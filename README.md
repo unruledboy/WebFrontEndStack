@@ -1,7 +1,7 @@
 # WebFrontEndStack
 web front end stack: browsers, platforms, libraries, frameworks, tools etc.
 
-![Image of Web Front End Stack](https://raw.githubusercontent.com/unruledboy/WebFrontEndStack/master/v1.1/Web%20Front%20End%20Stack%20v1.1.png)
+![Image of Web Front End Stack](https://raw.githubusercontent.com/unruledboy/WebFrontEndStack/master/v1.2/Web%20Front%20End%20Stack%20v1.2.png)
 
 # What and why?
 Have you ever wondered:
@@ -48,7 +48,7 @@ Developer Tools , Firebug | Debug
 
 NPM, Bower  | Package
 
-Grunt, Gulp, Brunch, Cake, Broccoli, webpack, browserify | Build
+Grunt, Gulp, Brunch, Yeoman, Lineman, Cake, Broccoli, webpack, browserify | Build
 
 Minification, Compilation, Concatenation,Uglification, Image Optimization, Unit Testing | Build Tasks
 
