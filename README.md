@@ -1,7 +1,7 @@
 # WebFrontEndStack
 web front end stack: browsers, platforms, libraries, frameworks, tools etc.
 
-![Image of Web Front End Stack](https://raw.githubusercontent.com/unruledboy/WebFrontEndStack/master/v1.0/Web%20Front%20End%20Stack%20v1.0.png)
+![Image of Web Front End Stack](https://raw.githubusercontent.com/unruledboy/WebFrontEndStack/master/v1.1/Web%20Front%20End%20Stack%20v1.1.png)
 
 # What and why?
 Have you ever wondered:
@@ -15,6 +15,7 @@ There might be issues here and there, like the category, the individual ones, bu
 
 
 # The Web Front End Stack
+
 
 
 Sencha, jQueryMobile, Kendo UI, Jo, WinkUI, DojoMobile, Lungo | Mobile UI
@@ -35,7 +36,7 @@ SCSS, LESS (Hat), SASS (Compass, Bourbon, Gumby), Stylus (Nib), ... | CSS Pre-pr
 
 Bootstrap, ZURB, YUI, Ext JS, Toast, YAML, ResponsiveGS, Semantic UI | UI framework
 
-AngularJS, Backbone, Knockout, Ember, Dojo, Deft.js | JavaScript framework
+AngularJS, Backbone, Knockout, Ember, React, polymer, flux, Dojo, Deft.js | JavaScript framework
 
 jQuery, Prototype, Zepto, MooTools,Underscore, RequireJS | JavaScript base library
 
@@ -55,12 +56,13 @@ Sublime Text, WebStorm, Atom, Vim, Brackets, Light Table | Editor
 
 Chakra (IE), V8 (Chrome), SpiderMonkey (Firefox), Nitro (Safari),  V8 (Opera), (??) Edge | JavaScript Engine
 
-Triddent (IE), Blink[formerly WebKit] (Chrome), Gecko (Firefox), WebKit (Safari),  Blink [formerly Presto] (Opera), EdgeHTML (Edge) | Rendering Engine
+Triddent (IE), Blink (formerly WebKit, Chrome), Gecko (Firefox), WebKit (Safari),  Blink (formerly Presto, Opera), EdgeHTML (Edge) | Rendering Engine
 
 DOM, Element, Attribute | Prototype, Scope, Closure, JSON | Selector, Priority, Specificity, Box Model | Core Concepts
 
-HTML                |                JavaScript          |           CSS (Cascading Style Sheets) | The 3 Pillars
+HTML  (HyperText Markup Language)              |                JavaScript          |           CSS (Cascading Style Sheets) | The 3 Pillars
 
 Internet Explorer, Chrome, Firefox, Safari, Opera, Edge, Netscape ;-)  | Browser
 
 OS
+
