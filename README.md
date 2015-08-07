@@ -57,7 +57,7 @@ Sublime Text, WebStorm, Atom, Vim, Brackets, Light Table, Visual Studio | Editor
 
 Chakra (IE), V8 (Chrome), SpiderMonkey (Firefox), Nitro (Safari),  V8 (Opera), (??) Edge | JavaScript Engine
 
-Triddent (IE), Blink [formerly WebKit] (Chrome), Gecko (Firefox), WebKit (Safari),  Blink [formerly Presto] (Opera), EdgeHTML (Edge) | Rendering Engine
+Triddent (IE), Blink / WebKit (Chrome), Gecko (Firefox), WebKit (Safari),  Blink / Presto (Opera), EdgeHTML (Edge) | Rendering Engine
 
 DOM, Element, Attribute | Prototype, Scope, Closure, JSON | Selector, Priority, Specificity, Box Model | Core Concepts
  
