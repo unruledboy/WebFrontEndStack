@@ -1,7 +1,7 @@
 # WebFrontEndStack
 web front end stack: browsers, platforms, libraries, frameworks, tools etc.
 
-![Image of Web Front End Stack](https://raw.githubusercontent.com/unruledboy/WebFrontEndStack/master/v1.4/Web%20Front%20End%20Stack%20v1.4.png)
+![Image of Web Front End Stack](https://raw.githubusercontent.com/unruledboy/WebFrontEndStack/master/v1.5/Web%20Front%20End%20Stack%20v1.5.png)
 
 # What and why?
 Have you ever wondered:
@@ -23,7 +23,7 @@ PhoneGap, Cordova, Appcelerator Titanium, appMobi, trigger.io | Platforms
 
 CoffeeScript, TypeScript, Dart, LiveScript, ClojureScript | Intermediate Languages
 
-Sandbox, XSS, CSRF | Security
+Sandbox, XSS, CSRF, CORS | Security
 
 SEO | Responsiveness | Practices
 
@@ -33,7 +33,7 @@ Markdown, Handlebars, Haml, Slim Ruby, Jade | Template
 
 SCSS, LESS (Hat), SASS (Compass, Bourbon, Gumby), Stylus (Nib), ... | CSS Pre-processors
 
-Bootstrap, ZURB, YUI, Ext JS, Toast, YAML, ResponsiveGS, Semantic UI | UI framework
+Bootstrap, ZURB, YUI, Ext JS, Toast, YAML, ResponsiveGS, Semantic UI, Foundation | UI framework
 
 AngularJS, Backbone, Knockout, Ember, React, polymer, flux, Dojo, Deft.js | JavaScript framework
 
@@ -53,23 +53,24 @@ Grunt, Gulp, Brunch, Yeoman, Lineman, Cake, Broccoli, webpack, browserify | Buil
 
 Minification, Compilation, Concatenation,Uglification, Image Optimization, Unit Testing | Build Tasks
 
-Sublime Text, WebStorm, Atom, Vim, Brackets, Light Table, Visual Studio | Editor
+Sublime Text, WebStorm, Atom, Vim, Emacs, Brackets, Light Table, Visual Studio | Editors
 
 Chakra (IE), V8 (Chrome), SpiderMonkey (Firefox), Nitro (Safari),  V8 (Opera), (??) Edge | JavaScript Engine
 
 Triddent (IE), Blink / WebKit (Chrome), Gecko (Firefox), WebKit (Safari),  Blink / Presto (Opera), EdgeHTML (Edge) | Rendering Engine
 
-DOM, Element, Attribute | Prototype, Scope, Closure, JSON | Selector, Priority, Specificity, Box Model | Core Concepts
- 
-W3C (DOM, HTML, XHTML, XML, JSON...), ECMAScript (JavaScript), HTML5/CSS3 | Standard
+DOM, Element, Attribute | Prototype, Scope, Closure, JSON, JSONP, AJAX | Selector, Priority, Specificity, Box Model | Core Concepts
+
+W3C (HTML, CSS£¬ XHTML, XML, JSON...), ECMAScript (JavaScript), HTML5/CSS3 | Standards
 
 HTML  (HyperText Markup Language)              |                JavaScript          |           CSS (Cascading Style Sheets) | The 3 Pillars
- 
+
 Compression, Encryption, Minification, Server Push  | HTTP/2
- 
+
 URI, Session, Authentication, Request method (GET, POST, HEAD, PUT, DELETE, TRACE, OPTIONS, PATCH, CONNECT), Request (Headers, Body), Response (Headers, Body), Status Code (2xx, 3xx, 4xx, 5xx ...) |  HTTP/1.1
 
 Internet Explorer, Chrome, Firefox, Safari, Opera, Edge, Netscape ;-)  | Browser
+
 
 OS
 
