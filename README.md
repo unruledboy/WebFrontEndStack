@@ -55,9 +55,9 @@ Minification, Compilation, Concatenation,Uglification, Image Optimization, Unit 
 
 Sublime Text, WebStorm, Atom, Vim, Emacs, Brackets, Light Table, Visual Studio | Editors
 
-Chakra (IE), V8 (Chrome), SpiderMonkey (Firefox), Nitro (Safari),  V8 (Opera), (??) Edge | JavaScript Engine
+Chakra (IE), V8 (Chrome), SpiderMonkey (Firefox), Nitro (Safari),  V8 (Opera), (Chakra) Edge | JavaScript Engine
 
-Triddent (IE), Blink / WebKit (Chrome), Gecko (Firefox), WebKit (Safari),  Blink / Presto (Opera), EdgeHTML (Edge) | Rendering Engine
+Trident (IE), Blink / (prev. WebKit) (Chrome), Gecko (Firefox), WebKit (Safari),  Blink / (prev. Presto) (Opera), EdgeHTML (Edge) | Rendering Engine
 
 DOM, Element, Attribute | Prototype, Scope, Closure, JSON, JSONP, AJAX | Selector, Priority, Specificity, Box Model | Core Concepts
 
@@ -70,7 +70,6 @@ Compression, Encryption, Minification, Server Push  | HTTP/2
 URI, Session, Authentication, Request method (GET, POST, HEAD, PUT, DELETE, TRACE, OPTIONS, PATCH, CONNECT), Request (Headers, Body), Response (Headers, Body), Status Code (2xx, 3xx, 4xx, 5xx ...) |  HTTP/1.1
 
 Internet Explorer, Chrome, Firefox, Safari, Opera, Edge, Netscape ;-)  | Browser
-
 
 OS
 
