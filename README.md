@@ -1,7 +1,7 @@
 # WebFrontEndStack
 web front end stack: browsers, platforms, libraries, frameworks, tools etc.
 
-![Image of Web Front End Stack](https://raw.githubusercontent.com/unruledboy/WebFrontEndStack/master/v1.6/Web%20Front%20End%20Stack%20v1.6.png)
+![Image of Web Front End Stack](https://raw.githubusercontent.com/unruledboy/WebFrontEndStack/master/v1.7/Web%20Front%20End%20Stack%20v1.7.png)
 
 # What and why?
 Have you ever wondered:
@@ -23,9 +23,9 @@ PhoneGap, Cordova, Appcelerator Titanium, appMobi, trigger.io | Platforms
 
 CoffeeScript, TypeScript, Dart, LiveScript, ClojureScript | Intermediate Languages
 
-Sandbox, XSS, CSRF, CORS | Security
+SSL, OAuth, Sandbox, XSS, CSRF, CORS | Security
 
-SEO | Responsiveness | Practices
+SEO | Responsiveness, CDN | Practices
 
 Normalize, Reset | Modernisation
 
@@ -55,6 +55,8 @@ Minification, Compilation, Concatenation,Uglification, Image Optimization, Unit 
 
 Sublime Text, WebStorm, Atom, Vim, Emacs, Brackets, Light Table, Visual Studio | Editors
 
+Cookie, Local Cache, Session Storage, Local Storage, Components (extensions, plugins...), Resources (images, fonts, videos...)|Runtime
+ 
 Chakra (IE), V8 (Chrome), SpiderMonkey (Firefox), Nitro (Safari),  V8 (Opera), (Chakra) Edge | JavaScript Engine
 
 Trident (IE), Blink / (prev. WebKit) (Chrome), Gecko (Firefox), WebKit (Safari),  Blink / (prev. Presto) (Opera), EdgeHTML (Edge) | Rendering Engine
@@ -70,6 +72,7 @@ Compression, Encryption, Minification, Server Push  | HTTP/2
 URI, Session, Authentication, Request method (GET, POST, HEAD, PUT, DELETE, TRACE, OPTIONS, PATCH, CONNECT), Request (Headers, Body), Response (Headers, Body), Status Code (2xx, 3xx, 4xx, 5xx ...) |  HTTP/1.1
 
 Internet Explorer, Chrome, Firefox, Safari, Opera, Edge, Netscape ;-)  | Browser
+
 
 OS
 
