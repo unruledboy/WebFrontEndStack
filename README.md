@@ -1,7 +1,7 @@
 # WebFrontEndStack
 web front end stack: browsers, platforms, libraries, frameworks, tools etc.
 
-![Image of Web Front End Stack](https://raw.githubusercontent.com/unruledboy/WebFrontEndStack/master/v1.7/Web%20Front%20End%20Stack%20v1.7.png)
+![Image of Web Front End Stack](https://raw.githubusercontent.com/unruledboy/WebFrontEndStack/master/Web%20Front%20End%20Stack%20.png)
 
 # What and why?
 Have you ever wondered:
