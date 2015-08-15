@@ -1,3 +1,8 @@
+# Localization
+жпнд: 
+http://www.cnblogs.com/unruledboy/p/WebFrontEndStack.html
+
+
 # WebFrontEndStack
 web front end stack: browsers, platforms, libraries, frameworks, tools etc.
 
