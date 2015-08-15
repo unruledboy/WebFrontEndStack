@@ -1,5 +1,5 @@
-# Localization
-ÖÐÎÄ: 
+ï»¿# Localization
+ä¸­æ–‡: 
 http://www.cnblogs.com/unruledboy/p/WebFrontEndStack.html
 
 
@@ -68,7 +68,7 @@ Trident (IE), Blink / (prev. WebKit) (Chrome), Gecko (Firefox), WebKit (Safari),
 
 DOM, Element, Attribute | Prototype, Scope, Closure, JSON, JSONP, AJAX | Selector, Priority, Specificity, Box Model | Core Concepts
 
-W3C (HTML, CSS£¬ XHTML, XML, JSON...), ECMAScript (JavaScript), HTML5/CSS3 | Standards
+W3C (HTML, CSSï¼Œ XHTML, XML, JSON...), ECMAScript (JavaScript), HTML5/CSS3 | Standards
 
 HTML  (HyperText Markup Language)              |                JavaScript          |           CSS (Cascading Style Sheets) | The 3 Pillars
 
