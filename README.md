@@ -6,7 +6,7 @@ http://www.cnblogs.com/unruledboy/p/WebFrontEndStack.html
 # WebFrontEndStack
 web front end stack: browsers, platforms, libraries, frameworks, tools etc.
 
-![Image of Web Front End Stack](Web%20Front%20End%20Stack.png)
+![Image of Web Front End Stack](WebFrontEndStack.png)
 
 # What and why?
 Have you ever wondered:
