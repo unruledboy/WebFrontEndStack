@@ -95,10 +95,10 @@ There might be issues here and there, like the category, the individual ones, bu
 			- Box Model
 	- Rendering Engine 
 		- Trident (IE)
-		- Blink / [prev. WebKit] (Chrome)
+		- Blink / prev. WebKit (Chrome)
 		- Gecko (Firefox)
 		- WebKit (Safari)
-		- Blink / [prev. Presto] (Opera)
+		- Blink / prev. Presto (Opera)
 		- EdgeHTML (Edge)
 	- JavaScript Engine
 		- Chakra (IE)
