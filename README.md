@@ -18,6 +18,10 @@ I could not find a really comprehensive diagram that shows the web front end tec
 
 There might be issues here and there, like the category, the individual ones, but the beautity is you can modify it as you want.
 
+You can have a graphical preview here (use mouse to move / zoom): 
+
+https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrotEndStack.htm 
+
 
 # The Web Front End Stack
 
