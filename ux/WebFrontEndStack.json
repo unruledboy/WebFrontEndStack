@@ -1,0 +1,7 @@
+﻿{
+  "name": "Web Front End",
+  "children": [
+    { "name": "Browser" },
+    // {       "name": "Internet Explorer"	}
+  ]
+}
