@@ -22,8 +22,8 @@ There might be issues here and there, like the category, the individual ones, bu
 # The Web Front End Stack
 
 
-
--Browser
+- Web Front End
+	- Browser
 		- Internet Explorer
 		- Chrome
 		- Firefox
