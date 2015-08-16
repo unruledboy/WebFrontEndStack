@@ -4,7 +4,8 @@
   "description": "Generate a image for web front-end stack.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node index phantom", 
+    "start": "node index"
   },
   "repository": {
     "type": "git",
