@@ -1,10 +1,10 @@
-﻿# Localization
+# Localization
 中文: 
 http://www.cnblogs.com/unruledboy/p/WebFrontEndStack.html
 
 
 # WebFrontEndStack
-web front end stack: browsers, platforms, libraries, frameworks, tools etc.
+Web front-end stack: browsers, platforms, libraries, frameworks, tools etc.
 
 ![Image of Web Front End Stack](Web Front End Stack.png)
 
@@ -292,8 +292,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 		- LiveScript
 		- ClojureScript
 	- Platforms
-		- PhoneGap
-		- Cordova
+		- PhoneGap / Cordova
 		- Appcelerator Titanium
 		- appMobi
 		- trigger.io
