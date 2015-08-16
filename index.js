@@ -1,6 +1,7 @@
 var express = require('express');
 var path = require('path');
 var Promise = require("bluebird");
+var fs = Promise.promisifyAll(require('fs'));
 
 var app = new express();
 var queueReady = ["server"];
@@ -10,14 +11,21 @@ var httpServer = "http://127.0.0.1:" + port + "/";
 var pageWidth = 2200; // Magic number!
 var pageHeight = 4000;
 
-/**
- * Use to build a promise for some fucking async api.
- * @param  object object       
- * @param  string method       
- * @param  array otherArguments
- * @return Promise<any>
- */
-var promiseFactory = function(object, method, otherArguments) {
+String.prototype.repeat = function(count) {
+        var ret = [];
+        while (count--) {
+            ret.push(this);
+        }
+        return ret.join("");
+    }
+    /**
+     * Use to build a promise for some fucking async api.
+     * @param  object object       
+     * @param  string method       
+     * @param  array otherArguments
+     * @return Promise<any>
+     */
+var promiseFactory = function promiseFactory(object, method, otherArguments) {
     var resolver = Promise.defer();
     var argu = otherArguments;
     if (!(argu instanceof Array)) {
@@ -28,6 +36,25 @@ var promiseFactory = function(object, method, otherArguments) {
     });
     object[method].apply(object, argu);
     return resolver.promise;
+}
+
+/**
+ * Recursion to generate readme
+ * @param object object
+ * @param int deep
+ * @return string     
+ */
+var buildReadme = function buildReadme(object, deep) {
+    var deeper = deep + 1;
+    var deepString = "\t".repeat(deep) + "- ";
+    var ret = [deepString + object.name];
+    if (!('children' in object)) {
+        return ret.join("\n");
+    }
+    object.children.map(function(value, index) {
+        ret.push(buildReadme(value, deeper));
+    });
+    return ret.join("\n");
 }
 
 var actions = {
@@ -43,7 +70,7 @@ var actions = {
             var page;
 
             // What the fucking API?
-            promiseFactory(phantom, 'create').then(function(phantom) {
+            return promiseFactory(phantom, 'create').then(function(phantom) {
                 ph = phantom;
                 console.log("Created Phantomjs");
                 return promiseFactory(ph, 'createPage');
@@ -64,9 +91,9 @@ var actions = {
                     return reject(status);
                 }
             }).then(function() {
-            	return promiseFactory(page, 'render', [path.join(__dirname, 'Web Front End Stack.png')]);
+                return promiseFactory(page, 'render', [path.join(__dirname, 'Web Front End Stack.png')]);
             }).then(function() {
-            	console.log("The image saved successfully!");
+                console.log("The image saved successfully!");
                 return resolve();
             }).then(function() {
                 page.close();
@@ -80,7 +107,17 @@ var actions = {
      * @return Promise<any>
      */
     readme: function readme() {
-
+        var json = require('./ux/WebFrontEndStack.json');
+        return Promise.resolve().then(function() {
+            return buildReadme(json, 0);
+        }).then(function(ret) {
+            return fs.readFileAsync("./README.md", "utf-8").then(function(fileContent) {
+                fileContent = fileContent.replace(/<\!--BUILD_START-->[\d\D]+?<\!--BUILD_END-->/, "{%BuildStart%}")
+                return fs.writeFileAsync("./README.md", fileContent.replace("{%BuildStart%}", "<!--BUILD_START-->\n\n" + ret + "\n\n<!--BUILD_END-->", "utf-8"));
+            }).then(function() {
+                console.log('Readme built successfully!');
+            });
+        });
     },
     /**
      * To start an express server
@@ -88,7 +125,7 @@ var actions = {
      */
     server: function server() {
         return new Promise(function(resolver, reject) {
-            app
+            return app
                 .set('port', port)
                 .set('view engine', 'html')
                 .use(express.static(path.join(__dirname, '/ux')))
@@ -118,3 +155,4 @@ if (queue.length > 1) { // for somebody who only want to start the server.
         process.exit(0);
     });
 }
+

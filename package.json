@@ -4,7 +4,7 @@
   "description": "Generate a image for web front-end stack.",
   "main": "index.js",
   "scripts": {
-    "build": "node index phantom", 
+    "build": "node index phantomjs readme", 
     "start": "node index"
   },
   "repository": {

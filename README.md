@@ -12,12 +12,15 @@ Web front-end stack: browsers, platforms, libraries, frameworks, tools etc.
 
 ## Prepare for environment
 You should have Visual Studio 2010 / 2012 installed in Windows.
+
 1. Install [nodejs](https://nodejs.org)
-2. Install [Phantomjs](https://phantomjs.org)
+
+2. Install [Phantomjs](http://phantomjs.org)
+
 3. ``npm install``
 
 ## Run commands
-``npm start`` for start a server to 
+``npm start`` for start a server to open the html directly.
 
 ``npm run build`` for generate the image.
 
@@ -50,7 +53,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 
 
 # The Web Front End Stack
-
+<!--BUILD_START-->
 
 - Web Front End
 	- Browser
@@ -67,33 +70,14 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- Session
 			- Authentication
 			- Request
-				- Request Methods
-					- GET
-					- POST
-					- HEAD
-					- PUT
-					- DELETE
-					- TRACE
-					- OPTIONS
-					- PATCH
-					- CONNECT
-				- Headers
-				- Body
 			- Response
-				- Headers
-				- Body
-				- Status Code
-					- 2xx
-					- 3xx
-					- 4xx
-					- 5xx
 		- HTTP/2
 			- Compression
 			- Encryption
 			- Minification
 			- Server Push
 	- The 3 Pillars
-		- HTML  (HyperText Markup Language)
+		- HTML (HyperText Markup Language)
 		- CSS (Cascading Style Sheets)
 		- JavaScript
 	- Standards
@@ -102,10 +86,6 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- CSS
 			- XHTML
 			- XML
-		- ECMAScript
-			- JavaScript
-		- HTML5
-		- CSS3
 	- Core Concepts
 		- HTML
 			- DOM
@@ -116,14 +96,13 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- Scope
 			- Closure
 			- JSON (JavaSript Object Notation)
-			- JSONP
 			- AJAX (Asynchronous JavaScript and XML)
 		- CSS
 			- Selector
 			- Priority
 			- Specificity
 			- Box Model
-	- Rendering Engine 
+	- Rendering Engine
 		- Trident (IE)
 		- Blink / prev. WebKit (Chrome)
 		- Gecko (Firefox)
@@ -137,7 +116,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 		- Nitro (Safari)
 		- V8 (Opera)
 		- Chakra (Edge)
-	- Runtime 
+	- Runtime
 		- Cookie
 		- Local Cache
 		- Session Storage
@@ -173,20 +152,10 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 		- Gulp
 		- Brunch
 		- Yeoman
-		- Lineman
-		- Cake
 		- Broccoli
 	- Debug
 		- Developer Tools
 		- Firebug
-		- Dragonfly
-		- Fiddler
-	- Performace
-		- YSlow
-		- jsPerf
-		- Speed Tracer
-		- Dynatrace
-		- PageSpeed
 	- Base Tools
 		- Node.js
 		- Phantom.js
@@ -195,9 +164,8 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 		- JSHint
 		- jscs
 		- Closure Linter
-		- SonarQube
 	- Package
-		- NPM
+		- npm
 		- Bower
 	- Test
 		- QUnit
@@ -205,7 +173,6 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 		- Mocha
 		- Selenium
 		- WebDriverJS
-		- Nightwatch.js
 		- Protractor
 		- Chai
 		- Sinon
@@ -232,21 +199,21 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- Ember
 			- React
 			- polymer
-			- flux
+			- Extjs
 			- Dojo
 			- Deft.js
+			- Vue
 		- UI framework
 			- Bootstrap
 			- ZURB
 			- YUI
-			- Ext JS
 			- Toast
 			- YAML
 			- ResponsiveGS
 			- Semantic UI
 			- Foundation
-			- Vue
 			- Material UI
+			- jQuery UI
 		- WebSocket
 			- Socket.io
 			- web-socket-js
@@ -275,13 +242,14 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- Gumby
 		- Stylus
 			- Nib
-	-  Template
+	- Template
 		- Markdown
 		- Handlebars
 		- Haml
 		- Slim Ruby
 		- Jade
 		- Ejs
+		- Spacebars
 	- Modernisation
 		- Normalize
 		- Reset
@@ -305,11 +273,8 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 		- Responsiveness
 		- CDN
 	- Security
-		- SSL
-		- OAuth
 		- Sandbox
 		- XSS
-		- CSRF
 		- CORS
 	- Intermediate Languages
 		- CoffeeScript
@@ -317,21 +282,17 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 		- Dart
 		- LiveScript
 		- ClojureScript
-	- Platforms
+	- Mobile App Builders
 		- PhoneGap / Cordova
-		- Appcelerator Titanium
-		- appMobi
-		- trigger.io
+		- MUI
+		- React Native
 	- Mobile UI
 		- Sencha
-		- jQueryMobile
+		- jQuery Mobile
 		- Kendo UI
 		- Jo
 		- WinkUI
 		- DojoMobile
 		- Lungo
 
-
-
-
-
+<!--BUILD_END-->
