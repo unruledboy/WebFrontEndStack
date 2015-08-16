@@ -8,7 +8,7 @@ var port = process.env.PORT || 3000;
 var httpServer = "http://127.0.0.1:" + port + "/";
 
 var pageWidth = 2200; // Magic number!
-var pageHeight = 3500;
+var pageHeight = 4500;
 
 /**
  * Use to build a promise for some fucking async api.
