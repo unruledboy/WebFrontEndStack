@@ -20,7 +20,7 @@ There might be issues here and there, like the category, the individual ones, bu
 
 You can have a graphical preview here (use mouse to move / zoom): 
 
-https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrotEndStack.htm 
+https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm 
 
 
 # The Web Front End Stack
