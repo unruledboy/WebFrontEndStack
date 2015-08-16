@@ -8,6 +8,14 @@ Web front-end stack: browsers, platforms, libraries, frameworks, tools etc.
 
 ![Image of Web Front End Stack](Web Front End Stack.png)
 
+## Generate image yourself
+
+If you're using Windows, you should have Visual Studio 2010 / 2012 installed.
+```bash
+npm install
+npm build
+```
+
 # What and why?
 Have you ever wondered:
 * what technologies web front end really includes? 

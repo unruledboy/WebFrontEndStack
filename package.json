@@ -26,6 +26,6 @@
   "homepage": "https://github.com/unruledboy/WebFrontEndStack",
   "dependencies": {
     "express": "^4.13.3",
-    "phantomjs": "^1.9.18"
+    "phantom": "^0.7.2"
   }
 }
