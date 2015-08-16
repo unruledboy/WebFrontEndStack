@@ -8,12 +8,30 @@ Web front-end stack: browsers, platforms, libraries, frameworks, tools etc.
 
 ![Image of Web Front End Stack](Web Front End Stack.png)
 
-## Generate image yourself
+# Generate image yourself
 
-If you're using Windows, you should have Visual Studio 2010 / 2012 installed.
+## Prepare for environment
+You should have Visual Studio 2010 / 2012 installed in Windows.
+1. Install [nodejs](https://nodejs.org)
+2. Install [Phantomjs](https://phantomjs.org)
+3. ``npm install``
+
+## Run commands
+``npm start`` for start a server to 
+
+``npm run build`` for generate the image.
+
+Both of commands require port 3000. If you're using this port, then try this:
+
+bash:
 ```bash
-npm install
-npm build
+PORT=4000 npm run build
+```
+
+cmd:
+```cmd
+SET PORT=4000
+npm run build
 ```
 
 # What and why?
