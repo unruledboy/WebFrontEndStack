@@ -128,7 +128,7 @@ var actions = {
                 .set('view engine', 'html')
                 .use(express.static(path.join(__dirname, '/ux')))
                 .use('/', function(req, res) {
-                    res.redirect('/WebFrontEndStack.html');
+                    res.redirect('/WebFrontEndStack.htm');
                 })
                 .listen(port, function() {
                     console.info('Express started on: http://127.0.0.1:' + port);
