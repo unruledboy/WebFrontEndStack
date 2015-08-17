@@ -11,13 +11,17 @@ Web front-end stack: browsers, platforms, libraries, frameworks, tools etc.
 # Generate image yourself
 
 ## Prepare for environment
-You should have Visual Studio 2010 / 2012 installed in Windows.
+You should have Visual Studio 2010+ installed in Windows. 
 
-1. Install [nodejs](https://nodejs.org)
+1. Install [nodejs](https://nodejs.org).
 
-2. Install [Phantomjs](http://phantomjs.org)
+2. Install [Phantomjs](http://phantomjs.org).
+
+3. Install [Python 2.7](https://www.python.org/).
 
 3. ``npm install``
+
+If the error occurs, you can check the dependence of [phantomjs-node](https://github.com/sgentle/phantomjs-node/wiki), [node-gyp](https://github.com/TooTallNate/node-gyp#installation).
 
 ## Run commands
 ``npm start`` for start a server to open the html directly.

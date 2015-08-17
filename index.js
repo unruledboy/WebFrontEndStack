@@ -12,19 +12,19 @@ var pageWidth = 2200; // Magic number!
 var pageHeight = 4000;
 
 String.prototype.repeat = function(count) {
-        var ret = [];
-        while (count--) {
-            ret.push(this);
-        }
-        return ret.join("");
+    var ret = [];
+    while (count--) {
+        ret.push(this);
     }
-    /**
-     * Use to build a promise for some fucking async api.
-     * @param  object object       
-     * @param  string method       
-     * @param  array otherArguments
-     * @return Promise<any>
-     */
+    return ret.join("");
+}
+/**
+ * Use to build a promise for some fucking async api.
+ * @param  object object       
+ * @param  string method       
+ * @param  array otherArguments
+ * @return Promise<any>
+**/
 var promiseFactory = function promiseFactory(object, otherArguments) {
     var resolver = Promise.defer();
     var argu = otherArguments;
@@ -68,7 +68,7 @@ var actions = {
             var ph;
             var page;
 
-            // What the fucking API?
+            // What the fucking API
             return promiseFactory(phantom.create).then(function(phantom) {
                 ph = phantom;
                 console.log("Created Phantomjs");
@@ -83,7 +83,7 @@ var actions = {
                 console.log("Set viewportSize");
                 return promiseFactory(page.open, [httpServer]);
             }).then(function(status) {
-                console.log("Rendered HTML, the image will save after 2 seconds.");
+                console.log("Rendered HTML, the image will be save after 2 seconds.");
                 if (status == "success") {
                     return Promise.delay(2000);
                 } else {

@@ -4,7 +4,7 @@
   "description": "Generate a image for web front-end stack.",
   "main": "index.js",
   "scripts": {
-    "build": "node index phantomjs readme", 
+    "build": "node index phantomjs readme",
     "start": "node index"
   },
   "repository": {
@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/unruledboy/WebFrontEndStack",
   "dependencies": {
+    "bluebird": "^2.9.34",
     "express": "^4.13.3",
     "phantom": "^0.7.2"
   }
