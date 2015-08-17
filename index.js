@@ -25,7 +25,7 @@ String.prototype.repeat = function(count) {
      * @param  array otherArguments
      * @return Promise<any>
      */
-var promiseFactory = function promiseFactory(object, method, otherArguments) {
+var promiseFactory = function promiseFactory(object, otherArguments) {
     var resolver = Promise.defer();
     var argu = otherArguments;
     if (!(argu instanceof Array)) {
@@ -34,7 +34,7 @@ var promiseFactory = function promiseFactory(object, method, otherArguments) {
     argu.push(function() {
         resolver.resolve.apply(resolver, arguments);
     });
-    object[method].apply(object, argu);
+    object.apply(object, argu);
     return resolver.promise;
 }
 
@@ -48,12 +48,11 @@ var buildReadme = function buildReadme(object, deep) {
     var deeper = deep + 1;
     var deepString = "\t".repeat(deep) + "- ";
     var ret = [deepString + object.name];
-    if (!('children' in object)) {
-        return ret.join("\n");
+    if (object.children) {
+        object.children.map(function(value, index) {
+            ret.push(buildReadme(value, deeper));
+        });
     }
-    object.children.map(function(value, index) {
-        ret.push(buildReadme(value, deeper));
-    });
     return ret.join("\n");
 }
 
@@ -70,19 +69,19 @@ var actions = {
             var page;
 
             // What the fucking API?
-            return promiseFactory(phantom, 'create').then(function(phantom) {
+            return promiseFactory(phantom.create).then(function(phantom) {
                 ph = phantom;
                 console.log("Created Phantomjs");
-                return promiseFactory(ph, 'createPage');
+                return promiseFactory(ph.createPage);
             }).then(function(pg) {
                 page = pg;
-                return promiseFactory(page, 'set', ['viewportSize', {
+                return promiseFactory(page.set, ['viewportSize', {
                     width: pageWidth,
                     height: pageHeight
                 }]);
             }).then(function(err) {
                 console.log("Set viewportSize");
-                return promiseFactory(page, 'open', [httpServer]);
+                return promiseFactory(page.open, [httpServer]);
             }).then(function(status) {
                 console.log("Rendered HTML, the image will save after 2 seconds.");
                 if (status == "success") {
@@ -91,7 +90,7 @@ var actions = {
                     return reject(status);
                 }
             }).then(function() {
-                return promiseFactory(page, 'render', [path.join(__dirname, 'Web Front End Stack.png')]);
+                return promiseFactory(page.render, [path.join(__dirname, 'Web Front End Stack.png')]);
             }).then(function() {
                 console.log("The image saved successfully!");
                 return resolve();
@@ -109,15 +108,14 @@ var actions = {
     readme: function readme() {
         var json = require('./ux/WebFrontEndStack.json');
         return Promise.resolve().then(function() {
-            return buildReadme(json, 0);
-        }).then(function(ret) {
-            return fs.readFileAsync("./README.md", "utf-8").then(function(fileContent) {
-                fileContent = fileContent.replace(/<\!--BUILD_START-->[\d\D]+?<\!--BUILD_END-->/, "{%BuildStart%}")
-                return fs.writeFileAsync("./README.md", fileContent.replace("{%BuildStart%}", "<!--BUILD_START-->\n\n" + ret + "\n\n<!--BUILD_END-->", "utf-8"));
-            }).then(function() {
-                console.log('Readme built successfully!');
-            });
-        });
+            return fs.readFileAsync("./README.md", "utf-8");
+        }).then(function(fileContent) {
+            var ret = buildReadme(json, 0);
+            fileContent = fileContent.replace(/<\!--BUILD_START-->[\d\D]+?<\!--BUILD_END-->/, "{%BuildStart%}")
+            return fs.writeFileAsync("./README.md", fileContent.replace("{%BuildStart%}", "<!--BUILD_START-->\n\n" + ret + "\n\n<!--BUILD_END-->", "utf-8"));
+        }).then(function() {
+            console.log('Readme built successfully!');
+        })
     },
     /**
      * To start an express server
@@ -155,4 +153,3 @@ if (queue.length > 1) { // for somebody who only want to start the server.
         process.exit(0);
     });
 }
-
