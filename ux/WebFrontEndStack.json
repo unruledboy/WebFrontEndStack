@@ -444,14 +444,12 @@
     }, {
         "name": "CSS Pre-processors",
         "children": [{
-            "name": "SCSS"
-        }, {
             "name": "LESS",
             "children": [{
                 "name": "Hat"
             }]
         }, {
-            "name": "SASS",
+            "name": "Sass(SCSS)",
             "children": [{
                 "name": "Compass"
             }, {
