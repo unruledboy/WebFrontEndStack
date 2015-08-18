@@ -43,6 +43,8 @@
             }, {
                 "name": "Server Push"
             }]
+        }, {
+            "name": "WebSocket"
         }]
     }, {
         "name": "The 3 Pillars",
@@ -121,17 +123,15 @@
     }, {
         "name": "JavaScript Engine",
         "children": [{
-            "name": "Chakra (IE)"
+            "name": "JScript (IE8- / ASP)"
         }, {
-            "name": "V8 (Chrome)"
+            "name": "Chakra (IE9+ / Edge)"
+        }, {
+            "name": "V8 (Chrome / Opera / Nodejs / MongoDB)"
         }, {
             "name": "SpiderMonkey (Firefox)"
         }, {
             "name": "Nitro (Safari)"
-        }, {
-            "name": "V8 (Opera)"
-        }, {
-            "name": "Chakra (Edge)"
         }]
     }, {
         "name": "Runtime",
@@ -386,6 +386,60 @@
             }, {
                 "name": "move.js"
             }]
+        }, {
+            "name": "Flow Controller",
+            "children": [{
+                "name": "ES6",
+                "children": [{
+                    "name": "Promise"
+                }, {
+                    "name": "Generator"
+                }]
+            }, {
+                "name": "ES7",
+                "children": [{
+                    "name": "yield"
+                }, {
+                    "name": "await"
+                }]
+            }, {
+                "name": "async"
+            }, {
+                "name": "co"
+            }, {
+                "name": "Promise",
+                "children": [{
+                    "name": "Bluebird"
+                }, {
+                    "name": "q"
+                }, {
+                    "name": "When.js"
+                }]
+            }]
+        }, {
+            "name": "Functional",
+            "children": [{
+                "name": "backon.js"
+            }, {
+                "name": "immutable.js"
+            }]
+        }, {
+            "name": "Mobile UI",
+            "children": [{
+                "name": "Sencha"
+            }, {
+                "name": "jQuery Mobile"
+            }, {
+                "name": "Kendo UI"
+            }, {
+                "name": "Jo"
+            }, {
+                "name": "WinkUI"
+            }, {
+                "name": "DojoMobile"
+            }, {
+                "name": "Lungo"
+            }]
         }]
     }, {
         "name": "CSS Pre-processors",
@@ -414,8 +468,6 @@
     }, {
         "name": "Template",
         "children": [{
-            "name": "Markdown"
-        }, {
             "name": "Handlebars"
         }, {
             "name": "Haml"
@@ -434,41 +486,6 @@
             "name": "Normalize"
         }, {
             "name": "Reset"
-        }]
-    }, {
-        "name": "Functional",
-        "children": [{
-            "name": "backon.js"
-        }, {
-            "name": "immutable.js"
-        }]
-    }, {
-        "name": "Flow Controller",
-        "children": [{
-            "name": "ES6",
-            "children": [{
-                "name": "Promise",
-                "children": [{
-                    "name": "Bluebird"
-                }, {
-                    "name": "q"
-                }, {
-                    "name": "When.js"
-                }]
-            }, {
-                "name": "Generator"
-            }]
-        }, {
-            "name": "ES7",
-            "children": [{
-                "name": "yield"
-            }, {
-                "name": "await"
-            }]
-        }, {
-            "name": "async"
-        }, {
-            "name": "co"
         }]
     }, {
         "name": "Best Practices",
@@ -509,23 +526,6 @@
             "name": "MUI"
         }, {
             "name": "React Native"
-        }]
-    }, {
-        "name": "Mobile UI",
-        "children": [{
-            "name": "Sencha"
-        }, {
-            "name": "jQuery Mobile"
-        }, {
-            "name": "Kendo UI"
-        }, {
-            "name": "Jo"
-        }, {
-            "name": "WinkUI"
-        }, {
-            "name": "DojoMobile"
-        }, {
-            "name": "Lungo"
         }]
     }]
 }

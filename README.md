@@ -80,6 +80,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- Encryption
 			- Minification
 			- Server Push
+		- WebSocket
 	- The 3 Pillars
 		- HTML (HyperText Markup Language)
 		- CSS (Cascading Style Sheets)
@@ -114,12 +115,11 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 		- Blink / prev. Presto (Opera)
 		- EdgeHTML (Edge)
 	- JavaScript Engine
-		- Chakra (IE)
-		- V8 (Chrome)
+		- JScript (IE8- / ASP)
+		- Chakra (IE9+ / Edge)
+		- V8 (Chrome / Opera / Nodejs / MongoDB)
 		- SpiderMonkey (Firefox)
 		- Nitro (Safari)
-		- V8 (Opera)
-		- Chakra (Edge)
 	- Runtime
 		- Cookie
 		- Local Cache
@@ -236,6 +236,30 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- bounce.js
 			- Effeckt.css
 			- move.js
+		- Flow Controller
+			- ES6
+				- Promise
+				- Generator
+			- ES7
+				- yield
+				- await
+			- async
+			- co
+			- Promise
+				- Bluebird
+				- q
+				- When.js
+		- Functional
+			- backon.js
+			- immutable.js
+		- Mobile UI
+			- Sencha
+			- jQuery Mobile
+			- Kendo UI
+			- Jo
+			- WinkUI
+			- DojoMobile
+			- Lungo
 	- CSS Pre-processors
 		- SCSS
 		- LESS
@@ -247,7 +271,6 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 		- Stylus
 			- Nib
 	- Template
-		- Markdown
 		- Handlebars
 		- Haml
 		- Slim Ruby
@@ -257,21 +280,6 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 	- Modernisation
 		- Normalize
 		- Reset
-	- Functional
-		- backon.js
-		- immutable.js
-	- Flow Controller
-		- ES6
-			- Promise
-				- Bluebird
-				- q
-				- When.js
-			- Generator
-		- ES7
-			- yield
-			- await
-		- async
-		- co
 	- Best Practices
 		- SEO
 		- Responsiveness
@@ -290,13 +298,5 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 		- PhoneGap / Cordova
 		- MUI
 		- React Native
-	- Mobile UI
-		- Sencha
-		- jQuery Mobile
-		- Kendo UI
-		- Jo
-		- WinkUI
-		- DojoMobile
-		- Lungo
 
 <!--BUILD_END-->

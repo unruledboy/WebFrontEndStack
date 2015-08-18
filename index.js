@@ -1,3 +1,7 @@
+/**
+ * Builder
+ * @author zsx<zsx@zsxsoft.com>
+ */
 var express = require('express');
 var path = require('path');
 var Promise = require("bluebird");
@@ -9,7 +13,7 @@ var port = process.env.PORT || 3000;
 var httpServer = "http://127.0.0.1:" + port + "/";
 
 var pageWidth = 2200; // Magic number!
-var pageHeight = 4000;
+var pageHeight = 3600;
 
 String.prototype.repeat = function(count) {
     var ret = [];
