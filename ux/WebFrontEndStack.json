@@ -585,6 +585,9 @@
         }, {
             "name": "Spacebars", 
             "url": "http://meteorcapture.com/spacebars/"
+        }, {
+            "name": "{{ mustache }}", 
+            "url": "https://github.com/janl/mustache.js/"
         }]
     }, {
         "name": "Modernisation",
