@@ -173,31 +173,33 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 		- Bower
 	- Test
 		- QUnit
-		- Jasmine
-		- Mocha
-		- Selenium
-		- WebDriverJS
+		- [Jasmine](http://jasmine.github.io/)
+		- [Mocha](https://mochajs.org/)
+		- [Selenium](http://www.seleniumhq.org/)
+		- [WebDriverIO](http://webdriver.io/)
 		- Protractor
 		- Chai
-		- Sinon
+		- [Sinon.JS](http://sinonjs.org/)
 		- Karma
-		- Nodeunit
-	- Frameworks/Libraries
+		- [nodeunit](https://github.com/caolan/nodeunit)
+	- Frameworks / Libraries
 		- JavaScript base library
-			- jQuery
-			- Prototype
-			- Zepto
-			- MooTool
-			- Underscore
+			- [jQuery](https://jquery.com/)
+			- [Prototype](http://prototypejs.org/)
+			- [Zepto](http://zeptojs.com/)
+			- [MooTool](http://mootools.net/)
+			- [Underscore](http://underscorejs.org/)
 		- Modular
 			- ES6 Module
 			- CommonJS
-				- webpack
+				- [webpack](http://webpack.github.io/)
 				- [browserify](http://browserify.org/)
 			- AMD
 				- [RequireJS](http://requirejs.org/)
+			- UMD
+				- [umd](https://github.com/umdjs/umd)
 		- JavaScript framework
-			- AngularJS
+			- [AngularJS](https://angularjs.org/)
 			- [Backbone](http://backbonejs.org/)
 			- [Knockout](http://knockoutjs.com/)
 			- [Ember](http://emberjs.com/)

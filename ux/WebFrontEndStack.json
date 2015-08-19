@@ -3,25 +3,25 @@
     "children": [{
         "name": "Browser",
         "children": [{
-            "name": "Internet Explorer", 
+            "name": "Internet Explorer",
             "url": "http://windows.microsoft.com/en-us/internet-explorer/download-ie"
         }, {
-            "name": "Chrome", 
+            "name": "Chrome",
             "url": "http://www.google.com/chrome/"
         }, {
-            "name": "Firefox", 
+            "name": "Firefox",
             "url": "https://www.mozilla.org/"
         }, {
-            "name": "Safari", 
+            "name": "Safari",
             "url": "http://www.apple.com/safari/"
         }, {
-            "name": "Opera", 
+            "name": "Opera",
             "url": "http://www.opera.com/"
         }, {
-            "name": "Edge", 
+            "name": "Edge",
             "url": "https://www.microsoft.com/en-us/windows/microsoft-edge"
         }, {
-            "name": "Netscape ;-)", 
+            "name": "Netscape ;-)",
             "url": "https://en.wikipedia.org/wiki/Netspace"
         }]
     }, {
@@ -116,22 +116,22 @@
     }, {
         "name": "Rendering Engine",
         "children": [{
-            "name": "Trident (IE)", 
+            "name": "Trident (IE)",
             "url": "https://en.wikipedia.org/wiki/Trident_(layout_engine)"
         }, {
-            "name": "Blink / prev. WebKit (Chrome)", 
+            "name": "Blink / prev. WebKit (Chrome)",
             "url": "http://www.chromium.org/blink"
         }, {
-            "name": "Gecko (Firefox)", 
+            "name": "Gecko (Firefox)",
             "url": "https://developer.mozilla.org/en-us/docs/Mozilla/Gecko"
         }, {
-            "name": "WebKit (Safari)", 
+            "name": "WebKit (Safari)",
             "url": "http://www.webkit.org/"
         }, {
-            "name": "Blink / prev. Presto (Opera)", 
+            "name": "Blink / prev. Presto (Opera)",
             "url": "http://www.chromium.org/blink"
         }, {
-            "name": "EdgeHTML (Edge)", 
+            "name": "EdgeHTML (Edge)",
             "url": "https://en.wikipedia.org/wiki/EdgeHTML"
         }]
     }, {
@@ -140,16 +140,16 @@
             "name": "JScript (IE8- / ASP)",
             "url": "https://en.wikipedia.org/wiki/JScript"
         }, {
-            "name": "Chakra (IE9+ / Edge)", 
+            "name": "Chakra (IE9+ / Edge)",
             "url": "https://en.wikipedia.org/wiki/Chakra_(JScript_engine)"
         }, {
-            "name": "V8 (Chrome / Opera / Nodejs / MongoDB)", 
+            "name": "V8 (Chrome / Opera / Nodejs / MongoDB)",
             "url": "https://developers.google.com/v8/?hl=zh-CN"
         }, {
-            "name": "SpiderMonkey (Firefox)", 
+            "name": "SpiderMonkey (Firefox)",
             "url": " https://developer.mozilla.org/en-us/docs/Mozilla/Projects/SpiderMonkey"
         }, {
-            "name": "Nitro (Safari)", 
+            "name": "Nitro (Safari)",
             "url": "https://en.wikipedia.org/wiki/WebKit#JavaScriptCore"
         }]
     }, {
@@ -269,38 +269,49 @@
         "children": [{
             "name": "QUnit"
         }, {
-            "name": "Jasmine"
+            "name": "Jasmine", 
+            "url": "http://jasmine.github.io/"
         }, {
-            "name": "Mocha"
+            "name": "Mocha", 
+            "url": "https://mochajs.org/"
         }, {
-            "name": "Selenium"
+            "name": "Selenium", 
+            "url": "http://www.seleniumhq.org/"
         }, {
-            "name": "WebDriverJS"
+            "name": "WebDriverIO", 
+            "url": "http://webdriver.io/"
         }, {
             "name": "Protractor"
         }, {
             "name": "Chai"
         }, {
-            "name": "Sinon"
+            "name": "Sinon.JS", 
+            "url": "http://sinonjs.org/"
         }, {
             "name": "Karma"
         }, {
-            "name": "Nodeunit"
+            "name": "nodeunit", 
+            "url": "https://github.com/caolan/nodeunit"
         }]
     }, {
-        "name": "Frameworks/Libraries",
+        "name": "Frameworks / Libraries",
         "children": [{
             "name": "JavaScript base library",
             "children": [{
-                "name": "jQuery"
+                "name": "jQuery", 
+                "url": "https://jquery.com/"
             }, {
-                "name": "Prototype"
+                "name": "Prototype", 
+                "url": "http://prototypejs.org/"
             }, {
-                "name": "Zepto"
+                "name": "Zepto", 
+                "url": "http://zeptojs.com/"
             }, {
-                "name": "MooTool"
+                "name": "MooTool", 
+                "url": "http://mootools.net/"
             }, {
-                "name": "Underscore"
+                "name": "Underscore", 
+                "url": "http://underscorejs.org/"
             }]
         }, {
             "name": "Modular",
@@ -309,84 +320,92 @@
             }, {
                 "name": "CommonJS",
                 "children": [{
-                    "name": "webpack"
+                    "name": "webpack",
+                    "url": "http://webpack.github.io/"
                 }, {
-                    "name": "browserify", 
+                    "name": "browserify",
                     "url": "http://browserify.org/"
                 }]
             }, {
                 "name": "AMD",
                 "children": [{
-                    "name": "RequireJS", 
+                    "name": "RequireJS",
                     "url": "http://requirejs.org/"
+                }]
+            }, {
+                "name": "UMD",
+                "children": [{
+                    "name": "umd",
+                    "url": "https://github.com/umdjs/umd"
                 }]
             }]
         }, {
             "name": "JavaScript framework",
             "children": [{
-                "name": "AngularJS"
+                "name": "AngularJS",
+                "url": "https://angularjs.org/"
             }, {
-                "name": "Backbone", 
+                "name": "Backbone",
                 "url": "http://backbonejs.org/"
             }, {
-                "name": "Knockout", 
+                "name": "Knockout",
                 "url": "http://knockoutjs.com/"
             }, {
-                "name": "Ember", 
+                "name": "Ember",
                 "url": "http://emberjs.com/"
             }, {
-                "name": "React", 
+                "name": "React",
                 "url": "http://facebook.github.io/react/"
             }, {
-                "name": "polymer", 
+                "name": "polymer",
                 "url": "https://www.polymer-project.org/"
             }, {
-                "name": "Dojo", 
+                "name": "Dojo",
                 "url": "https://dojotoolkit.org/"
             }, {
-                "name": "Deft.js", 
+                "name": "Deft.js",
                 "url": "http://deftjs.org/"
             }, {
-                "name": "Vue", 
+                "name": "Vue",
                 "url": "http://vuejs.org/"
             }]
         }, {
             "name": "UI framework",
             "children": [{
-                "name": "Bootstrap", 
+                "name": "Bootstrap",
                 "url": "http://getbootstrap.com/"
             }, {
-                "name": "ResponsiveGS", 
+                "name": "ResponsiveGS",
                 "url": "http://responsive.gs/"
             }, {
-                "name": "Semantic UI", 
+                "name": "Semantic UI",
                 "url": "http://semantic-ui.com/"
             }, {
-                "name": "Foundation", 
+                "name": "Foundation",
                 "url": "http://foundation.zurb.com/"
             }, {
-                "name": "Material UI", 
+                "name": "Material UI",
                 "url": "http://material-ui.com/"
             }, {
-                "name": "jQuery UI", 
+                "name": "jQuery UI",
                 "url": "http://jqueryui.com/"
             }]
         }, {
             "name": "WebSocket",
             "children": [{
-                "name": "Socket.io", 
+                "name": "Socket.io",
                 "url": "http://socket.io/"
             }, {
-                "name": "web-socket-js", 
+                "name": "web-socket-js",
                 "url": "https://github.com/gimite/web-socket-js"
             }]
         }, {
             "name": "Data Visualization",
             "children": [{
-                "name": "D3", 
+                "name": "D3",
                 "url": "http://d3js.org/"
             }, {
-                "name": "Echarts", 
+                "name": "Echarts",
                 "url": "http://echarts.baidu.com"
             }, {
                 "name": "HighCharts"
