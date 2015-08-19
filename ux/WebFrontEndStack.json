@@ -28,6 +28,7 @@
         "name": "Protocol",
         "children": [{
             "name": "HTTP/1.1",
+            "url": "https://www.ietf.org/rfc/rfc2616.txt",
             "children": [{
                 "name": "URI"
             }, {
@@ -310,12 +311,14 @@
                 "children": [{
                     "name": "webpack"
                 }, {
-                    "name": "browserify"
+                    "name": "browserify", 
+                    "url": "http://browserify.org/"
                 }]
             }, {
                 "name": "AMD",
                 "children": [{
-                    "name": "RequireJS"
+                    "name": "RequireJS", 
+                    "url": "http://requirejs.org/"
                 }]
             }]
         }, {
@@ -323,60 +326,68 @@
             "children": [{
                 "name": "AngularJS"
             }, {
-                "name": "Backbone"
+                "name": "Backbone", 
+                "url": "http://backbonejs.org/"
             }, {
-                "name": "Knockout"
+                "name": "Knockout", 
+                "url": "http://knockoutjs.com/"
             }, {
-                "name": "Ember"
+                "name": "Ember", 
+                "url": "http://emberjs.com/"
             }, {
-                "name": "React"
+                "name": "React", 
+                "url": "http://facebook.github.io/react/"
             }, {
-                "name": "polymer"
+                "name": "polymer", 
+                "url": "https://www.polymer-project.org/"
             }, {
-                "name": "Extjs"
+                "name": "Dojo", 
+                "url": "https://dojotoolkit.org/"
             }, {
-                "name": "Dojo"
+                "name": "Deft.js", 
+                "url": "http://deftjs.org/"
             }, {
-                "name": "Deft.js"
-            }, {
-                "name": "Vue"
+                "name": "Vue", 
+                "url": "http://vuejs.org/"
             }]
         }, {
             "name": "UI framework",
             "children": [{
-                "name": "Bootstrap"
+                "name": "Bootstrap", 
+                "url": "http://getbootstrap.com/"
             }, {
-                "name": "ZURB"
+                "name": "ResponsiveGS", 
+                "url": "http://responsive.gs/"
             }, {
-                "name": "YUI"
+                "name": "Semantic UI", 
+                "url": "http://semantic-ui.com/"
             }, {
-                "name": "Toast"
+                "name": "Foundation", 
+                "url": "http://foundation.zurb.com/"
             }, {
-                "name": "YAML"
+                "name": "Material UI", 
+                "url": "http://material-ui.com/"
             }, {
-                "name": "ResponsiveGS"
-            }, {
-                "name": "Semantic UI"
-            }, {
-                "name": "Foundation"
-            }, {
-                "name": "Material UI"
-            }, {
-                "name": "jQuery UI"
+                "name": "jQuery UI", 
+                "url": "http://jqueryui.com/"
             }]
         }, {
             "name": "WebSocket",
             "children": [{
-                "name": "Socket.io"
+                "name": "Socket.io", 
+                "url": "http://socket.io/"
             }, {
-                "name": "web-socket-js"
+                "name": "web-socket-js", 
+                "url": "https://github.com/gimite/web-socket-js"
             }]
         }, {
             "name": "Data Visualization",
             "children": [{
-                "name": "D3"
+                "name": "D3", 
+                "url": "http://d3js.org/"
             }, {
-                "name": "Echarts"
+                "name": "Echarts", 
+                "url": "http://echarts.baidu.com"
             }, {
                 "name": "HighCharts"
             }, {

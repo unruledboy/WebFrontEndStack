@@ -69,7 +69,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 		- [Edge](https://www.microsoft.com/en-us/windows/microsoft-edge)
 		- [Netscape ;-)](https://en.wikipedia.org/wiki/Netspace)
 	- Protocol
-		- HTTP/1.1
+		- [HTTP/1.1](https://www.ietf.org/rfc/rfc2616.txt)
 			- URI
 			- Session
 			- Authentication
@@ -193,37 +193,32 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- ES6 Module
 			- CommonJS
 				- webpack
-				- browserify
+				- [browserify](http://browserify.org/)
 			- AMD
-				- RequireJS
+				- [RequireJS](http://requirejs.org/)
 		- JavaScript framework
 			- AngularJS
-			- Backbone
-			- Knockout
-			- Ember
-			- React
-			- polymer
-			- Extjs
-			- Dojo
-			- Deft.js
-			- Vue
+			- [Backbone](http://backbonejs.org/)
+			- [Knockout](http://knockoutjs.com/)
+			- [Ember](http://emberjs.com/)
+			- [React](http://facebook.github.io/react/)
+			- [polymer](https://www.polymer-project.org/)
+			- [Dojo](https://dojotoolkit.org/)
+			- [Deft.js](http://deftjs.org/)
+			- [Vue](http://vuejs.org/)
 		- UI framework
-			- Bootstrap
-			- ZURB
-			- YUI
-			- Toast
-			- YAML
-			- ResponsiveGS
-			- Semantic UI
-			- Foundation
-			- Material UI
-			- jQuery UI
+			- [Bootstrap](http://getbootstrap.com/)
+			- [ResponsiveGS](http://responsive.gs/)
+			- [Semantic UI](http://semantic-ui.com/)
+			- [Foundation](http://foundation.zurb.com/)
+			- [Material UI](http://material-ui.com/)
+			- [jQuery UI](http://jqueryui.com/)
 		- WebSocket
-			- Socket.io
-			- web-socket-js
+			- [Socket.io](http://socket.io/)
+			- [web-socket-js](https://github.com/gimite/web-socket-js)
 		- Data Visualization
-			- D3
-			- Echarts
+			- [D3](http://d3js.org/)
+			- [Echarts](http://echarts.baidu.com)
 			- HighCharts
 			- Vis.js
 			- Flot
