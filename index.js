@@ -55,7 +55,11 @@ var promisify = function promisify(object) {
 var buildReadme = function buildReadme(object, deep) {
     var deeper = deep + 1;
     var deepString = "\t".repeat(deep) + "- ";
-    var ret = [deepString + object.name];
+    var ret = [];
+    ret.push((function(deepString, name, url) {
+        var haveUrl = !!url;
+        return deepString + (haveUrl ? "[" : "") + object.name + (haveUrl ? "](" + url + ")" : "");
+    })(deepString, object.name, object.url));
     if (object.children) {
         object.children.map(function(value, index) {
             ret.push(buildReadme(value, deeper));

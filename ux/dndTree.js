@@ -397,7 +397,12 @@
                 .attr("transform", function(d) {
                     return "translate(" + source.y0 + "," + source.x0 + ")";
                 })
-                .on('click', click);
+                .on('click', click)
+                .append("a")
+                .attr("xlink:href", function(d) {
+                    return d.url;
+                })
+                .attr("target", "_blank");
 
             nodeEnter.append("circle")
                 .attr('class', 'nodeCircle')
@@ -542,7 +547,7 @@
             zoomListener.scale(0.25);
             centerNode(root);
         }
-    
+
         //
     });
 

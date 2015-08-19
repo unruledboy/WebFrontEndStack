@@ -3,7 +3,8 @@
     "children": [{
         "name": "Browser",
         "children": [{
-            "name": "Internet Explorer"
+            "name": "Internet Explorer", 
+            "url": "http://windows.microsoft.com/en-us/internet-explorer/download-ie"
         }, {
             "name": "Chrome"
         }, {

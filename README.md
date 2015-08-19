@@ -61,7 +61,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 
 - Web Front End
 	- Browser
-		- Internet Explorer
+		- [Internet Explorer](http://windows.microsoft.com/en-us/internet-explorer/download-ie)
 		- Chrome
 		- Firefox
 		- Safari
