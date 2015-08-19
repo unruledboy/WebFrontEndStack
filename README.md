@@ -261,10 +261,9 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- DojoMobile
 			- Lungo
 	- CSS Pre-processors
-		- SCSS
 		- LESS
 			- Hat
-		- SASS
+		- Sass(SCSS)
 			- Compass
 			- Bourbon
 			- Gumby
@@ -298,5 +297,6 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 		- PhoneGap / Cordova
 		- MUI
 		- React Native
+		- Ionic
 
 <!--BUILD_END-->
