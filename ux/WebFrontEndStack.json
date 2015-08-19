@@ -253,44 +253,50 @@
         }, {
             "name": "JSHint"
         }, {
-            "name": "jscs"
+            "name": "jscs",
+            "url": "http://jscs.info/"
         }, {
             "name": "Closure Linter"
         }]
     }, {
         "name": "Package",
         "children": [{
-            "name": "npm"
+            "name": "npm",
+            "url": "https://www.npmjs.com/"
         }, {
-            "name": "Bower"
+            "name": "Bower",
+            "url": "http://bower.io/"
         }]
     }, {
         "name": "Test",
         "children": [{
             "name": "QUnit"
         }, {
-            "name": "Jasmine", 
+            "name": "Jasmine",
             "url": "http://jasmine.github.io/"
         }, {
-            "name": "Mocha", 
+            "name": "Mocha",
             "url": "https://mochajs.org/"
         }, {
-            "name": "Selenium", 
+            "name": "Selenium",
             "url": "http://www.seleniumhq.org/"
         }, {
-            "name": "WebDriverIO", 
+            "name": "WebDriverIO",
             "url": "http://webdriver.io/"
         }, {
-            "name": "Protractor"
+            "name": "Protractor",
+            "url": "http://www.protractortest.org/"
         }, {
-            "name": "Chai"
+            "name": "Chai",
+            "url": "http://chaijs.com/"
         }, {
-            "name": "Sinon.JS", 
+            "name": "Sinon.JS",
             "url": "http://sinonjs.org/"
         }, {
-            "name": "Karma"
+            "name": "Karma",
+            "url": "http://karma-runner.github.io/"
         }, {
-            "name": "nodeunit", 
+            "name": "nodeunit",
             "url": "https://github.com/caolan/nodeunit"
         }]
     }, {
@@ -298,19 +304,19 @@
         "children": [{
             "name": "JavaScript base library",
             "children": [{
-                "name": "jQuery", 
+                "name": "jQuery",
                 "url": "https://jquery.com/"
             }, {
-                "name": "Prototype", 
+                "name": "Prototype",
                 "url": "http://prototypejs.org/"
             }, {
-                "name": "Zepto", 
+                "name": "Zepto",
                 "url": "http://zeptojs.com/"
             }, {
-                "name": "MooTool", 
+                "name": "MooTool",
                 "url": "http://mootools.net/"
             }, {
-                "name": "Underscore", 
+                "name": "Underscore",
                 "url": "http://underscorejs.org/"
             }]
         }, {
@@ -408,31 +414,41 @@
                 "name": "Echarts",
                 "url": "http://echarts.baidu.com"
             }, {
-                "name": "HighCharts"
+                "name": "HighCharts",
+                "url": "http://www.highcharts.com/"
             }, {
-                "name": "Vis.js"
+                "name": "Vis.js",
+                "url": "http://visjs.org/"
             }, {
-                "name": "Flot"
+                "name": "Flot",
+                "url": "http://www.flotcharts.org/"
             }]
         }, {
             "name": "WebGL",
             "children": [{
-                "name": "Three.js"
+                "name": "Three.js",
+                "url": "http://threejs.org/"
             }, {
-                "name": "Babylon.js"
+                "name": "Babylon.js",
+                "url": "http://www.babylonjs.com/"
             }, {
-                "name": "Pixi.js"
+                "name": "Pixi.js",
+                "url": "http://www.pixijs.com/"
             }]
         }, {
             "name": "CSS3 Animation",
             "children": [{
-                "name": "Animate.css"
+                "name": "Animate.css",
+                "url": "https://daneden.github.io/animate.css/"
             }, {
-                "name": "bounce.js"
+                "name": "bounce.js",
+                "url": "http://bouncejs.com/"
             }, {
-                "name": "Effeckt.css"
+                "name": "Effeckt.css",
+                "url": "https://h5bp.github.io/Effeckt.css/"
             }, {
-                "name": "move.js"
+                "name": "move.js",
+                "url": "https://visionmedia.github.io/move.js/"
             }]
         }, {
             "name": "Flow Controller",
@@ -451,42 +467,49 @@
                     "name": "await"
                 }]
             }, {
-                "name": "async"
+                "name": "async",
+                "url": "https://github.com/caolan/async"
             }, {
-                "name": "co"
+                "name": "co",
+                "url": "https://github.com/tj/co"
             }, {
                 "name": "Promise",
                 "children": [{
-                    "name": "Bluebird"
+                    "name": "Bluebird",
+                    "url": "https://github.com/petkaantonov/bluebird"
                 }, {
-                    "name": "q"
+                    "name": "q",
+                    "url": "https://github.com/kriskowal/q"
                 }, {
-                    "name": "When.js"
+                    "name": "when.js",
+                    "url": "https://github.com/cujojs/when"
                 }]
             }]
         }, {
             "name": "Functional",
             "children": [{
-                "name": "backon.js"
+                "name": "backon.js",
+                "url": "https://github.com/baconjs/bacon.js/"
             }, {
-                "name": "immutable.js"
+                "name": "immutable.js",
+                "url": "https://facebook.github.io/immutable-js/"
             }]
         }, {
             "name": "Mobile UI",
             "children": [{
-                "name": "Sencha"
+                "name": "jQuery Mobile",
+                "url": "https://jquerymobile.com/"
             }, {
-                "name": "jQuery Mobile"
-            }, {
-                "name": "Kendo UI"
-            }, {
-                "name": "Jo"
+                "name": "Jo",
+                "url": "http://joapp.com/"
             }, {
                 "name": "WinkUI"
             }, {
-                "name": "DojoMobile"
+                "name": "Dojo Mobile",
+                "url": "https://dojotoolkit.org/reference-guide/1.10/dojox/mobile.html"
             }, {
-                "name": "Lungo"
+                "name": "Lungo",
+                "url": "http://lungo.tapquo.com/"
             }]
         }]
     }, {
@@ -494,16 +517,23 @@
         "children": [{
             "name": "LESS",
             "children": [{
-                "name": "Hat"
+                "name": "LESS",
+                "url": "http://lesscss.org/"
+            }, {
+                "name": "Hat",
+                "url": "http://lesshat.madebysource.com/"
             }]
         }, {
             "name": "Sass(SCSS)",
             "children": [{
-                "name": "Compass"
+                "name": "Compass",
+                "url": "http://compass-style.org/"
             }, {
-                "name": "Bourbon"
+                "name": "Bourbon",
+                "url": "http://bourbon.io/"
             }, {
-                "name": "Gumby"
+                "name": "Gumby",
+                "url": "http://www.gumbyframework.com/"
             }]
         }, {
             "name": "Stylus",
@@ -573,7 +603,8 @@
         }, {
             "name": "React Native"
         }, {
-            "name": "Ionic"
+            "name": "Ionic", 
+            "url": "http://ionicframework.com/"
         }]
     }]
 }

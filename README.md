@@ -166,21 +166,21 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 	- Quality
 		- JSLint
 		- JSHint
-		- jscs
+		- [jscs](http://jscs.info/)
 		- Closure Linter
 	- Package
-		- npm
-		- Bower
+		- [npm](https://www.npmjs.com/)
+		- [Bower](http://bower.io/)
 	- Test
 		- QUnit
 		- [Jasmine](http://jasmine.github.io/)
 		- [Mocha](https://mochajs.org/)
 		- [Selenium](http://www.seleniumhq.org/)
 		- [WebDriverIO](http://webdriver.io/)
-		- Protractor
-		- Chai
+		- [Protractor](http://www.protractortest.org/)
+		- [Chai](http://chaijs.com/)
 		- [Sinon.JS](http://sinonjs.org/)
-		- Karma
+		- [Karma](http://karma-runner.github.io/)
 		- [nodeunit](https://github.com/caolan/nodeunit)
 	- Frameworks / Libraries
 		- JavaScript base library
@@ -221,18 +221,18 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 		- Data Visualization
 			- [D3](http://d3js.org/)
 			- [Echarts](http://echarts.baidu.com)
-			- HighCharts
-			- Vis.js
-			- Flot
+			- [HighCharts](http://www.highcharts.com/)
+			- [Vis.js](http://visjs.org/)
+			- [Flot](http://www.flotcharts.org/)
 		- WebGL
-			- Three.js
-			- Babylon.js
-			- Pixi.js
+			- [Three.js](http://threejs.org/)
+			- [Babylon.js](http://www.babylonjs.com/)
+			- [Pixi.js](http://www.pixijs.com/)
 		- CSS3 Animation
-			- Animate.css
-			- bounce.js
-			- Effeckt.css
-			- move.js
+			- [Animate.css](https://daneden.github.io/animate.css/)
+			- [bounce.js](http://bouncejs.com/)
+			- [Effeckt.css](https://h5bp.github.io/Effeckt.css/)
+			- [move.js](https://visionmedia.github.io/move.js/)
 		- Flow Controller
 			- ES6
 				- Promise
@@ -240,30 +240,29 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- ES7
 				- yield
 				- await
-			- async
-			- co
+			- [async](https://github.com/caolan/async)
+			- [co](https://github.com/tj/co)
 			- Promise
-				- Bluebird
-				- q
-				- When.js
+				- [Bluebird](https://github.com/petkaantonov/bluebird)
+				- [q](https://github.com/kriskowal/q)
+				- [when.js](https://github.com/cujojs/when)
 		- Functional
-			- backon.js
-			- immutable.js
+			- [backon.js](https://github.com/baconjs/bacon.js/)
+			- [immutable.js](https://facebook.github.io/immutable-js/)
 		- Mobile UI
-			- Sencha
-			- jQuery Mobile
-			- Kendo UI
-			- Jo
+			- [jQuery Mobile](https://jquerymobile.com/)
+			- [Jo](http://joapp.com/)
 			- WinkUI
-			- DojoMobile
-			- Lungo
+			- [Dojo Mobile](https://dojotoolkit.org/reference-guide/1.10/dojox/mobile.html)
+			- [Lungo](http://lungo.tapquo.com/)
 	- CSS Pre-processors
 		- LESS
-			- Hat
+			- [LESS](http://lesscss.org/)
+			- [Hat](http://lesshat.madebysource.com/)
 		- Sass(SCSS)
-			- Compass
-			- Bourbon
-			- Gumby
+			- [Compass](http://compass-style.org/)
+			- [Bourbon](http://bourbon.io/)
+			- [Gumby](http://www.gumbyframework.com/)
 		- Stylus
 			- Nib
 	- Template
@@ -294,6 +293,6 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 		- PhoneGap / Cordova
 		- MUI
 		- React Native
-		- Ionic
+		- [Ionic](http://ionicframework.com/)
 
 <!--BUILD_END-->
