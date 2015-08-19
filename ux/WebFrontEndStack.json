@@ -538,23 +538,30 @@
         }, {
             "name": "Stylus",
             "children": [{
-                "name": "Nib"
+                "name": "nib", 
+                "url": "https://github.com/tj/nib"
             }]
         }]
     }, {
         "name": "Template",
         "children": [{
-            "name": "Handlebars"
+            "name": "Handlebars", 
+            "url": "http://handlebarsjs.com/"
         }, {
-            "name": "Haml"
+            "name": "Haml", 
+            "url": "http://haml.info/"
         }, {
-            "name": "Slim Ruby"
+            "name": "Slim", 
+            "url": "http://slim-lang.com/"
         }, {
-            "name": "Jade"
+            "name": "Jade", 
+            "url": "http://jade-lang.com/"
         }, {
-            "name": "Ejs"
+            "name": "Ejs", 
+            "url": "http://www.embeddedjs.com/"
         }, {
-            "name": "Spacebars"
+            "name": "Spacebars", 
+            "url": "http://meteorcapture.com/spacebars/"
         }]
     }, {
         "name": "Modernisation",
@@ -566,42 +573,54 @@
     }, {
         "name": "Best Practices",
         "children": [{
-            "name": "SEO"
+            "name": "SEO", 
+            "url": "https://en.wikipedia.org/wiki/Search_engine_optimization"
         }, {
             "name": "Responsiveness"
         }, {
-            "name": "CDN"
+            "name": "CDN", 
+            "url": "https://en.wikipedia.org/wiki/Content_delivery_network"
         }]
     }, {
         "name": "Security",
         "children": [{
             "name": "Sandbox"
         }, {
-            "name": "XSS"
+            "name": "XSS", 
+            "url": "https://en.wikipedia.org/wiki/Cross-site_scripting"
         }, {
-            "name": "CORS"
+            "name": "CORS", 
+            "url": "http://www.w3.org/TR/cors/"
         }]
     }, {
         "name": "Intermediate Languages",
         "children": [{
-            "name": "CoffeeScript"
+            "name": "CoffeeScript", 
+            "url": "http://coffeescript.org/"
         }, {
-            "name": "TypeScript"
+            "name": "TypeScript", 
+            "url": "http://www.typescriptlang.org/"
         }, {
-            "name": "Dart"
+            "name": "Dart", 
+            "url": "https://www.dartlang.org/"
         }, {
-            "name": "LiveScript"
+            "name": "LiveScript", 
+            "url": "http://livescript.net/"
         }, {
-            "name": "ClojureScript"
+            "name": "ClojureScript", 
+            "url": "https://github.com/clojure/clojurescript/"
         }]
     }, {
         "name": "Mobile App Builders",
         "children": [{
-            "name": "PhoneGap / Cordova"
+            "name": "PhoneGap / Cordova", 
+            "url": "https://cordova.apache.org/"
         }, {
-            "name": "MUI"
+            "name": "MUI", 
+            "url": "http://dev.dcloud.net.cn/mui/"
         }, {
-            "name": "React Native"
+            "name": "React Native", 
+            "url": "https://facebook.github.io/react-native/"
         }, {
             "name": "Ionic", 
             "url": "http://ionicframework.com/"
