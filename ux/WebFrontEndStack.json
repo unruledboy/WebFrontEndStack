@@ -186,23 +186,32 @@
     }, {
         "name": "Editors",
         "children": [{
-            "name": "Sublime Text"
+            "name": "Sublime Text", 
+            "url": "http://www.sublimetext.com/"
         }, {
-            "name": "WebStorm"
+            "name": "WebStorm", 
+            "url": "https://www.jetbrains.com/webstorm/"
         }, {
-            "name": "Atom"
+            "name": "Atom", 
+            "url": "https://atom.io/"
         }, {
-            "name": "Vim"
+            "name": "Vim", 
+            "url": "http://www.vim.org/"
         }, {
-            "name": "Emacs"
+            "name": "Emacs", 
+            "url": "https://www.gnu.org/software/emacs/"
         }, {
-            "name": "Brackets"
+            "name": "Brackets", 
+            "url": "http://brackets.io/"
         }, {
-            "name": "Light Table"
+            "name": "Light Table", 
+            "url": "http://lighttable.com/"
         }, {
-            "name": "Visual Studio"
+            "name": "Visual Studio", 
+            "url": "https://www.visualstudio.com/"
         }, {
-            "name": "Visual Studio Code"
+            "name": "Visual Studio Code", 
+            "url": "https://code.visualstudio.com/"
         }]
     }, {
         "name": "Build Tasks",
@@ -222,41 +231,53 @@
     }, {
         "name": "Build Tools",
         "children": [{
-            "name": "Grunt"
+            "name": "Grunt", 
+            "url": "http://www.gruntjs.com/"
         }, {
-            "name": "Gulp"
+            "name": "Gulp", 
+            "url": "http://gulpjs.com/"
         }, {
-            "name": "Brunch"
+            "name": "Brunch", 
+            "url": "http://brunch.io/"
         }, {
-            "name": "Yeoman"
+            "name": "Yeoman", 
+            "url": "http://yeoman.io/"
         }, {
-            "name": "Broccoli"
+            "name": "Broccoli", 
+            "url": "https://github.com/broccolijs/broccoli"
         }]
     }, {
         "name": "Debug",
         "children": [{
-            "name": "Developer Tools"
+            "name": "Developer Tools", 
+            "url": "https://developer.chrome.com/devtools"
         }, {
-            "name": "Firebug"
+            "name": "Firebug", 
+            "url": "http://getfirebug.com/"
         }]
     }, {
         "name": "Base Tools",
         "children": [{
-            "name": "Node.js"
+            "name": "Node.js", 
+            "url": "https://nodejs.org/"
         }, {
-            "name": "Phantom.js"
+            "name": "Phantom.js", 
+            "url": "http://phantomjs.org/"
         }]
     }, {
         "name": "Quality",
         "children": [{
-            "name": "JSLint"
+            "name": "JSLint", 
+            "url": "http://www.jslint.com/"
         }, {
-            "name": "JSHint"
+            "name": "JSHint", 
+            "url": "http://jshint.com/"
         }, {
             "name": "jscs",
             "url": "http://jscs.info/"
         }, {
-            "name": "Closure Linter"
+            "name": "Closure Linter", 
+            "url": "https://developers.google.com/closure/utilities/"
         }]
     }, {
         "name": "Package",
@@ -270,7 +291,8 @@
     }, {
         "name": "Test",
         "children": [{
-            "name": "QUnit"
+            "name": "QUnit", 
+            "url": "https://qunitjs.com/"
         }, {
             "name": "Jasmine",
             "url": "http://jasmine.github.io/"

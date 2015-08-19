@@ -135,15 +135,15 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- Audios
 			- Videos
 	- Editors
-		- Sublime Text
-		- WebStorm
-		- Atom
-		- Vim
-		- Emacs
-		- Brackets
-		- Light Table
-		- Visual Studio
-		- Visual Studio Code
+		- [Sublime Text](http://www.sublimetext.com/)
+		- [WebStorm](https://www.jetbrains.com/webstorm/)
+		- [Atom](https://atom.io/)
+		- [Vim](http://www.vim.org/)
+		- [Emacs](https://www.gnu.org/software/emacs/)
+		- [Brackets](http://brackets.io/)
+		- [Light Table](http://lighttable.com/)
+		- [Visual Studio](https://www.visualstudio.com/)
+		- [Visual Studio Code](https://code.visualstudio.com/)
 	- Build Tasks
 		- Minification
 		- Compilation
@@ -152,27 +152,27 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 		- Image Optimization
 		- Unit Testing
 	- Build Tools
-		- Grunt
-		- Gulp
-		- Brunch
-		- Yeoman
-		- Broccoli
+		- [Grunt](http://www.gruntjs.com/)
+		- [Gulp](http://gulpjs.com/)
+		- [Brunch](http://brunch.io/)
+		- [Yeoman](http://yeoman.io/)
+		- [Broccoli](https://github.com/broccolijs/broccoli)
 	- Debug
-		- Developer Tools
-		- Firebug
+		- [Developer Tools](https://developer.chrome.com/devtools)
+		- [Firebug](http://getfirebug.com/)
 	- Base Tools
-		- Node.js
-		- Phantom.js
+		- [Node.js](https://nodejs.org/)
+		- [Phantom.js](http://phantomjs.org/)
 	- Quality
-		- JSLint
-		- JSHint
+		- [JSLint](http://www.jslint.com/)
+		- [JSHint](http://jshint.com/)
 		- [jscs](http://jscs.info/)
-		- Closure Linter
+		- [Closure Linter](https://developers.google.com/closure/utilities/)
 	- Package
 		- [npm](https://www.npmjs.com/)
 		- [Bower](http://bower.io/)
 	- Test
-		- QUnit
+		- [QUnit](https://qunitjs.com/)
 		- [Jasmine](http://jasmine.github.io/)
 		- [Mocha](https://mochajs.org/)
 		- [Selenium](http://www.seleniumhq.org/)
@@ -264,35 +264,35 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- [Bourbon](http://bourbon.io/)
 			- [Gumby](http://www.gumbyframework.com/)
 		- Stylus
-			- Nib
+			- [nib](https://github.com/tj/nib)
 	- Template
-		- Handlebars
-		- Haml
-		- Slim Ruby
-		- Jade
-		- Ejs
-		- Spacebars
+		- [Handlebars](http://handlebarsjs.com/)
+		- [Haml](http://haml.info/)
+		- [Slim](http://slim-lang.com/)
+		- [Jade](http://jade-lang.com/)
+		- [Ejs](http://www.embeddedjs.com/)
+		- [Spacebars](http://meteorcapture.com/spacebars/)
 	- Modernisation
 		- Normalize
 		- Reset
 	- Best Practices
-		- SEO
+		- [SEO](https://en.wikipedia.org/wiki/Search_engine_optimization)
 		- Responsiveness
-		- CDN
+		- [CDN](https://en.wikipedia.org/wiki/Content_delivery_network)
 	- Security
 		- Sandbox
-		- XSS
-		- CORS
+		- [XSS](https://en.wikipedia.org/wiki/Cross-site_scripting)
+		- [CORS](http://www.w3.org/TR/cors/)
 	- Intermediate Languages
-		- CoffeeScript
-		- TypeScript
-		- Dart
-		- LiveScript
-		- ClojureScript
+		- [CoffeeScript](http://coffeescript.org/)
+		- [TypeScript](http://www.typescriptlang.org/)
+		- [Dart](https://www.dartlang.org/)
+		- [LiveScript](http://livescript.net/)
+		- [ClojureScript](https://github.com/clojure/clojurescript/)
 	- Mobile App Builders
-		- PhoneGap / Cordova
-		- MUI
-		- React Native
+		- [PhoneGap / Cordova](https://cordova.apache.org/)
+		- [MUI](http://dev.dcloud.net.cn/mui/)
+		- [React Native](https://facebook.github.io/react-native/)
 		- [Ionic](http://ionicframework.com/)
 
 <!--BUILD_END-->
