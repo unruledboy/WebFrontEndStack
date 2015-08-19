@@ -272,6 +272,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 		- [Jade](http://jade-lang.com/)
 		- [Ejs](http://www.embeddedjs.com/)
 		- [Spacebars](http://meteorcapture.com/spacebars/)
+		- [{{ mustache }}](https://github.com/janl/mustache.js/)
 	- Modernisation
 		- Normalize
 		- Reset
