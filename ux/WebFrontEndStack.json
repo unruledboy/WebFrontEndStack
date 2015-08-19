@@ -83,24 +83,31 @@
         "children": [{
             "name": "HTML",
             "children": [{
-                "name": "DOM"
+                "name": "DOM",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
             }, {
-                "name": "Element"
+                "name": "Element",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element"
             }, {
                 "name": "Attribute"
             }]
         }, {
             "name": "JavaScript",
             "children": [{
-                "name": "Prototype"
+                "name": "Prototype",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype"
             }, {
-                "name": "Scope"
+                "name": "Scope",
+                "url": "https://developer.mozilla.org/en-US/docs/Glossary/Scope"
             }, {
-                "name": "Closure"
+                "name": "Closure",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures"
             }, {
-                "name": "JSON (JavaSript Object Notation)"
+                "name": "JSON (JavaSript Object Notation)",
+                "url": "https://developer.mozilla.org/en-US/docs/Glossary/JSON"
             }, {
-                "name": "AJAX (Asynchronous JavaScript and XML)"
+                "name": "AJAX (Asynchronous JavaScript and XML)",
+                "url": "https://developer.mozilla.org/en-US/docs/AJAX"
             }]
         }, {
             "name": "CSS",
