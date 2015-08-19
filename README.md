@@ -93,15 +93,15 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- XML
 	- Core Concepts
 		- HTML
-			- DOM
-			- Element
+			- [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+			- [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
 			- Attribute
 		- JavaScript
-			- Prototype
-			- Scope
-			- Closure
-			- JSON (JavaSript Object Notation)
-			- AJAX (Asynchronous JavaScript and XML)
+			- [Prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype)
+			- [Scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
+			- [Closure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+			- [JSON (JavaSript Object Notation)](https://developer.mozilla.org/en-US/docs/Glossary/JSON)
+			- [AJAX (Asynchronous JavaScript and XML)](https://developer.mozilla.org/en-US/docs/AJAX)
 		- CSS
 			- Selector
 			- Priority
