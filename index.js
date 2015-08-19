@@ -16,11 +16,7 @@ var pageWidth = 2200; // Magic number!
 var pageHeight = 3600;
 
 String.prototype.repeat = function(count) {
-    var ret = [];
-    while (count--) {
-        ret.push(this);
-    }
-    return ret.join("");
+    return new Array(count + 1).join(this);
 }
 /**
  * Use to build a promise for some fucking async api.

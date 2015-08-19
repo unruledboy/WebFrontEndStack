@@ -62,12 +62,12 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 - Web Front End
 	- Browser
 		- [Internet Explorer](http://windows.microsoft.com/en-us/internet-explorer/download-ie)
-		- Chrome
-		- Firefox
-		- Safari
-		- Opera
-		- Edge
-		- Netscape ;-)
+		- [Chrome](http://www.google.com/chrome/)
+		- [Firefox](https://www.mozilla.org/)
+		- [Safari](http://www.apple.com/safari/)
+		- [Opera](http://www.opera.com/)
+		- [Edge](https://www.microsoft.com/en-us/windows/microsoft-edge)
+		- [Netscape ;-)](https://en.wikipedia.org/wiki/Netspace)
 	- Protocol
 		- HTTP/1.1
 			- URI
@@ -108,18 +108,18 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- Specificity
 			- Box Model
 	- Rendering Engine
-		- Trident (IE)
-		- Blink / prev. WebKit (Chrome)
-		- Gecko (Firefox)
-		- WebKit (Safari)
-		- Blink / prev. Presto (Opera)
-		- EdgeHTML (Edge)
+		- [Trident (IE)](https://en.wikipedia.org/wiki/Trident_(layout_engine))
+		- [Blink / prev. WebKit (Chrome)](http://www.chromium.org/blink)
+		- [Gecko (Firefox)](https://developer.mozilla.org/en-us/docs/Mozilla/Gecko)
+		- [WebKit (Safari)](http://www.webkit.org/)
+		- [Blink / prev. Presto (Opera)](http://www.chromium.org/blink)
+		- [EdgeHTML (Edge)](https://en.wikipedia.org/wiki/EdgeHTML)
 	- JavaScript Engine
-		- JScript (IE8- / ASP)
-		- Chakra (IE9+ / Edge)
-		- V8 (Chrome / Opera / Nodejs / MongoDB)
-		- SpiderMonkey (Firefox)
-		- Nitro (Safari)
+		- [JScript (IE8- / ASP)](https://en.wikipedia.org/wiki/JScript)
+		- [Chakra (IE9+ / Edge)](https://en.wikipedia.org/wiki/Chakra_(JScript_engine))
+		- [V8 (Chrome / Opera / Nodejs / MongoDB)](https://developers.google.com/v8/?hl=zh-CN)
+		- [SpiderMonkey (Firefox)]( https://developer.mozilla.org/en-us/docs/Mozilla/Projects/SpiderMonkey)
+		- [Nitro (Safari)](https://en.wikipedia.org/wiki/WebKit#JavaScriptCore)
 	- Runtime
 		- Cookie
 		- Local Cache
