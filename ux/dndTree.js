@@ -5,7 +5,7 @@
 
         // Calculate total nodes, max label length
         var totalNodes = 0;
-        var maxLabelLength = 0;
+        var maxLabelLength = [];
         // variables for drag/drop
         var selectedNode = null;
         var draggingNode = null;
@@ -32,28 +32,30 @@
 
         // A recursive helper function for performing some setup by walking through all nodes
 
-        function visit(parent, visitFn, childrenFn) {
+        function visit(parent, visitFn, childrenFn, depth) {
             if (!parent) return;
 
-            visitFn(parent);
+            visitFn(parent, depth);
 
             var children = childrenFn(parent);
             if (children) {
                 var count = children.length;
+				var d = depth + 1;
                 for (var i = 0; i < count; i++) {
-                    visit(children[i], visitFn, childrenFn);
+                    visit(children[i], visitFn, childrenFn, d);
                 }
             }
         }
 
         // Call visit function to establish maxLabelLength
-        visit(treeData, function(d) {
+        visit(treeData, function(d, depth) {
             totalNodes++;
-            maxLabelLength = Math.max(d.name.length, maxLabelLength);
-
+            if (maxLabelLength[depth] == undefined)
+                maxLabelLength[depth] = 0;
+            maxLabelLength[depth] = Math.max(d.name.length, maxLabelLength[depth]);
         }, function(d) {
             return d.children && d.children.length > 0 ? d.children : null;
-        });
+        }, 0);
 
 
         // sort the tree according to the node names
@@ -378,7 +380,11 @@
 
             // Set widths between levels based on maxLabelLength.
             nodes.forEach(function(d) {
-                d.y = (d.depth * (maxLabelLength * 10)); //maxLabelLength * 10px
+                var labelLength = 0;
+                for (var j = 0; j <= d.depth; j++) {
+                    labelLength += maxLabelLength[j];
+                }
+                d.y = labelLength * 10; //maxLabelLength * 10px
                 // alternatively to keep a fixed scale one can set a fixed depth per level
                 // Normalize for fixed-depth by commenting out below line
                 // d.y = (d.depth * 500); //500px per level.

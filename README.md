@@ -75,7 +75,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- Authentication
 			- Request
 			- Response
-		- HTTP/2
+		- [HTTP/2](https://en.wikipedia.org/wiki/HTTP/2)
 			- Compression
 			- Encryption
 			- Minification
