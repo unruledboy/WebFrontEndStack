@@ -11,11 +11,15 @@ var fs = Promise.promisifyAll(require('fs'));
 
 var app = new express();
 var queueReady = ["server"];
-var port = process.env.PORT || 3000;
-var httpServer = "http://127.0.0.1:" + port + "/";
 
 var pageWidth = 1900; // Magic number!
 var pageHeight = 3800;
+
+var config = {
+    port: 3000, 
+    update_existed_stargazers: false
+}
+var httpServer = "http://127.0.0.1:" + config.port + "/";
 
 String.prototype.repeat = function(count) {
     return new Array(count + 1).join(this);
@@ -126,14 +130,14 @@ var actions = {
      */
     updatestargazers: function updatestargazers() {
         return new Promise(function(resolve, reject) {
-            var originalData = JSON.parse(fs.readFileSync("./ux/WebFrontEndStack.json", "utf-8"));
+            var originalData = JSON.parse(fs.readFileSync("./ux/WebFrontEndStack.json", "utf-8")); // Require will lock the file.
             var getGitHubApi = function(github) {
                 var githubArray = github.split("/");
                 // I want a sprintf T_T
                 return "https://api.github.com/repos/" + githubArray[3] + "/" + githubArray[4];
             };
             var q = async.queue(function(object, callback) {
-                if (!object.github || object.stargazers) {
+                if (!object.github || (!config.update_existed_stargazers && object.stargazers)) {
                     callback(false);
                     return;
                 }
@@ -142,7 +146,7 @@ var actions = {
                 request({
                     url: githubUrl,
                     headers: {
-                        "User-Agent": "https://github.com/unruledboy/WebFrontEndStack"
+                        "User-Agent": "https://github.com/unruledboy/WebFrontEndStack" // GitHub required user-agent
                     }
                 }, function(err, res, body) {
                     if (!err && res.statusCode == 200) {
@@ -154,6 +158,12 @@ var actions = {
                         object.stargazers = json.stargazers_count;
                         callback(true);
                     } else {
+                        if (res.statusCode == 403) { // Out of API limit!
+                            console.error("Out of GitHub API limit!");
+                            console.error("The limit will be reset when " + new Date(res.headers['x-ratelimit-reset'] * 1000));
+                            q.kill();
+                            reject("Out of GitHub API limit!");
+                        }
                         callback(false);
                     }
                 });
@@ -170,7 +180,7 @@ var actions = {
                 }
             };
             addQueue(originalData);
-            q.push({
+            q.push({ // For some reason, the ``drain`` will not be called.
                 noRequest: true
             }, function() {
                 fs.writeFileAsync("./ux/WebFrontEndStack.json", JSON.stringify(originalData), "utf-8").then(function() {
@@ -216,8 +226,6 @@ var actions = {
             return page.renderAsync(path.join(__dirname, 'Web Front End Stack.png'));
         }).then(function() {
             console.log("The image saved successfully!");
-            return resolve();
-        }).then(function() {
             page.close();
             ph.exit();
         });
@@ -246,14 +254,14 @@ var actions = {
     server: function server() {
         return new Promise(function(resolver, reject) {
             return app
-                .set('port', port)
+                .set('port', config.port)
                 .set('view engine', 'html')
                 .use(express.static(path.join(__dirname, '/ux')))
                 .use('/', function(req, res) {
                     res.redirect('/WebFrontEndStack.htm');
                 })
-                .listen(port, function() {
-                    console.info('Express started on: http://127.0.0.1:' + port);
+                .listen(config.port, function() {
+                    console.info('Express started on: http://127.0.0.1:' + config.port);
                     resolver(app);
                 });
         });
@@ -265,6 +273,11 @@ process.argv.forEach(function(val) {
     if (val in actions) {
         console.info("Task: " + val);
         queue.push(actions[val]());
+    } else if (val[0] == "-" && val.indexOf("=") >= 0) {
+        var obj = val.split("=");
+        var name = obj[0].split("--")[1];
+        var value = obj[1];
+        config[name] = value;
     }
 });
 

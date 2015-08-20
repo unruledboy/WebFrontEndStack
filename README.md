@@ -28,18 +28,22 @@ If the error occurs, you can check the dependence of [phantomjs-node](https://gi
 
 ``npm run build`` for generate the image.
 
-Both of commands require port 3000. If you're using this port, then try this:
 
-bash:
-```bash
-PORT=4000 npm run build
-```
-
-cmd:
-```cmd
-SET PORT=4000
-npm run build
-```
+## Options
+### Usage
+	node index task1 \[task2\] \[task3\] .. \[--option=value\] \[--option=value\] ...
+#### Tasks
+##### phantomjs
+	For generate the image.
+##### readme
+	For rebuild the readme.
+##### updatestargazers
+	For Update the count of the Stargazers.
+#### Options
+#### port
+	Default: 3000
+#### update_existed_stargazers
+	Default: false
 
 # What and why?
 Have you ever wondered:
@@ -166,7 +170,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 	- Quality
 		- [JSLint](http://www.jslint.com/) [[GitHub]](https://github.com/douglascrockford/JSLint/)
 		- [JSHint](http://jshint.com/) [[GitHub]](https://github.com/jshint/jshint/)
-		- [jscs](http://jscs.info/) [[GitHub]](https://github.com/mdevils/)
+		- [jscs](http://jscs.info/) [[GitHub]](https://github.com/jscs-dev/node-jscs)
 		- [Closure Linter](https://developers.google.com/closure/utilities/)
 	- Package
 		- [npm](https://www.npmjs.com/) [[GitHub]](https://github.com/npm/npm/)
@@ -204,8 +208,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- [Knockout](http://knockoutjs.com/) [[GitHub]](https://github.com/SteveSanderson/knockout/)
 			- [Ember](http://emberjs.com/) [[GitHub]](https://github.com/emberjs/ember.js/)
 			- [React](http://facebook.github.io/react/) [[GitHub]](https://github.com/facebook/react/)
-			- [polymer](https://www.polymer-project.org/) [[GitHub]](https://github.com/polymer/)
-			- [Dojo](https://dojotoolkit.org/) [[GitHub]](https://github.com/dojo/)
+			- [polymer](https://www.polymer-project.org/) [[GitHub]](https://github.com/polymer/polymer/)
 			- [Deft.js](http://deftjs.org/) [[GitHub]](https://github.com/deftjs/DeftJS/)
 			- [Vue](http://vuejs.org/) [[GitHub]](https://github.com/yyx990803/vue/)
 		- UI framework
