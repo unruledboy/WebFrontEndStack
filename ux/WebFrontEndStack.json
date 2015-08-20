@@ -310,7 +310,8 @@
         }, {
             "name": "jscs",
             "url": "http://jscs.info/",
-            "github": "https://github.com/jscs-dev/node-jscs"
+            "github": "https://github.com/jscs-dev/node-jscs",
+            "stargazers": 3982
         }, {
             "name": "Closure Linter",
             "url": "https://developers.google.com/closure/utilities/"
@@ -492,7 +493,7 @@
                 "github": "https://github.com/twbs/bootstrap/",
                 "stargazers": 84763
             }, {
-                "name": "Semantic UI",
+                "name": "Semantic UI ",
                 "url": "http://semantic-ui.com/",
                 "github": "https://github.com/Semantic-Org/Semantic-UI/",
                 "stargazers": 19552
@@ -567,26 +568,31 @@
             }, {
                 "name": "Pixi.js",
                 "url": "http://www.pixijs.com/",
-                "github": "https://github.com/GoodBoyDigital/pixi.js/"
+                "github": "https://github.com/GoodBoyDigital/pixi.js/",
+                "stargazers": 8361
             }]
         }, {
             "name": "CSS3 Animation",
             "children": [{
                 "name": "Animate.css",
                 "url": "https://daneden.github.io/animate.css/",
-                "github": "https://github.com/daneden/animate.css/"
+                "github": "https://github.com/daneden/animate.css/",
+                "stargazers": 24549
             }, {
                 "name": "bounce.js",
                 "url": "http://bouncejs.com/",
-                "github": "https://github.com/tictail/bounce.js/"
+                "github": "https://github.com/tictail/bounce.js/",
+                "stargazers": 3727
             }, {
                 "name": "Effeckt.css",
                 "url": "https://h5bp.github.io/Effeckt.css/",
-                "github": "https://github.com/h5bp/Effeckt.css/"
+                "github": "https://github.com/h5bp/Effeckt.css/",
+                "stargazers": 9777
             }, {
                 "name": "move.js",
                 "url": "https://visionmedia.github.io/move.js/",
-                "github": "https://github.com/visionmedia/move.js/"
+                "github": "https://github.com/visionmedia/move.js/",
+                "stargazers": 2830
             }]
         }, {
             "name": "Flow Controller",
@@ -606,50 +612,60 @@
                 }]
             }, {
                 "name": "async",
-                "github": "https://github.com/caolan/async/"
+                "github": "https://github.com/caolan/async/",
+                "stargazers": 14156
             }, {
                 "name": "co",
-                "github": "https://github.com/tj/co/"
+                "github": "https://github.com/tj/co/",
+                "stargazers": 3502
             }, {
                 "name": "Promise",
                 "children": [{
                     "name": "Bluebird",
-                    "github": "https://github.com/petkaantonov/bluebird/"
+                    "github": "https://github.com/petkaantonov/bluebird/",
+                    "stargazers": 7530
                 }, {
                     "name": "q",
-                    "github": "https://github.com/kriskowal/q/"
+                    "github": "https://github.com/kriskowal/q/",
+                    "stargazers": 9460
                 }, {
                     "name": "when.js",
-                    "github": "https://github.com/cujojs/when/"
+                    "github": "https://github.com/cujojs/when/",
+                    "stargazers": 2579
                 }]
             }]
         }, {
             "name": "Functional",
             "children": [{
                 "name": "backon.js",
-                "github": "https://github.com/baconjs/bacon.js/"
+                "github": "https://github.com/baconjs/bacon.js/",
+                "stargazers": 4498
             }, {
                 "name": "immutable.js",
                 "url": "https://facebook.github.io/immutable-js/",
-                "github": "https://github.com/facebook/immutable-js/"
+                "github": "https://github.com/facebook/immutable-js/",
+                "stargazers": 7999
             }]
         }, {
             "name": "Mobile UI",
             "children": [{
                 "name": "jQuery Mobile",
                 "url": "https://jquerymobile.com/",
-                "github": "https://github.com/jquery/jquery-mobile/"
+                "github": "https://github.com/jquery/jquery-mobile/",
+                "stargazers": 9654
             }, {
                 "name": "Jo",
                 "url": "http://joapp.com/",
-                "github": "https://github.com/davebalmer/jo/"
+                "github": "https://github.com/davebalmer/jo/",
+                "stargazers": 1227
             }, {
                 "name": "Dojo Mobile",
                 "url": "https://dojotoolkit.org/reference-guide/1.10/dojox/mobile.html"
             }, {
                 "name": "Lungo",
                 "url": "http://lungo.tapquo.com/",
-                "github": "https://github.com/tapquo/Lungo.js/"
+                "github": "https://github.com/tapquo/Lungo.js/",
+                "stargazers": 2457
             }]
         }]
     }, {
@@ -659,32 +675,38 @@
             "children": [{
                 "name": "LESS",
                 "url": "http://lesscss.org/",
-                "github": "https://github.com/less/less.js/"
+                "github": "https://github.com/less/less.js/",
+                "stargazers": 12679
             }, {
                 "name": "Hat",
                 "url": "http://lesshat.madebysource.com/",
-                "github": "https://github.com/csshat/lesshat/"
+                "github": "https://github.com/csshat/lesshat/",
+                "stargazers": 2057
             }]
         }, {
             "name": "Sass(SCSS)",
             "children": [{
                 "name": "Compass",
                 "url": "http://compass-style.org/",
-                "github": "https://github.com/chriseppstein/compass/"
+                "github": "https://github.com/chriseppstein/compass/",
+                "stargazers": 6406
             }, {
                 "name": "Bourbon",
                 "url": "http://bourbon.io/",
-                "github": "https://github.com/thoughtbot/bourbon/"
+                "github": "https://github.com/thoughtbot/bourbon/",
+                "stargazers": 6178
             }, {
                 "name": "Gumby",
                 "url": "http://www.gumbyframework.com/",
-                "github": "https://github.com/GumbyFramework/Gumby/"
+                "github": "https://github.com/GumbyFramework/Gumby/",
+                "stargazers": 2920
             }]
         }, {
             "name": "Stylus",
             "children": [{
                 "name": "nib",
-                "github": "https://github.com/tj/nib/"
+                "github": "https://github.com/tj/nib/",
+                "stargazers": 1520
             }]
         }]
     }, {
@@ -692,19 +714,23 @@
         "children": [{
             "name": "Handlebars",
             "url": "http://handlebarsjs.com/",
-            "github": "https://github.com/wycats/handlebars.js/"
+            "github": "https://github.com/wycats/handlebars.js/",
+            "stargazers": 8808
         }, {
             "name": "Haml",
             "url": "http://haml.info/",
-            "github": "https://github.com/haml/haml/"
+            "github": "https://github.com/haml/haml/",
+            "stargazers": 2778
         }, {
             "name": "Slim",
             "url": "http://slim-lang.com/",
-            "github": "https://github.com/slim-template/slim/"
+            "github": "https://github.com/slim-template/slim/",
+            "stargazers": 3480
         }, {
             "name": "Jade",
             "url": "http://jade-lang.com/",
-            "github": "https://github.com/jadejs/jade/"
+            "github": "https://github.com/jadejs/jade/",
+            "stargazers": 8958
         }, {
             "name": "Ejs",
             "url": "http://www.embeddedjs.com/"
@@ -713,7 +739,8 @@
             "url": "http://meteorcapture.com/spacebars/"
         }, {
             "name": "mustache",
-            "github": "https://github.com/janl/mustache.js/"
+            "github": "https://github.com/janl/mustache.js/",
+            "stargazers": 8139
         }]
     }, {
         "name": "Modernisation",
@@ -749,22 +776,27 @@
         "children": [{
             "name": "CoffeeScript",
             "url": "http://coffeescript.org/",
-            "github": "https://github.com/jashkenas/coffeescript/"
+            "github": "https://github.com/jashkenas/coffeescript/",
+            "stargazers": 11755
         }, {
             "name": "TypeScript",
             "url": "http://www.typescriptlang.org/",
-            "github": "https://github.com/Microsoft/TypeScript/"
+            "github": "https://github.com/Microsoft/TypeScript/",
+            "stargazers": 6379
         }, {
             "name": "Dart",
             "url": "https://www.dartlang.org/",
-            "github": "https://github.com/dart-lang/sdk/"
+            "github": "https://github.com/dart-lang/sdk/",
+            "stargazers": 322
         }, {
             "name": "LiveScript",
             "url": "http://livescript.net/",
-            "github": "https://github.com/gkz/LiveScript/"
+            "github": "https://github.com/gkz/LiveScript/",
+            "stargazers": 1514
         }, {
             "name": "ClojureScript",
-            "github": "https://github.com/clojure/clojurescript/"
+            "github": "https://github.com/clojure/clojurescript/",
+            "stargazers": 4876
         }]
     }, {
         "name": "Mobile App Builders",
