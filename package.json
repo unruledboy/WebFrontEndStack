@@ -26,8 +26,10 @@
   },
   "homepage": "https://github.com/unruledboy/WebFrontEndStack",
   "dependencies": {
+    "async": "^1.4.2",
     "bluebird": "^2.9.34",
     "express": "^4.13.3",
-    "phantom": "^0.7.2"
+    "phantom": "^0.7.2",
+    "request": "^2.61.0"
   }
 }

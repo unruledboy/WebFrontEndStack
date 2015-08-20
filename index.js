@@ -5,6 +5,8 @@
 var express = require('express');
 var path = require('path');
 var Promise = require("bluebird");
+var request = require("request");
+var async = require("async");
 var fs = Promise.promisifyAll(require('fs'));
 
 var app = new express();
@@ -19,20 +21,18 @@ String.prototype.repeat = function(count) {
     return new Array(count + 1).join(this);
 }
 /**
- * Search Github
+ * Search Github from the offical website
  * Useless
- * Didn't import the dependencies in the package.json.
  */
 var searchGitHub = function searchGitHub() {
-    var request = require("request");
-    var async = require("async");
+
     var originalData = require('./ux/WebFrontEndStack.json');
     var q = async.queue(function(object, callback) {
 
         if (object.noRequest || object.github || !object.url || /mozilla|wikipedia/.test(object.url)) {
             callback(false);
             return;
-        } 
+        }
 
         console.log("Running " + object.name);
         request(object.url, function(err, res, body) {
@@ -60,7 +60,9 @@ var searchGitHub = function searchGitHub() {
     };
 
     addQueue(originalData);
-    q.push({noRequest: true}, function() {
+    q.push({
+        noRequest: true
+    }, function() {
         console.log(originalData);
         console.log(JSON.stringify(originalData));
         fs.writeFileAsync("./ux/WebFrontEndStack.json2", JSON.stringify(originalData), "utf-8");
@@ -117,49 +119,107 @@ var buildReadme = function buildReadme(object, deep) {
 
 var actions = {
     /**
+     * Update the stargazers of the GitHub repo
+     * Be careful! There have the rate limit!
+     * @see  https://developer.github.com/v3/#increasing-the-unauthenticated-rate-limit-for-oauth-applications
+     * @return Promise<any>
+     */
+    updatestargazers: function updatestargazers() {
+        return new Promise(function(resolve, reject) {
+            var originalData = JSON.parse(fs.readFileSync("./ux/WebFrontEndStack.json", "utf-8"));
+            var getGitHubApi = function(github) {
+                var githubArray = github.split("/");
+                // I want a sprintf T_T
+                return "https://api.github.com/repos/" + githubArray[3] + "/" + githubArray[4];
+            };
+            var q = async.queue(function(object, callback) {
+                if (!object.github || object.stargazers) {
+                    callback(false);
+                    return;
+                }
+                var githubUrl = getGitHubApi(object.github);
+                console.log("Getting " + githubUrl);
+                request({
+                    url: githubUrl,
+                    headers: {
+                        "User-Agent": "https://github.com/unruledboy/WebFrontEndStack"
+                    }
+                }, function(err, res, body) {
+                    if (!err && res.statusCode == 200) {
+                        var json = JSON.parse(body);
+                        if (json === null) {
+                            callback(false);
+                            return;
+                        }
+                        object.stargazers = json.stargazers_count;
+                        callback(true);
+                    } else {
+                        callback(false);
+                    }
+                });
+
+            }, 5);
+            var addQueue = function addQueue(object) {
+                q.push(object, function(err) {
+                    if (err) console.log(object.name + " = " + object.stargazers);
+                });
+                if (object.children) {
+                    object.children.forEach(function(val) {
+                        addQueue(val);
+                    });
+                }
+            };
+            addQueue(originalData);
+            q.push({
+                noRequest: true
+            }, function() {
+                fs.writeFileAsync("./ux/WebFrontEndStack.json", JSON.stringify(originalData), "utf-8").then(function() {
+                    resolve();
+                });
+            });
+            return q;
+        })
+    },
+    /**
      * For running phantomjs to take a screenshot for the webpage
      * @return Promise<any>
      */
     phantomjs: function phantomjs() {
-        return new Promise(function(resolve, reject) {
-            var phantom = require('phantom');
-
-            var ph;
-            var page;
-            promisify(phantom);
-
-                // What the fucking API
-            return phantom.createAsync().then(function(phantom) {
-                ph = phantom;
-                promisify(ph);
-                console.log("Created Phantomjs");
-                return ph.createPageAsync();
-            }).then(function(pg) {
-                page = pg;
-                promisify(pg);
-                return page.setAsync('viewportSize', {
-                    width: pageWidth,
-                    height: pageHeight
-                });
-            }).then(function() {
-                console.log("Set viewportSize");
-                return page.openAsync(httpServer);
-            }).then(function(status) {
-                console.log("Rendered HTML, the image will be saved after 2 seconds.");
-                if (status == "success") {
-                    return Promise.delay(2000);
-                } else {
-                    return reject(status);
-                }
-            }).then(function() {
-                return page.renderAsync(path.join(__dirname, 'Web Front End Stack.png'));
-            }).then(function() {
-                console.log("The image saved successfully!");
-                return resolve();
-            }).then(function() {
-                page.close();
-                ph.exit();
+        var phantom = require('phantom');
+        var ph;
+        var page;
+        promisify(phantom);        
+        // What the fucking API
+        return phantom.createAsync().then(function(phantom) {
+            ph = phantom;
+            promisify(ph);
+            console.log("Created Phantomjs");
+            return ph.createPageAsync();
+        }).then(function(pg) {
+            page = pg;
+            promisify(pg);
+            return page.setAsync('viewportSize', {
+                width: pageWidth,
+                height: pageHeight
             });
+        }).then(function() {
+            console.log("Set viewportSize");
+            return page.openAsync(httpServer);
+        }).then(function(status) {
+            console.log("Rendered HTML, the image will be saved after 2 seconds.");
+            if (status == "success") {
+                return Promise.delay(2000);
+            } else {
+                return reject(status);
+            }
+        }).then(function() {
+            return page.renderAsync(path.join(__dirname, 'Web Front End Stack.png'));
+        }).then(function() {
+            console.log("The image saved successfully!");
+            return resolve();
+        }).then(function() {
+            page.close();
+            ph.exit();
         });
     },
 

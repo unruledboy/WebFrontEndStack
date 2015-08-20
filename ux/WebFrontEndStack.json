@@ -1,4 +1,4 @@
-﻿{
+{
     "name": "Web Front End",
     "children": [{
         "name": "Browser",
@@ -155,7 +155,8 @@
         }, {
             "name": "V8 (Chrome / Opera / Nodejs / MongoDB)",
             "url": "https://developers.google.com/v8/?hl=zh-CN",
-            "github": "https://github.com/v8/v8/"
+            "github": "https://github.com/v8/v8/",
+            "stargazers": 2577
         }, {
             "name": "SpiderMonkey (Firefox)",
             "url": " https://developer.mozilla.org/en-us/docs/Mozilla/Projects/SpiderMonkey"
@@ -205,7 +206,8 @@
         }, {
             "name": "Atom",
             "url": "https://atom.io/",
-            "github": "https://github.com/atom/atom/"
+            "github": "https://github.com/atom/atom/",
+            "stargazers": 19510
         }, {
             "name": "Vim",
             "url": "http://www.vim.org/"
@@ -215,11 +217,13 @@
         }, {
             "name": "Brackets",
             "url": "http://brackets.io/",
-            "github": "https://github.com/adobe/brackets/"
+            "github": "https://github.com/adobe/brackets/",
+            "stargazers": 23091
         }, {
             "name": "Light Table",
             "url": "http://lighttable.com/",
-            "github": "https://github.com/LightTable/LightTable/"
+            "github": "https://github.com/LightTable/LightTable/",
+            "stargazers": 7926
         }, {
             "name": "Visual Studio",
             "url": "https://www.visualstudio.com/"
@@ -247,21 +251,25 @@
         "children": [{
             "name": "Grunt",
             "url": "http://www.gruntjs.com/",
-            "github": "https://github.com/cowboy/jquery-tiny-pubsub/"
+            "github": "https://github.com/cowboy/jquery-tiny-pubsub/",
+            "stargazers": 662
         }, {
             "name": "Gulp",
             "url": "http://gulpjs.com/",
-            "github": "https://github.com/gulpjs/gulp/"
+            "github": "https://github.com/gulpjs/gulp/",
+            "stargazers": 15661
         }, {
             "name": "Brunch",
             "url": "http://brunch.io/",
-            "github": "https://github.com/brunch/brunch/"
+            "github": "https://github.com/brunch/brunch/",
+            "stargazers": 4472
         }, {
             "name": "Yeoman",
             "url": "http://yeoman.io/"
         }, {
             "name": "Broccoli",
-            "github": "https://github.com/broccolijs/broccoli/"
+            "github": "https://github.com/broccolijs/broccoli/",
+            "stargazers": 2391
         }]
     }, {
         "name": "Debug",
@@ -271,33 +279,38 @@
         }, {
             "name": "Firebug",
             "url": "http://getfirebug.com/",
-            "github": "https://github.com/firebug/firebug/"
+            "github": "https://github.com/firebug/firebug/",
+            "stargazers": 924
         }]
     }, {
         "name": "Base Tools",
         "children": [{
             "name": "Node.js",
             "url": "https://nodejs.org/",
-            "github": "https://github.com/joyent/node/"
+            "github": "https://github.com/joyent/node/",
+            "stargazers": 37851
         }, {
             "name": "Phantom.js",
             "url": "http://phantomjs.org/",
-            "github": "https://github.com/ariya/phantomjs/"
+            "github": "https://github.com/ariya/phantomjs/",
+            "stargazers": 14950
         }]
     }, {
         "name": "Quality",
         "children": [{
             "name": "JSLint",
             "url": "http://www.jslint.com/",
-            "github": "https://github.com/douglascrockford/JSLint/"
+            "github": "https://github.com/douglascrockford/JSLint/",
+            "stargazers": 2382
         }, {
             "name": "JSHint",
             "url": "http://jshint.com/",
-            "github": "https://github.com/jshint/jshint/"
+            "github": "https://github.com/jshint/jshint/",
+            "stargazers": 5384
         }, {
             "name": "jscs",
             "url": "http://jscs.info/",
-            "github": "https://github.com/mdevils/"
+            "github": "https://github.com/jscs-dev/node-jscs"
         }, {
             "name": "Closure Linter",
             "url": "https://developers.google.com/closure/utilities/"
@@ -307,52 +320,63 @@
         "children": [{
             "name": "npm",
             "url": "https://www.npmjs.com/",
-            "github": "https://github.com/npm/npm/"
+            "github": "https://github.com/npm/npm/",
+            "stargazers": 6816
         }, {
             "name": "Bower",
             "url": "http://bower.io/",
-            "github": "https://github.com/bower/bower/"
+            "github": "https://github.com/bower/bower/",
+            "stargazers": 12747
         }]
     }, {
         "name": "Test",
         "children": [{
             "name": "QUnit",
             "url": "https://qunitjs.com/",
-            "github": "https://github.com/jquery/qunit/"
+            "github": "https://github.com/jquery/qunit/",
+            "stargazers": 3228
         }, {
             "name": "Jasmine",
             "url": "http://jasmine.github.io/",
-            "github": "https://github.com/jasmine/jasmine/"
+            "github": "https://github.com/jasmine/jasmine/",
+            "stargazers": 9303
         }, {
             "name": "Mocha",
             "url": "https://mochajs.org/",
-            "github": "https://github.com/mochajs/mocha/"
+            "github": "https://github.com/mochajs/mocha/",
+            "stargazers": 7226
         }, {
             "name": "Selenium",
             "url": "http://www.seleniumhq.org/",
-            "github": "https://github.com/SeleniumHQ/selenium/"
+            "github": "https://github.com/SeleniumHQ/selenium/",
+            "stargazers": 1563
         }, {
             "name": "WebDriverIO",
             "url": "http://webdriver.io/",
-            "github": "https://github.com/webdriverio/webdriverio/"
+            "github": "https://github.com/webdriverio/webdriverio/",
+            "stargazers": 1073
         }, {
             "name": "Protractor",
             "url": "http://www.protractortest.org/"
         }, {
             "name": "Chai",
             "url": "http://chaijs.com/",
-            "github": "https://github.com/jfirebaugh/konacha/"
+            "github": "https://github.com/jfirebaugh/konacha/",
+            "stargazers": 977
         }, {
             "name": "Sinon.JS",
             "url": "http://sinonjs.org/",
-            "github": "https://github.com/cjohansen/Sinon.JS/"
+            "github": "https://github.com/cjohansen/Sinon.JS/",
+            "stargazers": 2230
         }, {
             "name": "Karma",
-            "url": "http://karma-runner.github.io/", 
-            "github": "https://github.com/karma-runner/karma/"
+            "url": "http://karma-runner.github.io/",
+            "github": "https://github.com/karma-runner/karma/",
+            "stargazers": 5550
         }, {
             "name": "nodeunit",
-            "github": "https://github.com/caolan/nodeunit/"
+            "github": "https://github.com/caolan/nodeunit/",
+            "stargazers": 1608
         }]
     }, {
         "name": "Frameworks / Libraries",
@@ -361,23 +385,28 @@
             "children": [{
                 "name": "jQuery",
                 "url": "https://jquery.com/",
-                "github": "https://github.com/jquery/jquery/"
+                "github": "https://github.com/jquery/jquery/",
+                "stargazers": 35652
             }, {
                 "name": "Prototype",
-                "url": "http://prototypejs.org/", 
-                "github": "https://github.com/sstephenson/prototype/"
+                "url": "http://prototypejs.org/",
+                "github": "https://github.com/sstephenson/prototype/",
+                "stargazers": 3022
             }, {
                 "name": "Zepto",
                 "url": "http://zeptojs.com/",
-                "github": "https://github.com/madrobby/zepto/"
+                "github": "https://github.com/madrobby/zepto/",
+                "stargazers": 9109
             }, {
                 "name": "MooTool",
                 "url": "http://mootools.net/",
-                "github": "https://github.com/mootools/mootools-core/"
+                "github": "https://github.com/mootools/mootools-core/",
+                "stargazers": 2168
             }, {
                 "name": "Underscore",
                 "url": "http://underscorejs.org/",
-                "github": "https://github.com/jashkenas/underscore/"
+                "github": "https://github.com/jashkenas/underscore/",
+                "stargazers": 15538
             }]
         }, {
             "name": "Modular",
@@ -387,25 +416,29 @@
                 "name": "CommonJS",
                 "children": [{
                     "name": "webpack",
-                    "url": "http://webpack.github.io/", 
-                    "github": "https://github.com/webpack/webpack/"
+                    "url": "http://webpack.github.io/",
+                    "github": "https://github.com/webpack/webpack/",
+                    "stargazers": 7271
                 }, {
                     "name": "browserify",
                     "url": "http://browserify.org/",
-                    "github": "https://github.com/substack/node-browserify/"
+                    "github": "https://github.com/substack/node-browserify/",
+                    "stargazers": 8004
                 }]
             }, {
                 "name": "AMD",
                 "children": [{
                     "name": "RequireJS",
                     "url": "http://requirejs.org/",
-                    "github": "https://github.com/jrburke/requirejs/"
+                    "github": "https://github.com/jrburke/requirejs/",
+                    "stargazers": 8002
                 }]
             }, {
                 "name": "UMD",
                 "children": [{
                     "name": "umd",
-                    "github": "https://github.com/umdjs/umd/"
+                    "github": "https://github.com/umdjs/umd/",
+                    "stargazers": 2764
                 }]
             }]
         }, {
@@ -413,106 +446,124 @@
             "children": [{
                 "name": "AngularJS",
                 "url": "https://angularjs.org/",
-                "github": "https://github.com/angular/angular.js/"
+                "github": "https://github.com/angular/angular.js/",
+                "stargazers": 41780
             }, {
                 "name": "Backbone",
                 "url": "http://backbonejs.org/",
-                "github": "https://github.com/jashkenas/backbone/"
+                "github": "https://github.com/jashkenas/backbone/",
+                "stargazers": 22720
             }, {
                 "name": "Knockout",
                 "url": "http://knockoutjs.com/",
-                "github": "https://github.com/SteveSanderson/knockout/"
+                "github": "https://github.com/SteveSanderson/knockout/",
+                "stargazers": 6660
             }, {
                 "name": "Ember",
                 "url": "http://emberjs.com/",
-                "github": "https://github.com/emberjs/ember.js/"
+                "github": "https://github.com/emberjs/ember.js/",
+                "stargazers": 14555
             }, {
                 "name": "React",
                 "url": "http://facebook.github.io/react/",
-                "github": "https://github.com/facebook/react/"
+                "github": "https://github.com/facebook/react/",
+                "stargazers": 26617
             }, {
                 "name": "polymer",
                 "url": "https://www.polymer-project.org/",
-                "github": "https://github.com/polymer/"
-            }, {
-                "name": "Dojo",
-                "url": "https://dojotoolkit.org/",
-                "github": "https://github.com/dojo/"
+                "github": "https://github.com/polymer/polymer/",
+                "stargazers": 12217
             }, {
                 "name": "Deft.js",
                 "url": "http://deftjs.org/",
-                "github": "https://github.com/deftjs/DeftJS/"
+                "github": "https://github.com/deftjs/DeftJS/",
+                "stargazers": 308
             }, {
                 "name": "Vue",
                 "url": "http://vuejs.org/",
-                "github": "https://github.com/yyx990803/vue/"
+                "github": "https://github.com/yyx990803/vue/",
+                "stargazers": 6261
             }]
         }, {
             "name": "UI framework",
             "children": [{
                 "name": "Bootstrap",
                 "url": "http://getbootstrap.com/",
-                "github": "https://github.com/twbs/bootstrap/"
+                "github": "https://github.com/twbs/bootstrap/",
+                "stargazers": 84763
             }, {
                 "name": "Semantic UI",
                 "url": "http://semantic-ui.com/",
-                "github": "https://github.com/Semantic-Org/Semantic-UI/"
+                "github": "https://github.com/Semantic-Org/Semantic-UI/",
+                "stargazers": 19552
             }, {
                 "name": "Foundation",
                 "url": "http://foundation.zurb.com/",
-                "github": "https://github.com/zurb/foundation/"
+                "github": "https://github.com/zurb/foundation/",
+                "stargazers": 20711
             }, {
                 "name": "Material UI",
-                "url": "http://material-ui.com/", 
-                "github": "https://github.com/callemall/material-ui/"
+                "url": "http://material-ui.com/",
+                "github": "https://github.com/callemall/material-ui/",
+                "stargazers": 10048
             }, {
                 "name": "jQuery UI",
                 "url": "http://jqueryui.com/",
-                "github": "https://github.com/jquery/jquery-ui/"
+                "github": "https://github.com/jquery/jquery-ui/",
+                "stargazers": 9034
             }]
         }, {
             "name": "WebSocket",
             "children": [{
                 "name": "Socket.io",
                 "url": "http://socket.io/",
-                "github": "https://github.com/Automattic/socket.io/"
+                "github": "https://github.com/Automattic/socket.io/",
+                "stargazers": 19169
             }, {
                 "name": "web-socket-js",
-                "github": "https://github.com/gimite/web-socket-js/"
+                "github": "https://github.com/gimite/web-socket-js/",
+                "stargazers": 2115
             }]
         }, {
             "name": "Data Visualization",
             "children": [{
                 "name": "D3",
                 "url": "http://d3js.org/",
-                "github": "https://github.com/mbostock/d3/wiki/Gallery/"
+                "github": "https://github.com/mbostock/d3/wiki/Gallery/",
+                "stargazers": 40794
             }, {
                 "name": "Echarts",
                 "url": "http://echarts.baidu.com",
-                "github": "https://github.com/ecomfe/esl/"
+                "github": "https://github.com/ecomfe/esl/",
+                "stargazers": 396
             }, {
                 "name": "HighCharts",
                 "url": "http://www.highcharts.com/",
-                "github": "https://github.com/highslide-software/highcharts.com/"
+                "github": "https://github.com/highslide-software/highcharts.com/",
+                "stargazers": 4041
             }, {
                 "name": "Vis.js",
                 "url": "http://visjs.org/",
-                "github": "https://github.com/almende/vis/"
+                "github": "https://github.com/almende/vis/",
+                "stargazers": 2993
             }, {
                 "name": "Flot",
-                "url": "http://www.flotcharts.org/", 
-                "github": "https://github.com/flot/flot/"
+                "url": "http://www.flotcharts.org/",
+                "github": "https://github.com/flot/flot/",
+                "stargazers": 4531
             }]
         }, {
             "name": "WebGL",
             "children": [{
                 "name": "Three.js",
                 "url": "http://threejs.org/",
-                "github": "https://github.com/mrdoob/three.js/"
+                "github": "https://github.com/mrdoob/three.js/",
+                "stargazers": 20758
             }, {
                 "name": "Babylon.js",
                 "url": "http://www.babylonjs.com/",
-                "github": "https://github.com/BabylonJS/Babylon.js/"
+                "github": "https://github.com/BabylonJS/Babylon.js/",
+                "stargazers": 2349
             }, {
                 "name": "Pixi.js",
                 "url": "http://www.pixijs.com/",
@@ -526,7 +577,7 @@
                 "github": "https://github.com/daneden/animate.css/"
             }, {
                 "name": "bounce.js",
-                "url": "http://bouncejs.com/", 
+                "url": "http://bouncejs.com/",
                 "github": "https://github.com/tictail/bounce.js/"
             }, {
                 "name": "Effeckt.css",
