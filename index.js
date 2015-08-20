@@ -19,6 +19,56 @@ String.prototype.repeat = function(count) {
     return new Array(count + 1).join(this);
 }
 /**
+ * Search Github
+ * Useless
+ * Didn't import the dependencies in the package.json.
+ */
+var searchGitHub = function searchGitHub() {
+    var request = require("request");
+    var async = require("async");
+    var originalData = require('./ux/WebFrontEndStack.json');
+    var q = async.queue(function(object, callback) {
+
+        if (object.noRequest || object.github || !object.url || /mozilla|wikipedia/.test(object.url)) {
+            callback(false);
+            return;
+        } 
+
+        console.log("Running " + object.name);
+        request(object.url, function(err, res, body) {
+            if (!err && res.statusCode == 200) {
+                var rep = body.match(/<a.+?href=("|')([a-z:\/]+?github.com.+?)("|')/);
+                if (rep === null) {
+                    callback(false);
+                    return;
+                }
+                object.github = rep[2];
+                callback(true);
+            }
+        });
+
+    }, 5);
+    var addQueue = function addQueue(object) {
+        q.push(object, function(err) {
+            if (err) console.log(object.name + " = " + object.github);
+        });
+        if (object.children) {
+            object.children.forEach(function(val) {
+                addQueue(val);
+            });
+        }
+    };
+
+    addQueue(originalData);
+    q.push({noRequest: true}, function() {
+        console.log(originalData);
+        console.log(JSON.stringify(originalData));
+        fs.writeFileAsync("./ux/WebFrontEndStack.json2", JSON.stringify(originalData), "utf-8");
+    });
+
+}
+
+/**
  * Use to build a promise for some fucking async api.
  * @param  object object       
  **/
@@ -52,10 +102,11 @@ var buildReadme = function buildReadme(object, deep) {
     var deeper = deep + 1;
     var deepString = "\t".repeat(deep) + "- ";
     var ret = [];
-    ret.push((function(deepString, name, url) {
+    ret.push((function(deepString, name, url, github) {
         var haveUrl = !!url;
-        return deepString + (haveUrl ? "[" : "") + object.name + (haveUrl ? "](" + url + ")" : "");
-    })(deepString, object.name, object.url));
+        var haveGitHub = !!github;
+        return deepString + (haveUrl ? "[" : "") + object.name + (haveUrl ? "](" + url + ")" : "") + (haveGitHub ? " [\[GitHub\]](" + github + ")" : "");
+    })(deepString, object.name, object.url, object.github));
     if (object.children) {
         object.children.map(function(value, index) {
             ret.push(buildReadme(value, deeper));

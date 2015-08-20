@@ -42,7 +42,7 @@
             }]
         }, {
             "name": "HTTP/2",
-			"url": "https://en.wikipedia.org/wiki/HTTP/2",
+            "url": "https://en.wikipedia.org/wiki/HTTP/2",
             "children": [{
                 "name": "Compression"
             }, {
@@ -128,7 +128,8 @@
             "url": "https://en.wikipedia.org/wiki/Trident_(layout_engine)"
         }, {
             "name": "Blink / prev. WebKit (Chrome)",
-            "url": "http://www.chromium.org/blink"
+            "url": "http://www.chromium.org/blink",
+            "github": ""
         }, {
             "name": "Gecko (Firefox)",
             "url": "https://developer.mozilla.org/en-us/docs/Mozilla/Gecko"
@@ -137,7 +138,8 @@
             "url": "http://www.webkit.org/"
         }, {
             "name": "Blink / prev. Presto (Opera)",
-            "url": "http://www.chromium.org/blink"
+            "url": "http://www.chromium.org/blink",
+            "github": ""
         }, {
             "name": "EdgeHTML (Edge)",
             "url": "https://en.wikipedia.org/wiki/EdgeHTML"
@@ -152,7 +154,8 @@
             "url": "https://en.wikipedia.org/wiki/Chakra_(JScript_engine)"
         }, {
             "name": "V8 (Chrome / Opera / Nodejs / MongoDB)",
-            "url": "https://developers.google.com/v8/?hl=zh-CN"
+            "url": "https://developers.google.com/v8/?hl=zh-CN",
+            "github": "https://github.com/v8/v8"
         }, {
             "name": "SpiderMonkey (Firefox)",
             "url": " https://developer.mozilla.org/en-us/docs/Mozilla/Projects/SpiderMonkey"
@@ -194,31 +197,34 @@
     }, {
         "name": "Editors",
         "children": [{
-            "name": "Sublime Text", 
+            "name": "Sublime Text",
             "url": "http://www.sublimetext.com/"
         }, {
-            "name": "WebStorm", 
+            "name": "WebStorm",
             "url": "https://www.jetbrains.com/webstorm/"
         }, {
-            "name": "Atom", 
-            "url": "https://atom.io/"
+            "name": "Atom",
+            "url": "https://atom.io/",
+            "github": "https://github.com/atom/atom"
         }, {
-            "name": "Vim", 
+            "name": "Vim",
             "url": "http://www.vim.org/"
         }, {
-            "name": "Emacs", 
+            "name": "Emacs",
             "url": "https://www.gnu.org/software/emacs/"
         }, {
-            "name": "Brackets", 
-            "url": "http://brackets.io/"
+            "name": "Brackets",
+            "url": "http://brackets.io/",
+            "github": "https://github.com/adobe/brackets"
         }, {
-            "name": "Light Table", 
-            "url": "http://lighttable.com/"
+            "name": "Light Table",
+            "url": "http://lighttable.com/",
+            "github": "https://github.com/LightTable/LightTable"
         }, {
-            "name": "Visual Studio", 
+            "name": "Visual Studio",
             "url": "https://www.visualstudio.com/"
         }, {
-            "name": "Visual Studio Code", 
+            "name": "Visual Studio Code",
             "url": "https://code.visualstudio.com/"
         }]
     }, {
@@ -239,95 +245,114 @@
     }, {
         "name": "Build Tools",
         "children": [{
-            "name": "Grunt", 
-            "url": "http://www.gruntjs.com/"
+            "name": "Grunt",
+            "url": "http://www.gruntjs.com/",
+            "github": "https://github.com/cowboy/jquery-tiny-pubsub"
         }, {
-            "name": "Gulp", 
-            "url": "http://gulpjs.com/"
+            "name": "Gulp",
+            "url": "http://gulpjs.com/",
+            "github": "https://github.com/gulpjs/gulp/"
         }, {
-            "name": "Brunch", 
-            "url": "http://brunch.io/"
+            "name": "Brunch",
+            "url": "http://brunch.io/",
+            "github": "https://github.com/brunch/brunch/"
         }, {
-            "name": "Yeoman", 
+            "name": "Yeoman",
             "url": "http://yeoman.io/"
         }, {
-            "name": "Broccoli", 
-            "url": "https://github.com/broccolijs/broccoli"
+            "name": "Broccoli",
+            "github": "https://github.com/broccolijs/broccoli"
         }]
     }, {
         "name": "Debug",
         "children": [{
-            "name": "Developer Tools", 
+            "name": "Developer Tools",
             "url": "https://developer.chrome.com/devtools"
         }, {
-            "name": "Firebug", 
-            "url": "http://getfirebug.com/"
+            "name": "Firebug",
+            "url": "http://getfirebug.com/",
+            "github": "https://github.com/firebug/firebug"
         }]
     }, {
         "name": "Base Tools",
         "children": [{
-            "name": "Node.js", 
-            "url": "https://nodejs.org/"
+            "name": "Node.js",
+            "url": "https://nodejs.org/",
+            "github": "https://github.com/joyent/node/"
         }, {
-            "name": "Phantom.js", 
-            "url": "http://phantomjs.org/"
+            "name": "Phantom.js",
+            "url": "http://phantomjs.org/",
+            "github": "https://github.com/ariya/phantomjs"
         }]
     }, {
         "name": "Quality",
         "children": [{
-            "name": "JSLint", 
-            "url": "http://www.jslint.com/"
+            "name": "JSLint",
+            "url": "http://www.jslint.com/",
+            "github": "https://github.com/douglascrockford/JSLint"
         }, {
-            "name": "JSHint", 
-            "url": "http://jshint.com/"
+            "name": "JSHint",
+            "url": "http://jshint.com/",
+            "github": "https://github.com/jshint/jshint/"
         }, {
             "name": "jscs",
-            "url": "http://jscs.info/"
+            "url": "http://jscs.info/",
+            "github": "https://github.com/mdevils"
         }, {
-            "name": "Closure Linter", 
+            "name": "Closure Linter",
             "url": "https://developers.google.com/closure/utilities/"
         }]
     }, {
         "name": "Package",
         "children": [{
             "name": "npm",
-            "url": "https://www.npmjs.com/"
+            "url": "https://www.npmjs.com/",
+            "github": "https://github.com/npm/npm"
         }, {
             "name": "Bower",
-            "url": "http://bower.io/"
+            "url": "http://bower.io/",
+            "github": "https://github.com/bower/bower"
         }]
     }, {
         "name": "Test",
         "children": [{
-            "name": "QUnit", 
-            "url": "https://qunitjs.com/"
+            "name": "QUnit",
+            "url": "https://qunitjs.com/",
+            "github": "https://github.com/jquery/qunit/"
         }, {
             "name": "Jasmine",
-            "url": "http://jasmine.github.io/"
+            "url": "http://jasmine.github.io/",
+            "github": "https://github.com/jasmine/jasmine"
         }, {
             "name": "Mocha",
-            "url": "https://mochajs.org/"
+            "url": "https://mochajs.org/",
+            "github": "https://github.com/mochajs/mocha"
         }, {
             "name": "Selenium",
-            "url": "http://www.seleniumhq.org/"
+            "url": "http://www.seleniumhq.org/",
+            "github": "https://github.com/SeleniumHQ/selenium/"
         }, {
             "name": "WebDriverIO",
-            "url": "http://webdriver.io/"
+            "url": "http://webdriver.io/",
+            "github": "https://github.com/webdriverio/webdriverio/"
         }, {
             "name": "Protractor",
             "url": "http://www.protractortest.org/"
         }, {
             "name": "Chai",
-            "url": "http://chaijs.com/"
+            "url": "http://chaijs.com/",
+            "github": "https://github.com/jfirebaugh/konacha"
         }, {
             "name": "Sinon.JS",
-            "url": "http://sinonjs.org/"
+            "url": "http://sinonjs.org/",
+            "github": "https://github.com/cjohansen/Sinon.JS/"
         }, {
             "name": "Karma",
-            "url": "http://karma-runner.github.io/"
+            "url": "http://karma-runner.github.io/", 
+            "github": "https://github.com/karma-runner/karma/"
         }, {
             "name": "nodeunit",
-            "url": "https://github.com/caolan/nodeunit"
+            "github": "https://github.com/caolan/nodeunit"
         }]
     }, {
         "name": "Frameworks / Libraries",
@@ -335,19 +360,24 @@
             "name": "JavaScript base library",
             "children": [{
                 "name": "jQuery",
-                "url": "https://jquery.com/"
+                "url": "https://jquery.com/",
+                "github": "http://github.com/jquery/jquery"
             }, {
                 "name": "Prototype",
-                "url": "http://prototypejs.org/"
+                "url": "http://prototypejs.org/", 
+                "github": "https://github.com/sstephenson/prototype/"
             }, {
                 "name": "Zepto",
-                "url": "http://zeptojs.com/"
+                "url": "http://zeptojs.com/",
+                "github": "https://github.com/madrobby/zepto/"
             }, {
                 "name": "MooTool",
-                "url": "http://mootools.net/"
+                "url": "http://mootools.net/",
+                "github": "http://github.com/mootools/mootools-core"
             }, {
                 "name": "Underscore",
-                "url": "http://underscorejs.org/"
+                "url": "http://underscorejs.org/",
+                "github": "https://github.com/jashkenas/underscore"
             }]
         }, {
             "name": "Modular",
@@ -357,128 +387,155 @@
                 "name": "CommonJS",
                 "children": [{
                     "name": "webpack",
-                    "url": "http://webpack.github.io/"
+                    "url": "http://webpack.github.io/", 
+                    "github": "https://github.com/webpack/webpack"
                 }, {
                     "name": "browserify",
-                    "url": "http://browserify.org/"
+                    "url": "http://browserify.org/",
+                    "github": "https://github.com/substack/node-browserify"
                 }]
             }, {
                 "name": "AMD",
                 "children": [{
                     "name": "RequireJS",
-                    "url": "http://requirejs.org/"
+                    "url": "http://requirejs.org/",
+                    "github": "http://github.com/jrburke/requirejs"
                 }]
             }, {
                 "name": "UMD",
                 "children": [{
                     "name": "umd",
-                    "url": "https://github.com/umdjs/umd"
+                    "github": "https://github.com/umdjs/umd"
                 }]
             }]
         }, {
             "name": "JavaScript framework",
             "children": [{
                 "name": "AngularJS",
-                "url": "https://angularjs.org/"
+                "url": "https://angularjs.org/",
+                "github": "https://github.com/angular/angular.js"
             }, {
                 "name": "Backbone",
-                "url": "http://backbonejs.org/"
+                "url": "http://backbonejs.org/",
+                "github": "http://github.com/jashkenas/backbone"
             }, {
                 "name": "Knockout",
-                "url": "http://knockoutjs.com/"
+                "url": "http://knockoutjs.com/",
+                "github": "http://github.com/SteveSanderson/knockout"
             }, {
                 "name": "Ember",
-                "url": "http://emberjs.com/"
+                "url": "http://emberjs.com/",
+                "github": "https://github.com/emberjs/ember.js"
             }, {
                 "name": "React",
-                "url": "http://facebook.github.io/react/"
+                "url": "http://facebook.github.io/react/",
+                "github": "https://github.com/facebook/react"
             }, {
                 "name": "polymer",
-                "url": "https://www.polymer-project.org/"
+                "url": "https://www.polymer-project.org/",
+                "github": "https://github.com/polymer"
             }, {
                 "name": "Dojo",
-                "url": "https://dojotoolkit.org/"
+                "url": "https://dojotoolkit.org/",
+                "github": "https://github.com/dojo"
             }, {
                 "name": "Deft.js",
-                "url": "http://deftjs.org/"
+                "url": "http://deftjs.org/",
+                "github": "https://github.com/deftjs/DeftJS"
             }, {
                 "name": "Vue",
-                "url": "http://vuejs.org/"
+                "url": "http://vuejs.org/",
+                "github": "https://github.com/yyx990803/vue"
             }]
         }, {
             "name": "UI framework",
             "children": [{
                 "name": "Bootstrap",
-                "url": "http://getbootstrap.com/"
-            }, {
-                "name": "ResponsiveGS",
-                "url": "http://responsive.gs/"
+                "url": "http://getbootstrap.com/",
+                "github": "https://github.com/twbs/bootstrap"
             }, {
                 "name": "Semantic UI",
-                "url": "http://semantic-ui.com/"
+                "url": "http://semantic-ui.com/",
+                "github": "https://github.com/Semantic-Org/Semantic-UI/"
             }, {
                 "name": "Foundation",
-                "url": "http://foundation.zurb.com/"
+                "url": "http://foundation.zurb.com/",
+                "github": "http://github.com/zurb/foundation"
             }, {
                 "name": "Material UI",
-                "url": "http://material-ui.com/"
+                "url": "http://material-ui.com/", 
+                "github": "https://github.com/callemall/material-ui"
             }, {
                 "name": "jQuery UI",
-                "url": "http://jqueryui.com/"
+                "url": "http://jqueryui.com/",
+                "github": "https://github.com/jquery/jquery-ui"
             }]
         }, {
             "name": "WebSocket",
             "children": [{
                 "name": "Socket.io",
-                "url": "http://socket.io/"
+                "url": "http://socket.io/",
+                "github": "https://github.com/Automattic/socket.io"
             }, {
                 "name": "web-socket-js",
-                "url": "https://github.com/gimite/web-socket-js"
+                "github": "https://github.com/gimite/web-socket-js"
             }]
         }, {
             "name": "Data Visualization",
             "children": [{
                 "name": "D3",
-                "url": "http://d3js.org/"
+                "url": "http://d3js.org/",
+                "github": "https://github.com/mbostock/d3/wiki/Gallery"
             }, {
                 "name": "Echarts",
-                "url": "http://echarts.baidu.com"
+                "url": "http://echarts.baidu.com",
+                "github": "https://github.com/ecomfe/esl"
             }, {
                 "name": "HighCharts",
-                "url": "http://www.highcharts.com/"
+                "url": "http://www.highcharts.com/",
+                "github": "https://github.com/highslide-software/highcharts.com"
             }, {
                 "name": "Vis.js",
-                "url": "http://visjs.org/"
+                "url": "http://visjs.org/",
+                "github": "https://github.com/almende/vis"
             }, {
                 "name": "Flot",
-                "url": "http://www.flotcharts.org/"
+                "url": "http://www.flotcharts.org/", 
+                "github": "https://github.com/flot/flot"
             }]
         }, {
             "name": "WebGL",
             "children": [{
                 "name": "Three.js",
-                "url": "http://threejs.org/"
+                "url": "http://threejs.org/",
+                "github": "http://github.com/mrdoob/three.js/"
             }, {
                 "name": "Babylon.js",
-                "url": "http://www.babylonjs.com/"
+                "url": "http://www.babylonjs.com/",
+                "github": "https://github.com/BabylonJS/Babylon.js"
             }, {
                 "name": "Pixi.js",
-                "url": "http://www.pixijs.com/"
+                "url": "http://www.pixijs.com/",
+                "github": "https://github.com/GoodBoyDigital/pixi.js"
             }]
         }, {
             "name": "CSS3 Animation",
             "children": [{
                 "name": "Animate.css",
-                "url": "https://daneden.github.io/animate.css/"
+                "url": "https://daneden.github.io/animate.css/",
+                "github": "//github.com/daneden/animate.css"
             }, {
                 "name": "bounce.js",
-                "url": "http://bouncejs.com/"
+                "url": "http://bouncejs.com/", 
+                "github": "https://github.com/tictail/bounce.js"
             }, {
                 "name": "Effeckt.css",
-                "url": "https://h5bp.github.io/Effeckt.css/"
+                "url": "https://h5bp.github.io/Effeckt.css/",
+                "github": "https://github.com/h5bp/Effeckt.css"
             }, {
                 "name": "move.js",
-                "url": "https://visionmedia.github.io/move.js/"
+                "url": "https://visionmedia.github.io/move.js/",
+                "github": "https://github.com/visionmedia/move.js"
             }]
         }, {
             "name": "Flow Controller",
@@ -498,48 +555,50 @@
                 }]
             }, {
                 "name": "async",
-                "url": "https://github.com/caolan/async"
+                "github": "https://github.com/caolan/async"
             }, {
                 "name": "co",
-                "url": "https://github.com/tj/co"
+                "github": "https://github.com/tj/co"
             }, {
                 "name": "Promise",
                 "children": [{
                     "name": "Bluebird",
-                    "url": "https://github.com/petkaantonov/bluebird"
+                    "github": "https://github.com/petkaantonov/bluebird"
                 }, {
                     "name": "q",
-                    "url": "https://github.com/kriskowal/q"
+                    "github": "https://github.com/kriskowal/q"
                 }, {
                     "name": "when.js",
-                    "url": "https://github.com/cujojs/when"
+                    "github": "https://github.com/cujojs/when"
                 }]
             }]
         }, {
             "name": "Functional",
             "children": [{
                 "name": "backon.js",
-                "url": "https://github.com/baconjs/bacon.js/"
+                "github": "https://github.com/baconjs/bacon.js/"
             }, {
                 "name": "immutable.js",
-                "url": "https://facebook.github.io/immutable-js/"
+                "url": "https://facebook.github.io/immutable-js/",
+                "github": "https://github.com/facebook/immutable-js/"
             }]
         }, {
             "name": "Mobile UI",
             "children": [{
                 "name": "jQuery Mobile",
-                "url": "https://jquerymobile.com/"
+                "url": "https://jquerymobile.com/",
+                "github": "https://github.com/jquery/jquery-mobile"
             }, {
                 "name": "Jo",
-                "url": "http://joapp.com/"
-            }, {
-                "name": "WinkUI"
+                "url": "http://joapp.com/",
+                "github": "https://github.com/davebalmer/jo"
             }, {
                 "name": "Dojo Mobile",
                 "url": "https://dojotoolkit.org/reference-guide/1.10/dojox/mobile.html"
             }, {
                 "name": "Lungo",
-                "url": "http://lungo.tapquo.com/"
+                "url": "http://lungo.tapquo.com/",
+                "github": "https://github.com/tapquo/Lungo.js/"
             }]
         }]
     }, {
@@ -548,53 +607,62 @@
             "name": "LESS",
             "children": [{
                 "name": "LESS",
-                "url": "http://lesscss.org/"
+                "url": "http://lesscss.org/",
+                "github": "https://github.com/less/less.js"
             }, {
                 "name": "Hat",
-                "url": "http://lesshat.madebysource.com/"
+                "url": "http://lesshat.madebysource.com/",
+                "github": "https://github.com/csshat/lesshat/"
             }]
         }, {
             "name": "Sass(SCSS)",
             "children": [{
                 "name": "Compass",
-                "url": "http://compass-style.org/"
+                "url": "http://compass-style.org/",
+                "github": "https://github.com/chriseppstein/compass/"
             }, {
                 "name": "Bourbon",
-                "url": "http://bourbon.io/"
+                "url": "http://bourbon.io/",
+                "github": "https://github.com/thoughtbot/bourbon"
             }, {
                 "name": "Gumby",
-                "url": "http://www.gumbyframework.com/"
+                "url": "http://www.gumbyframework.com/",
+                "github": "https://github.com/GumbyFramework/Gumby"
             }]
         }, {
             "name": "Stylus",
             "children": [{
-                "name": "nib", 
-                "url": "https://github.com/tj/nib"
+                "name": "nib",
+                "github": "https://github.com/tj/nib"
             }]
         }]
     }, {
         "name": "Template",
         "children": [{
-            "name": "Handlebars", 
-            "url": "http://handlebarsjs.com/"
+            "name": "Handlebars",
+            "url": "http://handlebarsjs.com/",
+            "github": "https://github.com/wycats/handlebars.js"
         }, {
-            "name": "Haml", 
-            "url": "http://haml.info/"
+            "name": "Haml",
+            "url": "http://haml.info/",
+            "github": "https://github.com/haml/haml/"
         }, {
-            "name": "Slim", 
-            "url": "http://slim-lang.com/"
+            "name": "Slim",
+            "url": "http://slim-lang.com/",
+            "github": "https://github.com/slim-template/slim"
         }, {
-            "name": "Jade", 
-            "url": "http://jade-lang.com/"
+            "name": "Jade",
+            "url": "http://jade-lang.com/",
+            "github": "https://github.com/jadejs/jade"
         }, {
-            "name": "Ejs", 
+            "name": "Ejs",
             "url": "http://www.embeddedjs.com/"
         }, {
-            "name": "Spacebars", 
+            "name": "Spacebars",
             "url": "http://meteorcapture.com/spacebars/"
         }, {
-            "name": "{{ mustache }}", 
-            "url": "https://github.com/janl/mustache.js/"
+            "name": "mustache",
+            "github": "https://github.com/janl/mustache.js/"
         }]
     }, {
         "name": "Modernisation",
@@ -606,12 +674,12 @@
     }, {
         "name": "Best Practices",
         "children": [{
-            "name": "SEO", 
+            "name": "SEO",
             "url": "https://en.wikipedia.org/wiki/Search_engine_optimization"
         }, {
             "name": "Responsiveness"
         }, {
-            "name": "CDN", 
+            "name": "CDN",
             "url": "https://en.wikipedia.org/wiki/Content_delivery_network"
         }]
     }, {
@@ -619,44 +687,52 @@
         "children": [{
             "name": "Sandbox"
         }, {
-            "name": "XSS", 
+            "name": "XSS",
             "url": "https://en.wikipedia.org/wiki/Cross-site_scripting"
         }, {
-            "name": "CORS", 
+            "name": "CORS",
             "url": "http://www.w3.org/TR/cors/"
         }]
     }, {
         "name": "Intermediate Languages",
         "children": [{
-            "name": "CoffeeScript", 
-            "url": "http://coffeescript.org/"
+            "name": "CoffeeScript",
+            "url": "http://coffeescript.org/",
+            "github": "http://github.com/jashkenas/coffeescript/"
         }, {
-            "name": "TypeScript", 
-            "url": "http://www.typescriptlang.org/"
+            "name": "TypeScript",
+            "url": "http://www.typescriptlang.org/",
+            "github": "https://github.com/Microsoft/TypeScript"
         }, {
-            "name": "Dart", 
-            "url": "https://www.dartlang.org/"
+            "name": "Dart",
+            "url": "https://www.dartlang.org/",
+            "github": "https://github.com/dart-lang/sdk"
         }, {
-            "name": "LiveScript", 
-            "url": "http://livescript.net/"
+            "name": "LiveScript",
+            "url": "http://livescript.net/",
+            "github": "https://github.com/gkz/LiveScript/"
         }, {
-            "name": "ClojureScript", 
-            "url": "https://github.com/clojure/clojurescript/"
+            "name": "ClojureScript",
+            "github": "https://github.com/clojure/clojurescript/"
         }]
     }, {
         "name": "Mobile App Builders",
         "children": [{
-            "name": "PhoneGap / Cordova", 
-            "url": "https://cordova.apache.org/"
+            "name": "PhoneGap / Cordova",
+            "url": "https://cordova.apache.org/",
+            "github": "https://github.com/apache/cordova-android"
         }, {
-            "name": "MUI", 
-            "url": "http://dev.dcloud.net.cn/mui/"
+            "name": "MUI",
+            "url": "http://dev.dcloud.net.cn/mui/",
+            "github": "https://github.com/dcloudio/mui"
         }, {
-            "name": "React Native", 
-            "url": "https://facebook.github.io/react-native/"
+            "name": "React Native",
+            "url": "https://facebook.github.io/react-native/",
+            "github": "https://github.com/facebook/react-native/"
         }, {
-            "name": "Ionic", 
-            "url": "http://ionicframework.com/"
+            "name": "Ionic",
+            "url": "http://ionicframework.com/",
+            "github": "https://github.com/driftyco/ionic"
         }]
     }]
 }
