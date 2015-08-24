@@ -75,7 +75,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 		- [Safari](http://www.apple.com/safari/)
 		- [Opera](http://www.opera.com/)
 		- [Edge](https://www.microsoft.com/en-us/windows/microsoft-edge)
-		- [Netscape ;-)](https://en.wikipedia.org/wiki/Netspace)
+		- [Netscape ;-)](https://en.wikipedia.org/wiki/Netscape)
 	- Protocol
 		- [HTTP/1.1](https://www.ietf.org/rfc/rfc2616.txt)
 			- URI
@@ -217,7 +217,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- [Vue](http://vuejs.org/) [[GitHub]](https://github.com/yyx990803/vue/)
 		- UI framework
 			- [Bootstrap](http://getbootstrap.com/) [[GitHub]](https://github.com/twbs/bootstrap/)
-			- [Semantic UI](http://semantic-ui.com/) [[GitHub]](https://github.com/Semantic-Org/Semantic-UI/)
+			- [Semantic UI ](http://semantic-ui.com/) [[GitHub]](https://github.com/Semantic-Org/Semantic-UI/)
 			- [Foundation](http://foundation.zurb.com/) [[GitHub]](https://github.com/zurb/foundation/)
 			- [Material UI](http://material-ui.com/) [[GitHub]](https://github.com/callemall/material-ui/)
 			- [jQuery UI](http://jqueryui.com/) [[GitHub]](https://github.com/jquery/jquery-ui/)
