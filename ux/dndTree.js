@@ -406,7 +406,7 @@
                 .on('click', click)
                 .append("a")
                 .attr("xlink:href", function(d) {
-                    return d.url;
+                    return d.url || d.github; 
                 })
                 .attr("target", "_blank");
 

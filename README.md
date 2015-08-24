@@ -1,3 +1,7 @@
+# Overflow Stack
+The overflow stack family (Web Front End Stack, Database Stack, .NET Stack etc.):
+http://overflowstack.github.io
+
 # Localization
 中文: 
 http://www.cnblogs.com/unruledboy/p/WebFrontEndStack.html
@@ -28,18 +32,22 @@ If the error occurs, you can check the dependence of [phantomjs-node](https://gi
 
 ``npm run build`` for generate the image.
 
-Both of commands require port 3000. If you're using this port, then try this:
 
-bash:
-```bash
-PORT=4000 npm run build
-```
-
-cmd:
-```cmd
-SET PORT=4000
-npm run build
-```
+## Options
+### Usage
+	node index task1 \[task2\] \[task3\] .. \[--option=value\] \[--option=value\] ...
+#### Tasks
+##### phantomjs
+	For generate the image.
+##### readme
+	For rebuild the readme.
+##### updatestargazers
+	For Update the count of the Stargazers.
+#### Options
+#### port
+	Default: 3000
+#### update_existed_stargazers
+	Default: false
 
 # What and why?
 Have you ever wondered:
@@ -117,7 +125,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 	- JavaScript Engine
 		- [JScript (IE8- / ASP)](https://en.wikipedia.org/wiki/JScript)
 		- [Chakra (IE9+ / Edge)](https://en.wikipedia.org/wiki/Chakra_(JScript_engine))
-		- [V8 (Chrome / Opera / Nodejs / MongoDB)](https://developers.google.com/v8/?hl=zh-CN)
+		- [V8 (Chrome / Opera / Nodejs / MongoDB)](https://developers.google.com/v8/?hl=zh-CN) [[GitHub]](https://github.com/v8/v8/)
 		- [SpiderMonkey (Firefox)]( https://developer.mozilla.org/en-us/docs/Mozilla/Projects/SpiderMonkey)
 		- [Nitro (Safari)](https://en.wikipedia.org/wiki/WebKit#JavaScriptCore)
 	- Runtime
@@ -137,11 +145,11 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 	- Editors
 		- [Sublime Text](http://www.sublimetext.com/)
 		- [WebStorm](https://www.jetbrains.com/webstorm/)
-		- [Atom](https://atom.io/)
+		- [Atom](https://atom.io/) [[GitHub]](https://github.com/atom/atom/)
 		- [Vim](http://www.vim.org/)
 		- [Emacs](https://www.gnu.org/software/emacs/)
-		- [Brackets](http://brackets.io/)
-		- [Light Table](http://lighttable.com/)
+		- [Brackets](http://brackets.io/) [[GitHub]](https://github.com/adobe/brackets/)
+		- [Light Table](http://lighttable.com/) [[GitHub]](https://github.com/LightTable/LightTable/)
 		- [Visual Studio](https://www.visualstudio.com/)
 		- [Visual Studio Code](https://code.visualstudio.com/)
 	- Build Tasks
@@ -152,87 +160,85 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 		- Image Optimization
 		- Unit Testing
 	- Build Tools
-		- [Grunt](http://www.gruntjs.com/)
-		- [Gulp](http://gulpjs.com/)
-		- [Brunch](http://brunch.io/)
+		- [Grunt](http://www.gruntjs.com/) [[GitHub]](https://github.com/cowboy/jquery-tiny-pubsub/)
+		- [Gulp](http://gulpjs.com/) [[GitHub]](https://github.com/gulpjs/gulp/)
+		- [Brunch](http://brunch.io/) [[GitHub]](https://github.com/brunch/brunch/)
 		- [Yeoman](http://yeoman.io/)
-		- [Broccoli](https://github.com/broccolijs/broccoli)
+		- Broccoli [[GitHub]](https://github.com/broccolijs/broccoli/)
 	- Debug
 		- [Developer Tools](https://developer.chrome.com/devtools)
-		- [Firebug](http://getfirebug.com/)
+		- [Firebug](http://getfirebug.com/) [[GitHub]](https://github.com/firebug/firebug/)
 	- Base Tools
-		- [Node.js](https://nodejs.org/)
-		- [Phantom.js](http://phantomjs.org/)
+		- [Node.js](https://nodejs.org/) [[GitHub]](https://github.com/joyent/node/)
+		- [Phantom.js](http://phantomjs.org/) [[GitHub]](https://github.com/ariya/phantomjs/)
 	- Quality
-		- [JSLint](http://www.jslint.com/)
-		- [JSHint](http://jshint.com/)
-		- [jscs](http://jscs.info/)
+		- [JSLint](http://www.jslint.com/) [[GitHub]](https://github.com/douglascrockford/JSLint/)
+		- [JSHint](http://jshint.com/) [[GitHub]](https://github.com/jshint/jshint/)
+		- [jscs](http://jscs.info/) [[GitHub]](https://github.com/jscs-dev/node-jscs)
 		- [Closure Linter](https://developers.google.com/closure/utilities/)
 	- Package
-		- [npm](https://www.npmjs.com/)
-		- [Bower](http://bower.io/)
+		- [npm](https://www.npmjs.com/) [[GitHub]](https://github.com/npm/npm/)
+		- [Bower](http://bower.io/) [[GitHub]](https://github.com/bower/bower/)
 	- Test
-		- [QUnit](https://qunitjs.com/)
-		- [Jasmine](http://jasmine.github.io/)
-		- [Mocha](https://mochajs.org/)
-		- [Selenium](http://www.seleniumhq.org/)
-		- [WebDriverIO](http://webdriver.io/)
+		- [QUnit](https://qunitjs.com/) [[GitHub]](https://github.com/jquery/qunit/)
+		- [Jasmine](http://jasmine.github.io/) [[GitHub]](https://github.com/jasmine/jasmine/)
+		- [Mocha](https://mochajs.org/) [[GitHub]](https://github.com/mochajs/mocha/)
+		- [Selenium](http://www.seleniumhq.org/) [[GitHub]](https://github.com/SeleniumHQ/selenium/)
+		- [WebDriverIO](http://webdriver.io/) [[GitHub]](https://github.com/webdriverio/webdriverio/)
 		- [Protractor](http://www.protractortest.org/)
-		- [Chai](http://chaijs.com/)
-		- [Sinon.JS](http://sinonjs.org/)
-		- [Karma](http://karma-runner.github.io/)
-		- [nodeunit](https://github.com/caolan/nodeunit)
+		- [Chai](http://chaijs.com/) [[GitHub]](https://github.com/jfirebaugh/konacha/)
+		- [Sinon.JS](http://sinonjs.org/) [[GitHub]](https://github.com/cjohansen/Sinon.JS/)
+		- [Karma](http://karma-runner.github.io/) [[GitHub]](https://github.com/karma-runner/karma/)
+		- nodeunit [[GitHub]](https://github.com/caolan/nodeunit/)
 	- Frameworks / Libraries
 		- JavaScript base library
-			- [jQuery](https://jquery.com/)
-			- [Prototype](http://prototypejs.org/)
-			- [Zepto](http://zeptojs.com/)
-			- [MooTool](http://mootools.net/)
-			- [Underscore](http://underscorejs.org/)
+			- [jQuery](https://jquery.com/) [[GitHub]](https://github.com/jquery/jquery/)
+			- [Prototype](http://prototypejs.org/) [[GitHub]](https://github.com/sstephenson/prototype/)
+			- [Zepto](http://zeptojs.com/) [[GitHub]](https://github.com/madrobby/zepto/)
+			- [MooTool](http://mootools.net/) [[GitHub]](https://github.com/mootools/mootools-core/)
+			- [Underscore](http://underscorejs.org/) [[GitHub]](https://github.com/jashkenas/underscore/)
 		- Modular
 			- ES6 Module
 			- CommonJS
-				- [webpack](http://webpack.github.io/)
-				- [browserify](http://browserify.org/)
+				- [webpack](http://webpack.github.io/) [[GitHub]](https://github.com/webpack/webpack/)
+				- [browserify](http://browserify.org/) [[GitHub]](https://github.com/substack/node-browserify/)
 			- AMD
-				- [RequireJS](http://requirejs.org/)
+				- [RequireJS](http://requirejs.org/) [[GitHub]](https://github.com/jrburke/requirejs/)
 			- UMD
-				- [umd](https://github.com/umdjs/umd)
+				- umd [[GitHub]](https://github.com/umdjs/umd/)
 		- JavaScript framework
-			- [AngularJS](https://angularjs.org/)
-			- [Backbone](http://backbonejs.org/)
-			- [Knockout](http://knockoutjs.com/)
-			- [Ember](http://emberjs.com/)
-			- [React](http://facebook.github.io/react/)
-			- [polymer](https://www.polymer-project.org/)
-			- [Dojo](https://dojotoolkit.org/)
-			- [Deft.js](http://deftjs.org/)
-			- [Vue](http://vuejs.org/)
+			- [AngularJS](https://angularjs.org/) [[GitHub]](https://github.com/angular/angular.js/)
+			- [Backbone](http://backbonejs.org/) [[GitHub]](https://github.com/jashkenas/backbone/)
+			- [Knockout](http://knockoutjs.com/) [[GitHub]](https://github.com/SteveSanderson/knockout/)
+			- [Ember](http://emberjs.com/) [[GitHub]](https://github.com/emberjs/ember.js/)
+			- [React](http://facebook.github.io/react/) [[GitHub]](https://github.com/facebook/react/)
+			- [polymer](https://www.polymer-project.org/) [[GitHub]](https://github.com/polymer/polymer/)
+			- [Deft.js](http://deftjs.org/) [[GitHub]](https://github.com/deftjs/DeftJS/)
+			- [Vue](http://vuejs.org/) [[GitHub]](https://github.com/yyx990803/vue/)
 		- UI framework
-			- [Bootstrap](http://getbootstrap.com/)
-			- [ResponsiveGS](http://responsive.gs/)
-			- [Semantic UI](http://semantic-ui.com/)
-			- [Foundation](http://foundation.zurb.com/)
-			- [Material UI](http://material-ui.com/)
-			- [jQuery UI](http://jqueryui.com/)
+			- [Bootstrap](http://getbootstrap.com/) [[GitHub]](https://github.com/twbs/bootstrap/)
+			- [Semantic UI](http://semantic-ui.com/) [[GitHub]](https://github.com/Semantic-Org/Semantic-UI/)
+			- [Foundation](http://foundation.zurb.com/) [[GitHub]](https://github.com/zurb/foundation/)
+			- [Material UI](http://material-ui.com/) [[GitHub]](https://github.com/callemall/material-ui/)
+			- [jQuery UI](http://jqueryui.com/) [[GitHub]](https://github.com/jquery/jquery-ui/)
 		- WebSocket
-			- [Socket.io](http://socket.io/)
-			- [web-socket-js](https://github.com/gimite/web-socket-js)
+			- [Socket.io](http://socket.io/) [[GitHub]](https://github.com/Automattic/socket.io/)
+			- web-socket-js [[GitHub]](https://github.com/gimite/web-socket-js/)
 		- Data Visualization
-			- [D3](http://d3js.org/)
-			- [Echarts](http://echarts.baidu.com)
-			- [HighCharts](http://www.highcharts.com/)
-			- [Vis.js](http://visjs.org/)
-			- [Flot](http://www.flotcharts.org/)
+			- [D3](http://d3js.org/) [[GitHub]](https://github.com/mbostock/d3/wiki/Gallery/)
+			- [Echarts](http://echarts.baidu.com) [[GitHub]](https://github.com/ecomfe/esl/)
+			- [HighCharts](http://www.highcharts.com/) [[GitHub]](https://github.com/highslide-software/highcharts.com/)
+			- [Vis.js](http://visjs.org/) [[GitHub]](https://github.com/almende/vis/)
+			- [Flot](http://www.flotcharts.org/) [[GitHub]](https://github.com/flot/flot/)
 		- WebGL
-			- [Three.js](http://threejs.org/)
-			- [Babylon.js](http://www.babylonjs.com/)
-			- [Pixi.js](http://www.pixijs.com/)
+			- [Three.js](http://threejs.org/) [[GitHub]](https://github.com/mrdoob/three.js/)
+			- [Babylon.js](http://www.babylonjs.com/) [[GitHub]](https://github.com/BabylonJS/Babylon.js/)
+			- [Pixi.js](http://www.pixijs.com/) [[GitHub]](https://github.com/GoodBoyDigital/pixi.js/)
 		- CSS3 Animation
-			- [Animate.css](https://daneden.github.io/animate.css/)
-			- [bounce.js](http://bouncejs.com/)
-			- [Effeckt.css](https://h5bp.github.io/Effeckt.css/)
-			- [move.js](https://visionmedia.github.io/move.js/)
+			- [Animate.css](https://daneden.github.io/animate.css/) [[GitHub]](https://github.com/daneden/animate.css/)
+			- [bounce.js](http://bouncejs.com/) [[GitHub]](https://github.com/tictail/bounce.js/)
+			- [Effeckt.css](https://h5bp.github.io/Effeckt.css/) [[GitHub]](https://github.com/h5bp/Effeckt.css/)
+			- [move.js](https://visionmedia.github.io/move.js/) [[GitHub]](https://github.com/visionmedia/move.js/)
 		- Flow Controller
 			- ES6
 				- Promise
@@ -240,39 +246,38 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- ES7
 				- yield
 				- await
-			- [async](https://github.com/caolan/async)
-			- [co](https://github.com/tj/co)
+			- async [[GitHub]](https://github.com/caolan/async/)
+			- co [[GitHub]](https://github.com/tj/co/)
 			- Promise
-				- [Bluebird](https://github.com/petkaantonov/bluebird)
-				- [q](https://github.com/kriskowal/q)
-				- [when.js](https://github.com/cujojs/when)
+				- Bluebird [[GitHub]](https://github.com/petkaantonov/bluebird/)
+				- q [[GitHub]](https://github.com/kriskowal/q/)
+				- when.js [[GitHub]](https://github.com/cujojs/when/)
 		- Functional
-			- [backon.js](https://github.com/baconjs/bacon.js/)
-			- [immutable.js](https://facebook.github.io/immutable-js/)
+			- backon.js [[GitHub]](https://github.com/baconjs/bacon.js/)
+			- [immutable.js](https://facebook.github.io/immutable-js/) [[GitHub]](https://github.com/facebook/immutable-js/)
 		- Mobile UI
-			- [jQuery Mobile](https://jquerymobile.com/)
-			- [Jo](http://joapp.com/)
-			- WinkUI
+			- [jQuery Mobile](https://jquerymobile.com/) [[GitHub]](https://github.com/jquery/jquery-mobile/)
+			- [Jo](http://joapp.com/) [[GitHub]](https://github.com/davebalmer/jo/)
 			- [Dojo Mobile](https://dojotoolkit.org/reference-guide/1.10/dojox/mobile.html)
-			- [Lungo](http://lungo.tapquo.com/)
+			- [Lungo](http://lungo.tapquo.com/) [[GitHub]](https://github.com/tapquo/Lungo.js/)
 	- CSS Pre-processors
 		- LESS
-			- [LESS](http://lesscss.org/)
-			- [Hat](http://lesshat.madebysource.com/)
+			- [LESS](http://lesscss.org/) [[GitHub]](https://github.com/less/less.js/)
+			- [Hat](http://lesshat.madebysource.com/) [[GitHub]](https://github.com/csshat/lesshat/)
 		- Sass(SCSS)
-			- [Compass](http://compass-style.org/)
-			- [Bourbon](http://bourbon.io/)
-			- [Gumby](http://www.gumbyframework.com/)
+			- [Compass](http://compass-style.org/) [[GitHub]](https://github.com/chriseppstein/compass/)
+			- [Bourbon](http://bourbon.io/) [[GitHub]](https://github.com/thoughtbot/bourbon/)
+			- [Gumby](http://www.gumbyframework.com/) [[GitHub]](https://github.com/GumbyFramework/Gumby/)
 		- Stylus
-			- [nib](https://github.com/tj/nib)
+			- nib [[GitHub]](https://github.com/tj/nib/)
 	- Template
-		- [Handlebars](http://handlebarsjs.com/)
-		- [Haml](http://haml.info/)
-		- [Slim](http://slim-lang.com/)
-		- [Jade](http://jade-lang.com/)
+		- [Handlebars](http://handlebarsjs.com/) [[GitHub]](https://github.com/wycats/handlebars.js/)
+		- [Haml](http://haml.info/) [[GitHub]](https://github.com/haml/haml/)
+		- [Slim](http://slim-lang.com/) [[GitHub]](https://github.com/slim-template/slim/)
+		- [Jade](http://jade-lang.com/) [[GitHub]](https://github.com/jadejs/jade/)
 		- [Ejs](http://www.embeddedjs.com/)
 		- [Spacebars](http://meteorcapture.com/spacebars/)
-		- [{{ mustache }}](https://github.com/janl/mustache.js/)
+		- mustache [[GitHub]](https://github.com/janl/mustache.js/)
 	- Modernisation
 		- Normalize
 		- Reset
@@ -285,15 +290,15 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 		- [XSS](https://en.wikipedia.org/wiki/Cross-site_scripting)
 		- [CORS](http://www.w3.org/TR/cors/)
 	- Intermediate Languages
-		- [CoffeeScript](http://coffeescript.org/)
-		- [TypeScript](http://www.typescriptlang.org/)
-		- [Dart](https://www.dartlang.org/)
-		- [LiveScript](http://livescript.net/)
-		- [ClojureScript](https://github.com/clojure/clojurescript/)
+		- [CoffeeScript](http://coffeescript.org/) [[GitHub]](https://github.com/jashkenas/coffeescript/)
+		- [TypeScript](http://www.typescriptlang.org/) [[GitHub]](https://github.com/Microsoft/TypeScript/)
+		- [Dart](https://www.dartlang.org/) [[GitHub]](https://github.com/dart-lang/sdk/)
+		- [LiveScript](http://livescript.net/) [[GitHub]](https://github.com/gkz/LiveScript/)
+		- ClojureScript [[GitHub]](https://github.com/clojure/clojurescript/)
 	- Mobile App Builders
-		- [PhoneGap / Cordova](https://cordova.apache.org/)
-		- [MUI](http://dev.dcloud.net.cn/mui/)
-		- [React Native](https://facebook.github.io/react-native/)
-		- [Ionic](http://ionicframework.com/)
+		- [PhoneGap / Cordova](https://cordova.apache.org/) [[GitHub]](https://github.com/apache/cordova-android/)
+		- [MUI](http://dev.dcloud.net.cn/mui/) [[GitHub]](https://github.com/dcloudio/mui/)
+		- [React Native](https://facebook.github.io/react-native/) [[GitHub]](https://github.com/facebook/react-native/)
+		- [Ionic](http://ionicframework.com/) [[GitHub]](https://github.com/driftyco/ionic/)
 
 <!--BUILD_END-->
