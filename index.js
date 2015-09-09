@@ -17,9 +17,14 @@ var pageHeight = 3800;
 
 var config = {
     port: 3000, 
-    update_existed_stargazers: false
+    update_existed_stargazers: false,
+	locale: process.env.locale || '',
+	rawLocale: process.env.locale || ''
 }
 var httpServer = "http://127.0.0.1:" + config.port + "/";
+
+if (config.locale)
+	config.locale = '.' + config.locale;
 
 String.prototype.repeat = function(count) {
     return new Array(count + 1).join(this);
@@ -81,7 +86,7 @@ var actions = {
      */
     updatestargazers: function updatestargazers() {
         return new Promise(function(resolve, reject) {
-            var originalData = JSON.parse(fs.readFileSync("./ux/WebFrontEndStack.json", "utf-8")); // Require will lock the file.
+            var originalData = JSON.parse(fs.readFileSync('./ux/WebFrontEndStack' + config.locale + '.json', "utf-8")); // Require will lock the file.
             var getGitHubApi = function(github) {
                 var githubArray = github.split("/");
                 // I want a sprintf T_T
@@ -134,7 +139,7 @@ var actions = {
             q.push({ // For some reason, the ``drain`` will not be called.
                 noRequest: true
             }, function() {
-                fs.writeFileAsync("./ux/WebFrontEndStack.json", JSON.stringify(originalData), "utf-8").then(function() {
+                fs.writeFileAsync('./ux/WebFrontEndStack' + config.locale + '.json', JSON.stringify(originalData), "utf-8").then(function() {
                     resolve();
                 });
             });
@@ -174,7 +179,7 @@ var actions = {
                 return reject(status);
             }
         }).then(function() {
-            return page.renderAsync(path.join(__dirname, 'Web Front End Stack.png'));
+            return page.renderAsync(path.join(__dirname, 'Web Front End Stack' + config.locale + '.png'));
         }).then(function() {
             console.log("The image saved successfully!");
             page.close();
@@ -187,13 +192,13 @@ var actions = {
      * @return Promise<any>
      */
     readme: function readme() {
-        var json = require('./ux/WebFrontEndStack.json');
+        var json = require('./ux/WebFrontEndStack' + config.locale + '.json');
         return Promise.resolve().then(function() {
-            return fs.readFileAsync("./README.md", "utf-8");
+            return fs.readFileAsync('./README' + config.locale + '.md', "utf-8");
         }).then(function(fileContent) {
             var ret = buildReadme(json, 0);
             fileContent = fileContent.replace(/<\!--BUILD_START-->[\d\D]+?<\!--BUILD_END-->/, "{%BuildStart%}")
-            return fs.writeFileAsync("./README.md", fileContent.replace("{%BuildStart%}", "<!--BUILD_START-->\n\n" + ret + "\n\n<!--BUILD_END-->", "utf-8"));
+            return fs.writeFileAsync('./README' + config.locale + '.md', fileContent.replace("{%BuildStart%}", "<!--BUILD_START-->\n\n" + ret + "\n\n<!--BUILD_END-->", "utf-8"));
         }).then(function() {
             console.log('Readme built successfully!');
         })
@@ -209,10 +214,10 @@ var actions = {
                 .set('view engine', 'html')
                 .use(express.static(path.join(__dirname, '/ux')))
                 .use('/', function(req, res) {
-                    res.redirect('/WebFrontEndStack.htm');
+                    res.redirect('/WebFrontEndStack.htm?locale=' + config.rawLocale);
                 })
                 .listen(config.port, function() {
-                    console.info('Express started on: http://127.0.0.1:' + config.port);
+                    console.info('Express started on: http://127.0.0.1:' + config.port + '?locale=' + config.rawLocale);
                     resolver(app);
                 });
         });
