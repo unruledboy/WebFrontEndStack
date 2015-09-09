@@ -39,14 +39,14 @@ http://www.cnblogs.com/unruledboy/p/WebFrontEndStack.html
 ## 选项
 ### 用法
 	node index task1 \[task2\] \[task3\] .. \[--option=value\] \[--option=value\] ...
-#### Tasks
+#### 任务
 ##### phantomjs
 	用于生成预览图。
 ##### readme
 	用于重新生成readme。
 ##### updatestargazers
 	用于更新Stargazers计数。
-#### Options
+#### 选项
 #### port
 	默认: 3000
 #### update_existed_stargazers
