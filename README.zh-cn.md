@@ -85,16 +85,16 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm?lo
 		- [Netscape ;-)](https://en.wikipedia.org/wiki/Netscape)
 	- 协议
 		- [HTTP/1.1](https://www.ietf.org/rfc/rfc2616.txt)
-			- URI
-			- Session
-			- Authentication
-			- Request
-			- Response
+			- 链接
+			- 会话
+			- 授权
+			- 请求
+			- 响应
 		- [HTTP/2](https://en.wikipedia.org/wiki/HTTP/2)
-			- Compression
-			- Encryption
-			- Minification
-			- Server Push
+			- 压缩
+			- 加密
+			- 缩小
+			- 服务器端推送
 		- WebSocket
 	- 三大支柱
 		- HTML (HyperText Markup Language)
@@ -159,13 +159,15 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm?lo
 		- [Light Table](http://lighttable.com/) [[GitHub]](https://github.com/LightTable/LightTable/)
 		- [Visual Studio](https://www.visualstudio.com/)
 		- [Visual Studio Code](https://code.visualstudio.com/)
+		- Dreamweaver ;-)
+		- FrontPage ;-)
 	- 编译任务
-		- Minification
-		- Compilation
-		- Concatenation
-		- Uglification
-		- Image Optimization
-		- Unit Testing
+		- 缩小
+		- 编译
+		- 拼接
+		- 混淆
+		- 图像优化
+		- 单元测试
 	- 编译工具
 		- [Grunt](http://www.gruntjs.com/) [[GitHub]](https://github.com/cowboy/jquery-tiny-pubsub/)
 		- [Gulp](http://gulpjs.com/) [[GitHub]](https://github.com/gulpjs/gulp/)
@@ -173,7 +175,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm?lo
 		- [Yeoman](http://yeoman.io/)
 		- Broccoli [[GitHub]](https://github.com/broccolijs/broccoli/)
 	- 调试
-		- [Developer Tools](https://developer.chrome.com/devtools)
+		- [开发者工具](https://developer.chrome.com/devtools)
 		- [Firebug](http://getfirebug.com/) [[GitHub]](https://github.com/firebug/firebug/)
 	- 基础工具
 		- [Node.js](https://nodejs.org/) [[GitHub]](https://github.com/joyent/node/)

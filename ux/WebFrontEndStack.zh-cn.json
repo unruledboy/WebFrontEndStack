@@ -42,19 +42,19 @@
           "url": "https://www.ietf.org/rfc/rfc2616.txt",
           "children": [
             {
-              "name": "URI"
+              "name": "链接"
             },
             {
-              "name": "Session"
+              "name": "会话"
             },
             {
-              "name": "Authentication"
+              "name": "授权"
             },
             {
-              "name": "Request"
+              "name": "请求"
             },
             {
-              "name": "Response"
+              "name": "响应"
             }
           ]
         },
@@ -63,16 +63,16 @@
           "url": "https://en.wikipedia.org/wiki/HTTP/2",
           "children": [
             {
-              "name": "Compression"
+              "name": "压缩"
             },
             {
-              "name": "Encryption"
+              "name": "加密"
             },
             {
-              "name": "Minification"
+              "name": "缩小"
             },
             {
-              "name": "Server Push"
+              "name": "服务器端推送"
             }
           ]
         },
@@ -330,6 +330,12 @@
         {
           "name": "Visual Studio Code",
           "url": "https://code.visualstudio.com/"
+        },
+        {
+          "name": "Dreamweaver ;-)"
+        },
+        {
+          "name": "FrontPage ;-)"
         }
       ]
     },
@@ -337,22 +343,22 @@
       "name": "编译任务",
       "children": [
         {
-          "name": "Minification"
+          "name": "缩小"
         },
         {
-          "name": "Compilation"
+          "name": "编译"
         },
         {
-          "name": "Concatenation"
+          "name": "拼接"
         },
         {
-          "name": "Uglification"
+          "name": "混淆"
         },
         {
-          "name": "Image Optimization"
+          "name": "图像优化"
         },
         {
-          "name": "Unit Testing"
+          "name": "单元测试"
         }
       ]
     },
@@ -392,7 +398,7 @@
       "name": "调试",
       "children": [
         {
-          "name": "Developer Tools",
+          "name": "开发者工具",
           "url": "https://developer.chrome.com/devtools"
         },
         {
