@@ -85,7 +85,6 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- Response
 		- [HTTP/2](https://en.wikipedia.org/wiki/HTTP/2)
 			- Compression
-			- Encryption
 			- Minification
 			- Server Push
 		- WebSocket
@@ -218,7 +217,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 				- [RequireJS](http://requirejs.org/) [[GitHub]](https://github.com/jrburke/requirejs/)
 			- UMD
 				- umd [[GitHub]](https://github.com/umdjs/umd/)
-		- JavaScript framework
+		- JavaScript Framework
 			- [AngularJS](https://angularjs.org/) [[GitHub]](https://github.com/angular/angular.js/)
 			- [Backbone](http://backbonejs.org/) [[GitHub]](https://github.com/jashkenas/backbone/)
 			- [Knockout](http://knockoutjs.com/) [[GitHub]](https://github.com/SteveSanderson/knockout/)

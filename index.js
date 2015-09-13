@@ -57,21 +57,25 @@ var promisify = function promisify(object) {
 /**
  * Recursion to generate readme
  * @param object object
+ * @param string language
  * @param int deep
  * @return string     
  */
-var buildReadme = function buildReadme(object, deep) {
+var buildReadme = function buildReadme(object, language, deep) {
     var deeper = deep + 1;
     var deepString = "\t".repeat(deep) + "- ";
     var ret = [];
+    var lang = typeof object.languages == "undefined" ? object.name : object.languages[language];
+    lang = lang || object.name;
+
     ret.push((function(deepString, name, url, github) {
         var haveUrl = !!url;
         var haveGitHub = !!github;
-        return deepString + (haveUrl ? "[" : "") + object.name + (haveUrl ? "](" + url + ")" : "") + (haveGitHub ? " [\[GitHub\]](" + github + ")" : "");
-    })(deepString, object.name, object.url, object.github));
+        return deepString + (haveUrl ? "[" : "") + name + (haveUrl ? "](" + url + ")" : "") + (haveGitHub ? " [\[GitHub\]](" + github + ")" : "");
+    })(deepString, lang, object.url, object.github));
     if (object.children) {
         object.children.map(function(value, index) {
-            ret.push(buildReadme(value, deeper));
+            ret.push(buildReadme(value, language, deeper));
         });
     }
     return ret.join("\n");
@@ -86,7 +90,7 @@ var actions = {
      */
     updatestargazers: function updatestargazers() {
         return new Promise(function(resolve, reject) {
-            var originalData = JSON.parse(fs.readFileSync('./ux/WebFrontEndStack' + config.locale + '.json', "utf-8")); // Require will lock the file.
+            var originalData = JSON.parse(fs.readFileSync('./ux/WebFrontEndStack.json', "utf-8")); // Require will lock the file.
             var getGitHubApi = function(github) {
                 var githubArray = github.split("/");
                 // I want a sprintf T_T
@@ -139,7 +143,7 @@ var actions = {
             q.push({ // For some reason, the ``drain`` will not be called.
                 noRequest: true
             }, function() {
-                fs.writeFileAsync('./ux/WebFrontEndStack' + config.locale + '.json', JSON.stringify(originalData), "utf-8").then(function() {
+                fs.writeFileAsync('./ux/WebFrontEndStack.json', JSON.stringify(originalData), "utf-8").then(function() {
                     resolve();
                 });
             });
@@ -151,40 +155,51 @@ var actions = {
      * @return Promise<any>
      */
     phantomjs: function phantomjs() {
+        var json = require('./ux/WebFrontEndStack.json');
         var phantom = require('phantom');
-        var ph;
-        var page;
         promisify(phantom);        
         // What the fucking API
-        return phantom.createAsync().then(function(phantom) {
-            ph = phantom;
-            promisify(ph);
-            console.log("Created Phantomjs");
-            return ph.createPageAsync();
-        }).then(function(pg) {
-            page = pg;
-            promisify(pg);
-            return page.setAsync('viewportSize', {
-                width: pageWidth,
-                height: pageHeight
+        var resolver = Promise.defer();
+        var buildByLanguage = function(language) {
+            var displayLanguage = language == "" ? "en" : language;
+            var ph;
+            var page;
+            return phantom.createAsync().then(function(phantom) {
+                ph = phantom;
+                promisify(ph);
+                console.log("Created Phantomjs for " + displayLanguage);
+                return ph.createPageAsync();
+            }).then(function(pg) {
+                page = pg;
+                promisify(pg);
+                return page.setAsync('viewportSize', {
+                    width: pageWidth,
+                    height: pageHeight
+                });
+            }).then(function() {
+                console.log("Set viewportSize");
+                console.log("Opening " + httpServer + "?locale=" + language + " for " + displayLanguage);
+                return page.openAsync(httpServer + "?locale=" + language);
+            }).then(function(status) {
+                console.log("Rendered HTML, the image will be saved after 2 seconds.");
+                if (status == "success") {
+                    return Promise.delay(2000);
+                } else {
+                    throw status;
+                }
+            }).then(function() {
+                return page.renderAsync(path.join(__dirname, 'Web Front End Stack' + (language == "" ? "" : ".") + language + '.png'));
+            }).then(function() {
+                console.log("The image(" + displayLanguage + ") saved successfully!");
+                page.close();
+                ph.exit();
             });
-        }).then(function() {
-            console.log("Set viewportSize");
-            return page.openAsync(httpServer);
-        }).then(function(status) {
-            console.log("Rendered HTML, the image will be saved after 2 seconds.");
-            if (status == "success") {
-                return Promise.delay(2000);
-            } else {
-                return reject(status);
-            }
-        }).then(function() {
-            return page.renderAsync(path.join(__dirname, 'Web Front End Stack' + config.locale + '.png'));
-        }).then(function() {
-            console.log("The image saved successfully!");
-            page.close();
-            ph.exit();
-        });
+        };
+        resolver.promise.then(buildByLanguage(""));
+        for (var item in json.languages) {
+            resolver.promise.then(buildByLanguage(item));
+        }
+        return resolver.promise;
     },
 
     /**
@@ -192,16 +207,24 @@ var actions = {
      * @return Promise<any>
      */
     readme: function readme() {
-        var json = require('./ux/WebFrontEndStack' + config.locale + '.json');
-        return Promise.resolve().then(function() {
-            return fs.readFileAsync('./README' + config.locale + '.md', "utf-8");
-        }).then(function(fileContent) {
-            var ret = buildReadme(json, 0);
-            fileContent = fileContent.replace(/<\!--BUILD_START-->[\d\D]+?<\!--BUILD_END-->/, "{%BuildStart%}")
-            return fs.writeFileAsync('./README' + config.locale + '.md', fileContent.replace("{%BuildStart%}", "<!--BUILD_START-->\n\n" + ret + "\n\n<!--BUILD_END-->", "utf-8"));
-        }).then(function() {
-            console.log('Readme built successfully!');
-        })
+        var json = require('./ux/WebFrontEndStack.json');
+        var resolver = Promise.defer();
+        var buildByLanguage = function(language) {
+            return Promise.resolve().then(function() {
+                return fs.readFileAsync('./README' + (language == "" ? "" : ".") + language + '.md', "utf-8");
+            }).then(function(fileContent) {
+                var ret = buildReadme(json, language, 0);
+                fileContent = fileContent.replace(/<\!--BUILD_START-->[\d\D]+?<\!--BUILD_END-->/, "{%BuildStart%}")
+                return fs.writeFileAsync('./README' + (language == "" ? "" : ".") + language + '.md', fileContent.replace("{%BuildStart%}", "<!--BUILD_START-->\n\n" + ret + "\n\n<!--BUILD_END-->", "utf-8"));
+            }).then(function() {
+                console.log('Readme' + (language == "" ? "" : ":") + language + ' built successfully!');
+            })
+        };
+        resolver.promise.then(buildByLanguage(""));
+        for (var item in json.languages) {
+            resolver.promise.then(buildByLanguage(item));
+        }
+        return resolver.promise;
     },
     /**
      * To start an express server
@@ -214,10 +237,10 @@ var actions = {
                 .set('view engine', 'html')
                 .use(express.static(path.join(__dirname, '/ux')))
                 .use('/', function(req, res) {
-                    res.redirect('/WebFrontEndStack.htm?locale=' + config.rawLocale);
+                    res.redirect('/WebFrontEndStack.htm?locale=' + req.query.locale);
                 })
                 .listen(config.port, function() {
-                    console.info('Express started on: http://127.0.0.1:' + config.port + '?locale=' + config.rawLocale);
+                    console.info('Express started on: http://127.0.0.1:' + config.port);
                     resolver(app);
                 });
         });
@@ -239,6 +262,7 @@ process.argv.forEach(function(val) {
 
 var promise = Promise.all(queue);
 if (queue.length > 1) { // for somebody who only want to start the server.
+    console.log("You can press Ctrl+C to exit if tasks finished.")
     promise.then(function() {
         console.log("OK!");
         process.exit(0);

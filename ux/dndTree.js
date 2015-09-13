@@ -1,36 +1,15 @@
-﻿var QueryString = function () {
-  // This function is anonymous, is executed immediately and 
-  // the return value is assigned to QueryString!
-  var query_string = {};
-  var query = window.location.search.substring(1);
-  var vars = query.split("&");
-  for (var i=0;i<vars.length;i++) {
-    var pair = vars[i].split("=");
-        // If first entry with this name
-    if (typeof query_string[pair[0]] === "undefined") {
-      query_string[pair[0]] = decodeURIComponent(pair[1]);
-        // If second entry with this name
-    } else if (typeof query_string[pair[0]] === "string") {
-      var arr = [ query_string[pair[0]],decodeURIComponent(pair[1]) ];
-      query_string[pair[0]] = arr;
-        // If third or later entry with this name
-    } else {
-      query_string[pair[0]].push(decodeURIComponent(pair[1]));
-    }
-  } 
-    return query_string;
-}();
-
+﻿
 (function() {
     var isPhantom = /PhantomJS/ig.test(navigator.userAgent);
-	var locale = QueryString.locale;
-	if (locale)
-		locale = '.' + locale;
-	else
-		locale = '';	
+	var locale = location.search.split("locale=").pop().split("&").shift();
+
+    var parseName = function(object) {
+        if (!object.languages) return object.name;
+        return object.languages[locale] || object.name;
+    }
 
     // Get JSON data
-    var treeJSON = d3.json('WebFrontEndStack' + locale + '.json', function(error, treeData) {
+    var treeJSON = d3.json('WebFrontEndStack.json', function(error, treeData) {
 
         // Calculate total nodes, max label length
         var totalNodes = 0;
@@ -81,7 +60,7 @@
             totalNodes++;
             if (maxLabelLength[depth] == undefined)
                 maxLabelLength[depth] = 0;
-            maxLabelLength[depth] = Math.max(d.name.length, maxLabelLength[depth]);
+            maxLabelLength[depth] = Math.max(parseName(d).length, maxLabelLength[depth]);
         }, function(d) {
             return d.children && d.children.length > 0 ? d.children : null;
         }, 0);
@@ -91,7 +70,7 @@
 
         function sortTree() {
             tree.sort(function(a, b) {
-                return b.name.toLowerCase() < a.name.toLowerCase() ? 1 : -1;
+                return parseName(b).toLowerCase() < parseName(a).toLowerCase() ? 1 : -1;
             });
         }
         // Sort the tree initially incase the JSON isn't in a sorted order.
@@ -456,7 +435,7 @@
                     return d.children || d._children ? "end" : "start";
                 })
                 .text(function(d) {
-                    return d.name;
+                    return parseName(d);
                 })
                 .style("fill-opacity", 0);
 
@@ -483,7 +462,7 @@
                     return d.children || d._children ? "end" : "start";
                 })
                 .text(function(d) {
-                    return d.name;
+                    return parseName(d);
                 });
 
             // Change the circle fill depending on whether it has children and is collapsed
