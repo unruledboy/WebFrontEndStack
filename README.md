@@ -264,7 +264,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 				- q [[GitHub]](https://github.com/kriskowal/q/)
 				- when.js [[GitHub]](https://github.com/cujojs/when/)
 		- Functional
-			- backon.js [[GitHub]](https://github.com/baconjs/bacon.js/)
+			- [bacon.js](http://baconjs.github.io/) [[GitHub]](https://github.com/baconjs/bacon.js/)
 			- [immutable.js](https://facebook.github.io/immutable-js/) [[GitHub]](https://github.com/facebook/immutable-js/)
 		- Mobile UI
 			- [jQuery Mobile](https://jquerymobile.com/) [[GitHub]](https://github.com/jquery/jquery-mobile/)

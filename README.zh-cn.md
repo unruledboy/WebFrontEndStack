@@ -271,7 +271,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm?lo
 				- q [[GitHub]](https://github.com/kriskowal/q/)
 				- when.js [[GitHub]](https://github.com/cujojs/when/)
 		- 函数式编程
-			- backon.js [[GitHub]](https://github.com/baconjs/bacon.js/)
+			- [bacon.js](http://baconjs.github.io/) [[GitHub]](https://github.com/baconjs/bacon.js/)
 			- [immutable.js](https://facebook.github.io/immutable-js/) [[GitHub]](https://github.com/facebook/immutable-js/)
 		- 手机 UI 框架
 			- [jQuery Mobile](https://jquerymobile.com/) [[GitHub]](https://github.com/jquery/jquery-mobile/)

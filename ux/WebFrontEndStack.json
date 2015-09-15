@@ -795,7 +795,8 @@
         "zh-cn": "函数式编程"
       },
       "children": [{
-        "name": "backon.js",
+        "name": "bacon.js",
+		"url": "http://baconjs.github.io/",
         "github": "https://github.com/baconjs/bacon.js/",
         "stargazers": 4498
       }, {
