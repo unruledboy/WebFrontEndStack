@@ -192,6 +192,8 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- [Sinon.JS](http://sinonjs.org/) [[GitHub]](https://github.com/cjohansen/Sinon.JS/)
 			- [Karma](http://karma-runner.github.io/) [[GitHub]](https://github.com/karma-runner/karma/)
 			- nodeunit [[GitHub]](https://github.com/caolan/nodeunit/)
+			- tape [[GitHub]](http://github.com/substack/tape)
+			- [speckjs](http://speckjs.github.io/) [[GitHub]](http://github.com/speckjs/speckjs/)
 		- Composite
 			- [Sauce Labs](https://saucelabs.com/)
 			- [Browser Stack](https://www.browserstack.com/)
@@ -207,7 +209,6 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- [Prototype](http://prototypejs.org/) [[GitHub]](https://github.com/sstephenson/prototype/)
 			- [Zepto](http://zeptojs.com/) [[GitHub]](https://github.com/madrobby/zepto/)
 			- [MooTool](http://mootools.net/) [[GitHub]](https://github.com/mootools/mootools-core/)
-			- [Underscore](http://underscorejs.org/) [[GitHub]](https://github.com/jashkenas/underscore/)
 		- Modular
 			- ES6 Module
 			- CommonJS
@@ -266,6 +267,9 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 		- Functional
 			- [bacon.js](http://baconjs.github.io/) [[GitHub]](https://github.com/baconjs/bacon.js/)
 			- [immutable.js](https://facebook.github.io/immutable-js/) [[GitHub]](https://github.com/facebook/immutable-js/)
+			- [ramda](http://ramdajs.com/) [[GitHub]](http://github.com/ramda/ramda)
+			- [underscore.js](http://underscorejs.org/) [[GitHub]](https://github.com/jashkenas/underscore)
+			- [lodash](https://lodash.com/) [[GitHub]](https://github.com/lodash/lodash)
 		- Mobile UI
 			- [jQuery Mobile](https://jquerymobile.com/) [[GitHub]](https://github.com/jquery/jquery-mobile/)
 			- [Jo](http://joapp.com/) [[GitHub]](https://github.com/davebalmer/jo/)
@@ -288,9 +292,9 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 		- [Jade](http://jade-lang.com/) [[GitHub]](https://github.com/jadejs/jade/)
 		- [Ejs](http://www.embeddedjs.com/)
 		- [Spacebars](http://meteorcapture.com/spacebars/)
-		- mustache [[GitHub]](https://github.com/janl/mustache.js/)
+		- [mustache](http://mustache.github.io/) [[GitHub]](https://github.com/janl/mustache.js/)
 	- Modernisation
-		- Normalize
+		- [Normalize](http://necolas.github.io/normalize.css/) [[GitHub]](https://github.com/necolas/normalize.css/)
 		- Reset
 	- Best Practices
 		- [SEO](https://en.wikipedia.org/wiki/Search_engine_optimization)

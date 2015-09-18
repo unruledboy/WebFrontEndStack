@@ -199,6 +199,8 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm?lo
 			- [Sinon.JS](http://sinonjs.org/) [[GitHub]](https://github.com/cjohansen/Sinon.JS/)
 			- [Karma](http://karma-runner.github.io/) [[GitHub]](https://github.com/karma-runner/karma/)
 			- nodeunit [[GitHub]](https://github.com/caolan/nodeunit/)
+			- tape [[GitHub]](http://github.com/substack/tape)
+			- [speckjs](http://speckjs.github.io/) [[GitHub]](http://github.com/speckjs/speckjs/)
 		- 在线工具
 			- [Sauce Labs](https://saucelabs.com/)
 			- [Browser Stack](https://www.browserstack.com/)
@@ -214,7 +216,6 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm?lo
 			- [Prototype](http://prototypejs.org/) [[GitHub]](https://github.com/sstephenson/prototype/)
 			- [Zepto](http://zeptojs.com/) [[GitHub]](https://github.com/madrobby/zepto/)
 			- [MooTool](http://mootools.net/) [[GitHub]](https://github.com/mootools/mootools-core/)
-			- [Underscore](http://underscorejs.org/) [[GitHub]](https://github.com/jashkenas/underscore/)
 		- 模块化
 			- ES6 Module
 			- CommonJS
@@ -273,6 +274,9 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm?lo
 		- 函数式编程
 			- [bacon.js](http://baconjs.github.io/) [[GitHub]](https://github.com/baconjs/bacon.js/)
 			- [immutable.js](https://facebook.github.io/immutable-js/) [[GitHub]](https://github.com/facebook/immutable-js/)
+			- [ramda](http://ramdajs.com/) [[GitHub]](http://github.com/ramda/ramda)
+			- [underscore.js](http://underscorejs.org/) [[GitHub]](https://github.com/jashkenas/underscore)
+			- [lodash](https://lodash.com/) [[GitHub]](https://github.com/lodash/lodash)
 		- 手机 UI 框架
 			- [jQuery Mobile](https://jquerymobile.com/) [[GitHub]](https://github.com/jquery/jquery-mobile/)
 			- [Jo](http://joapp.com/) [[GitHub]](https://github.com/davebalmer/jo/)
@@ -295,9 +299,9 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm?lo
 		- [Jade](http://jade-lang.com/) [[GitHub]](https://github.com/jadejs/jade/)
 		- [Ejs](http://www.embeddedjs.com/)
 		- [Spacebars](http://meteorcapture.com/spacebars/)
-		- mustache [[GitHub]](https://github.com/janl/mustache.js/)
+		- [mustache](http://mustache.github.io/) [[GitHub]](https://github.com/janl/mustache.js/)
 	- 统一化
-		- Normalize
+		- [Normalize](http://necolas.github.io/normalize.css/) [[GitHub]](https://github.com/necolas/normalize.css/)
 		- Reset
 	- 最佳实践
 		- [SEO](https://en.wikipedia.org/wiki/Search_engine_optimization)

@@ -31,5 +31,9 @@
     "express": "^4.13.3",
     "phantom": "^0.7.2",
     "request": "^2.61.0"
+  },
+  "devDependencies": {
+    "phantomjs": "^1.9.18",
+    "weak": "^1.0.0"
   }
 }

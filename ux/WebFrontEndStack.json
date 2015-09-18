@@ -478,6 +478,15 @@
         "name": "nodeunit",
         "github": "https://github.com/caolan/nodeunit/",
         "stargazers": 1608
+      }, {
+        "name": "tape",
+        "github": "http://github.com/substack/tape",
+        "stargazers": 1264
+      }, {
+        "name": "speckjs",
+        "url": "http://speckjs.github.io/",
+        "github": "http://github.com/speckjs/speckjs/",
+        "stargazers": 305
       }]
     }, {
       "name": "Composite",
@@ -540,11 +549,6 @@
         "url": "http://mootools.net/",
         "github": "https://github.com/mootools/mootools-core/",
         "stargazers": 2168
-      }, {
-        "name": "Underscore",
-        "url": "http://underscorejs.org/",
-        "github": "https://github.com/jashkenas/underscore/",
-        "stargazers": 15538
       }]
     }, {
       "name": "Modular",
@@ -804,6 +808,21 @@
         "url": "https://facebook.github.io/immutable-js/",
         "github": "https://github.com/facebook/immutable-js/",
         "stargazers": 7999
+      }, {
+        "name": "ramda",
+        "url": "http://ramdajs.com/",
+        "github": "http://github.com/ramda/ramda",
+        "stargazers": 2792
+      }, {
+        "name": "underscore.js",
+        "url": "http://underscorejs.org/",
+        "github": "https://github.com/jashkenas/underscore",
+        "stargazers": 15823
+      }, {
+        "name": "lodash",
+        "url": "https://lodash.com/",
+        "github": "https://github.com/lodash/lodash",
+        "stargazers": 11071
       }]
     }, {
       "name": "Mobile UI",
@@ -907,6 +926,7 @@
       "url": "http://meteorcapture.com/spacebars/"
     }, {
       "name": "mustache",
+      "url": "http://mustache.github.io/",
       "github": "https://github.com/janl/mustache.js/",
       "stargazers": 8139
     }]
@@ -916,7 +936,9 @@
       "zh-cn": "统一化"
     },
     "children": [{
-      "name": "Normalize"
+      "name": "Normalize",
+      "url": "http://necolas.github.io/normalize.css/",
+      "github": "https://github.com/necolas/normalize.css/"
     }, {
       "name": "Reset"
     }]
