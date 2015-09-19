@@ -1,12 +1,14 @@
 {
   "name": "Web Front End",
   "languages": {
-    "zh-cn": "Web前端开发技术栈"
+    "zh-cn": "Web前端开发技术栈",
+    "es-es": "Web Front End"
   },
   "children": [{
     "name": "Browser",
     "languages": {
-      "zh-cn": "浏览器"
+      "zh-cn": "浏览器",
+      "es-es": "Navegadores"
     },
     "children": [{
       "name": "Internet Explorer",
@@ -33,7 +35,8 @@
   }, {
     "name": "Protocol",
     "languages": {
-      "zh-cn": "协议"
+      "zh-cn": "协议",
+      "es-es": "Protocolos"
     },
     "children": [{
       "name": "HTTP/1.1",
@@ -46,22 +49,26 @@
       }, {
         "name": "Session",
         "languages": {
-          "zh-cn": "会话"
+          "zh-cn": "会话",
+          "es-es": "Sesión"
         }
       }, {
         "name": "Authentication",
         "languages": {
-          "zh-cn": "授权"
+          "zh-cn": "授权",
+          "es-es": "Autenticación"
         }
       }, {
         "name": "Request",
         "languages": {
-          "zh-cn": "请求"
+          "zh-cn": "请求",
+          "es-es": "Petición"
         }
       }, {
         "name": "Response",
         "languages": {
-          "zh-cn": "响应"
+          "zh-cn": "响应",
+          "es-es": "Respuesta"
         }
       }]
     }, {
@@ -70,12 +77,14 @@
       "children": [{
         "name": "Compression",
         "languages": {
-          "zh-cn": "压缩"
+          "zh-cn": "压缩",
+          "es-es": "Compresión"
         }
       }, {
         "name": "Minification",
         "languages": {
-          "zh-cn": "打包"
+          "zh-cn": "打包",
+          "es-es": "Minificación"
         }
       }, {
         "name": "Server Push",
@@ -101,7 +110,8 @@
   }, {
     "name": "Standards",
     "languages": {
-      "zh-cn": "标准"
+      "zh-cn": "标准",
+      "es-es": "Estándares"
     },
     "children": [{
       "name": "W3C",
@@ -118,7 +128,8 @@
   }, {
     "name": "Core Concepts",
     "languages": {
-      "zh-cn": "核心概念"
+      "zh-cn": "核心概念",
+      "es-es": "Conceptons principales"
     },
     "children": [{
       "name": "HTML",
@@ -164,7 +175,8 @@
   }, {
     "name": "Rendering Engine",
     "languages": {
-      "zh-cn": "渲染引擎"
+      "zh-cn": "渲染引擎",
+      "es-es": "Motores de renderizado"
     },
     "children": [{
       "name": "Trident (IE)",
@@ -190,7 +202,8 @@
   }, {
     "name": "JavaScript Engine",
     "languages": {
-      "zh-cn": "脚本引擎"
+      "zh-cn": "脚本引擎",
+      "es-es": "Motores JavaScript"
     },
     "children": [{
       "name": "JScript (IE8- / ASP)",
@@ -213,7 +226,8 @@
   }, {
     "name": "Runtime",
     "languages": {
-      "zh-cn": "运行时"
+      "zh-cn": "运行时",
+      "es-es": "Tiempo de ejecución"
     },
     "children": [{
       "name": "Cookie"
@@ -225,8 +239,14 @@
       "name": "Local Storage"
     }, {
       "name": "Components",
+      "languages": {
+        "es-es": "Componentes"
+      },
       "children": [{
-        "name": "Extensions"
+        "name": "Extensions",
+        "languages": {
+          "es-es": "Extensiones"
+        }
       }, {
         "name": "Plugins"
       }]
@@ -247,7 +267,8 @@
   }, {
     "name": "Editors",
     "languages": {
-      "zh-cn": "编辑器"
+      "zh-cn": "编辑器",
+      "es-es": "Editores de texto"
     },
     "children": [{
       "name": "Sublime Text",
@@ -295,17 +316,20 @@
     "children": [{
       "name": "Minification",
       "languages": {
-        "zh-cn": "精简"
+        "zh-cn": "精简",
+        "es-es": "Minificación"
       }
     }, {
       "name": "Compilation",
       "languages": {
-        "zh-cn": "编译"
+        "zh-cn": "编译",
+        "es-es": "Compilación"
       }
     }, {
       "name": "Concatenation",
       "languages": {
-        "zh-cn": "合并"
+        "zh-cn": "合并",
+        "es-es": "Concatenación"
       }
     }, {
       "name": "Uglification",
@@ -315,18 +339,21 @@
     }, {
       "name": "Image Optimization",
       "languages": {
-        "zh-cn": "图像优化"
+        "zh-cn": "图像优化",
+        "es-es": "Optimización de imágenes"
       }
     }, {
       "name": "Unit Testing",
       "languages": {
-        "zh-cn": "单元测试"
+        "zh-cn": "单元测试",
+        "es-es": "Tests unitarios"
       }
     }]
   }, {
     "name": "Build Tools",
     "languages": {
-      "zh-cn": "编译工具"
+      "zh-cn": "编译工具",
+      "es-es": "Herramientas de tareas"
     },
     "children": [{
       "name": "Grunt",
@@ -354,7 +381,8 @@
   }, {
     "name": "Debug",
     "languages": {
-      "zh-cn": "调试"
+      "zh-cn": "调试",
+      "es-es": "Depuración"
     },
     "children": [{
       "name": "Developer Tools",
@@ -368,7 +396,8 @@
   }, {
     "name": "Base Tools",
     "languages": {
-      "zh-cn": "基础工具"
+      "zh-cn": "基础工具",
+      "es-es": "Herramientas base"
     },
     "children": [{
       "name": "Node.js",
@@ -384,7 +413,8 @@
   }, {
     "name": "Quality",
     "languages": {
-      "zh-cn": "质量控制"
+      "zh-cn": "质量控制",
+      "es-es": "Calidad"
     },
     "children": [{
       "name": "JSLint",
@@ -408,7 +438,8 @@
   }, {
     "name": "Package",
     "languages": {
-      "zh-cn": "包管理"
+      "zh-cn": "包管理",
+      "es-es": "Gestores de paquetes"
     },
     "children": [{
       "name": "npm",
@@ -429,7 +460,8 @@
     "children": [{
       "name": "Tools",
       "languages": {
-        "zh-cn": "工具"
+        "zh-cn": "工具",
+        "es-es": "Herramientas"
       },
       "children": [{
         "name": "QUnit",
@@ -522,7 +554,8 @@
   }, {
     "name": "Frameworks / Libraries",
     "languages": {
-      "zh-cn": "库 / 框架"
+      "zh-cn": "库 / 框架",
+      "es-es": "Librerías y frameworks"
     },
     "children": [{
       "name": "JavaScript base library",
@@ -553,7 +586,8 @@
     }, {
       "name": "Modular",
       "languages": {
-        "zh-cn": "模块化"
+        "zh-cn": "模块化",
+        "es-es": "Módulos"
       },
       "children": [{
         "name": "ES6 Module"
@@ -678,7 +712,8 @@
     }, {
       "name": "Data Visualization",
       "languages": {
-        "zh-cn": "数据可视化"
+        "zh-cn": "数据可视化",
+        "es-es": "Visualización de datos"
       },
       "children": [{
         "name": "D3",
@@ -753,7 +788,8 @@
     }, {
       "name": "Flow Controller",
       "languages": {
-        "zh-cn": "流程控制"
+        "zh-cn": "流程控制",
+        "es-es": "Control de flujo"
       },
       "children": [{
         "name": "ES6",
@@ -796,7 +832,8 @@
     }, {
       "name": "Functional",
       "languages": {
-        "zh-cn": "函数式编程"
+        "zh-cn": "函数式编程",
+        "es-es": "Funcional"
       },
       "children": [{
         "name": "bacon.js",
@@ -852,7 +889,8 @@
   }, {
     "name": "CSS Pre-processors",
     "languages": {
-      "zh-cn": "CSS 预处理器"
+      "zh-cn": "CSS 预处理器",
+      "es-es": "Pre-procesadores CSS"
     },
     "children": [{
       "name": "LESS",
@@ -896,7 +934,8 @@
   }, {
     "name": "Template",
     "languages": {
-      "zh-cn": "模板引擎"
+      "zh-cn": "模板引擎",
+      "es-es": "Plantillas"
     },
     "children": [{
       "name": "Handlebars",
@@ -945,7 +984,8 @@
   }, {
     "name": "Best Practices",
     "languages": {
-      "zh-cn": "最佳实践"
+      "zh-cn": "最佳实践",
+      "es-es": "Buenas prácticas"
     },
     "children": [{
       "name": "SEO",
@@ -959,7 +999,8 @@
   }, {
     "name": "Security",
     "languages": {
-      "zh-cn": "安全"
+      "zh-cn": "安全",
+      "es-es": "Seguridad"
     },
     "children": [{
       "name": "Sandbox"
@@ -973,7 +1014,8 @@
   }, {
     "name": "Intermediate Languages",
     "languages": {
-      "zh-cn": "中间语言"
+      "zh-cn": "中间语言",
+      "es-es": "Lenguajes intermedios"
     },
     "children": [{
       "name": "CoffeeScript",
@@ -1003,7 +1045,8 @@
   }, {
     "name": "Mobile App Builders",
     "languages": {
-      "zh-cn": "移动应用开发"
+      "zh-cn": "移动应用开发",
+      "es-es": "Empaquetadores de Apps para móvil"
     },
     "children": [{
       "name": "PhoneGap / Cordova",

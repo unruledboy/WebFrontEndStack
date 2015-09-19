@@ -6,6 +6,9 @@ http://overflowstack.github.io
 中文: 
 https://github.com/unruledboy/WebFrontEndStack/blob/master/README.zh-cn.md
 
+Español: 
+https://github.com/unruledboy/WebFrontEndStack/blob/master/README.es-es.md
+
 
 # WebFrontEndStack
 Web front-end stack: browsers, platforms, libraries, frameworks, tools etc.
@@ -57,7 +60,7 @@ Have you ever wondered:
 
 I could not find a really comprehensive diagram that shows the web front end technology stack, so I come up with my own version.
 
-There might be issues here and there, like the category, the individual ones, but the beautity is you can modify it as you want.
+There might be issues here and there, like the category, the individual ones, but the beauty is you can modify it as you want.
 
 You can have a graphical preview here (use mouse to move / zoom): 
 
