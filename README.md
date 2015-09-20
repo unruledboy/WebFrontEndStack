@@ -175,6 +175,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 	- Base Tools
 		- [Node.js](https://nodejs.org/) [[GitHub]](https://github.com/joyent/node/)
 		- [Phantom.js](http://phantomjs.org/) [[GitHub]](https://github.com/ariya/phantomjs/)
+		- [fibjs](http://fibjs.org/en/) [[GitHub]](https://github.com/xicilion/fibjs)
 	- Quality
 		- [JSLint](http://www.jslint.com/) [[GitHub]](https://github.com/douglascrockford/JSLint/)
 		- [JSHint](http://jshint.com/) [[GitHub]](https://github.com/jshint/jshint/)

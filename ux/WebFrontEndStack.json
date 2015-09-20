@@ -409,6 +409,10 @@
       "url": "http://phantomjs.org/",
       "github": "https://github.com/ariya/phantomjs/",
       "stargazers": 14950
+    }, {
+      "name": "fibjs",
+      "url": "http://fibjs.org/en/",
+      "github": "https://github.com/xicilion/fibjs"
     }]
   }, {
     "name": "Quality",
