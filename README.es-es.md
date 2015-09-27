@@ -181,7 +181,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 	- Herramientas base
 		- [Node.js](https://nodejs.org/) [[GitHub]](https://github.com/joyent/node/)
 		- [Phantom.js](http://phantomjs.org/) [[GitHub]](https://github.com/ariya/phantomjs/)
-		- [fibjs](http://fibjs.org/en/) [[GitHub]](https://github.com/xicilion/fibjs)
+		- [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey)
 	- Calidad
 		- [JSLint](http://www.jslint.com/) [[GitHub]](https://github.com/douglascrockford/JSLint/)
 		- [JSHint](http://jshint.com/) [[GitHub]](https://github.com/jshint/jshint/)
@@ -239,10 +239,12 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- [Vue](http://vuejs.org/) [[GitHub]](https://github.com/yyx990803/vue/)
 		- UI framework
 			- [Bootstrap](http://getbootstrap.com/) [[GitHub]](https://github.com/twbs/bootstrap/)
-			- [Semantic UI ](http://semantic-ui.com/) [[GitHub]](https://github.com/Semantic-Org/Semantic-UI/)
+			- [Semantic UI](http://semantic-ui.com/) [[GitHub]](https://github.com/Semantic-Org/Semantic-UI/)
 			- [Foundation](http://foundation.zurb.com/) [[GitHub]](https://github.com/zurb/foundation/)
 			- [Material UI](http://material-ui.com/) [[GitHub]](https://github.com/callemall/material-ui/)
-			- [jQuery UI](http://jqueryui.com/) [[GitHub]](https://github.com/jquery/jquery-ui/)
+			- [WinJS](https://dev.windows.com/en-us/develop/winjs) [[GitHub]](https://github.com/winjs/winjs)
+			- [Pure](http://purecss.io/) [[GitHub]](https://github.com/yahoo/pure/)
+			- [Amaze UI](http://amazeui.org/) [[GitHub]](https://github.com/allmobilize/amazeui)
 		- WebSocket
 			- [Socket.io](http://socket.io/) [[GitHub]](https://github.com/Automattic/socket.io/)
 			- web-socket-js [[GitHub]](https://github.com/gimite/web-socket-js/)
@@ -295,6 +297,8 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- [Gumby](http://www.gumbyframework.com/) [[GitHub]](https://github.com/GumbyFramework/Gumby/)
 		- Stylus
 			- nib [[GitHub]](https://github.com/tj/nib/)
+	- Future Standards
+		- [babel](https://babeljs.io/) [[GitHub]](https://github.com/babel/babel)
 	- Plantillas
 		- [Handlebars](http://handlebarsjs.com/) [[GitHub]](https://github.com/wycats/handlebars.js/)
 		- [Haml](http://haml.info/) [[GitHub]](https://github.com/haml/haml/)
@@ -317,13 +321,15 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 	- Lenguajes intermedios
 		- [CoffeeScript](http://coffeescript.org/) [[GitHub]](https://github.com/jashkenas/coffeescript/)
 		- [TypeScript](http://www.typescriptlang.org/) [[GitHub]](https://github.com/Microsoft/TypeScript/)
-		- [Dart](https://www.dartlang.org/) [[GitHub]](https://github.com/dart-lang/sdk/)
-		- [LiveScript](http://livescript.net/) [[GitHub]](https://github.com/gkz/LiveScript/)
 		- ClojureScript [[GitHub]](https://github.com/clojure/clojurescript/)
+		- [JSX (Facebook)](http://facebook.github.io/react/docs/jsx-in-depth.html)
 	- Empaquetadores de Apps para móvil
 		- [PhoneGap / Cordova](https://cordova.apache.org/) [[GitHub]](https://github.com/apache/cordova-android/)
 		- [MUI](http://dev.dcloud.net.cn/mui/) [[GitHub]](https://github.com/dcloudio/mui/)
 		- [React Native](https://facebook.github.io/react-native/) [[GitHub]](https://github.com/facebook/react-native/)
 		- [Ionic](http://ionicframework.com/) [[GitHub]](https://github.com/driftyco/ionic/)
+	- Desktop Application Development
+		- [Electron](http://electron.atom.io/) [[GitHub]](https://github.com/atom/electron)
+		- [NW.js](http://nwjs.io/) [[GitHub]](https://github.com/nwjs/nw.js)
 
 <!--BUILD_END-->

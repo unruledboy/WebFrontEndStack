@@ -306,7 +306,7 @@
 		}, {
 			"name": "Dreamweaver ;-)"
 		}, {
-			"name": "FrontPage ;-)"
+			"name": "FrontPage / SharePoint Designer ;-)"
 		}]
 	}, {
 		"name": "Build Tasks",
@@ -410,10 +410,8 @@
 			"github": "https://github.com/ariya/phantomjs/",
 			"stargazers": 14950
 		}, {
-			"name": "fibjs",
-			"url": "http://fibjs.org/en/",
-			"github": "https://github.com/xicilion/fibjs",
-			"stargazers": 1422
+			"name": "SpiderMonkey",
+			"url": "https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey"
 		}]
 	}, {
 		"name": "Quality",
@@ -682,7 +680,7 @@
 				"github": "https://github.com/twbs/bootstrap/",
 				"stargazers": 84763
 			}, {
-				"name": "Semantic UI ",
+				"name": "Semantic UI",
 				"url": "http://semantic-ui.com/",
 				"github": "https://github.com/Semantic-Org/Semantic-UI/",
 				"stargazers": 19552
@@ -697,10 +695,20 @@
 				"github": "https://github.com/callemall/material-ui/",
 				"stargazers": 10048
 			}, {
-				"name": "jQuery UI",
-				"url": "http://jqueryui.com/",
-				"github": "https://github.com/jquery/jquery-ui/",
-				"stargazers": 9034
+				"name": "WinJS",
+				"url": "https://dev.windows.com/en-us/develop/winjs",
+				"github": "https://github.com/winjs/winjs",
+				"stargazers": 3621
+			}, {
+				"name": "Pure",
+				"url": "http://purecss.io/",
+				"github": "https://github.com/yahoo/pure/",
+				"stargazers": 12367
+			}, {
+				"name": "Amaze UI",
+				"url": "http://amazeui.org/",
+				"github": "https://github.com/allmobilize/amazeui",
+				"stargazers": 5965
 			}]
 		}, {
 			"name": "WebSocket",
@@ -937,6 +945,17 @@
 			}]
 		}]
 	}, {
+		"name": "Future Standards",
+		"languages": {
+			"zh-cn": "未来标准"
+		},
+		"children": [{
+			"name": "babel",
+			"github": "https://github.com/babel/babel",
+			"url": "https://babeljs.io/",
+			"stargazers": 9712
+		}]
+	}, {
 		"name": "Template",
 		"languages": {
 			"zh-cn": "模板引擎",
@@ -1034,22 +1053,15 @@
 			"github": "https://github.com/Microsoft/TypeScript/",
 			"stargazers": 6379
 		}, {
-			"name": "Dart",
-			"url": "https://www.dartlang.org/",
-			"github": "https://github.com/dart-lang/sdk/",
-			"stargazers": 322
-		}, {
-			"name": "LiveScript",
-			"url": "http://livescript.net/",
-			"github": "https://github.com/gkz/LiveScript/",
-			"stargazers": 1514
-		}, {
 			"name": "ClojureScript",
 			"github": "https://github.com/clojure/clojurescript/",
 			"stargazers": 4876
+		}, {
+			"name": "JSX (Facebook)",
+			"url": "http://facebook.github.io/react/docs/jsx-in-depth.html"
 		}]
 	}, {
-		"name": "Mobile App Builders",
+		"name": "Mobile Application Development",
 		"languages": {
 			"zh-cn": "移动应用开发",
 			"es-es": "Empaquetadores de Apps para móvil"
@@ -1074,6 +1086,22 @@
 			"url": "http://ionicframework.com/",
 			"github": "https://github.com/driftyco/ionic/",
 			"stargazers": 19472
+		}]
+	}, {
+		"name": "Desktop Application Development",
+		"languages": {
+			"zh-cn": "桌面应用开发"
+		},
+		"children": [{
+			"name": "Electron",
+			"url": "http://electron.atom.io/",
+			"github": "https://github.com/atom/electron",
+			"stargazers": 16896
+		}, {
+			"name": "NW.js",
+			"url": "http://nwjs.io/",
+			"github": "https://github.com/nwjs/nw.js",
+			"stargazers": 24680
 		}]
 	}]
 }
