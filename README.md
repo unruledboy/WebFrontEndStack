@@ -20,7 +20,7 @@ Web front-end stack: browsers, platforms, libraries, frameworks, tools etc.
 ## Prepare for environment
 You should have Visual Studio 2010+ installed in Windows. 
 
-1. Install [nodejs](https://nodejs.org).
+1. Install [nodejs](https://nodejs.org). (Shoule be >= iojs 1.8.0)
 
 2. Install [Phantomjs](http://phantomjs.org).
 
@@ -37,20 +37,17 @@ If the error occurs, you can check the dependence of [phantomjs-node](https://gi
 
 
 ## Options
-### Usage
-	node index task1 \[task2\] \[task3\] .. \[--option=value\] \[--option=value\] ...
-#### Tasks
-##### phantomjs
-	For generate the image.
-##### readme
-	For rebuild the readme.
-##### updatestargazers
-	For Update the count of the Stargazers.
-#### Options
-#### port
-	Default: 3000
-#### update_existed_stargazers
-	Default: false
+```bash
+
+  -h, --help                           Display help message.
+  -p, --port number                    (Default: 3000) Set the port what express listening.
+  -ues, --update_existed_stargazers    (Default: false) Update project's stargazers including existed.
+  --phantomjs                          The task to generate the image.
+  --readme                             The task to update readme.
+  --updatestargazers                   The task to update the count of the stargazers.
+
+```
+
 
 # What and why?
 Have you ever wondered:

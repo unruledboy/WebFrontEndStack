@@ -40,20 +40,16 @@ https://github.com/unruledboy/WebFrontEndStack/blob/master/README.es-es.md
 
 
 ## 选项
-### 用法
-	node index task1 \[task2\] \[task3\] .. \[--option=value\] \[--option=value\] ...
-#### 任务
-##### phantomjs
-	用于生成预览图。
-##### readme
-	用于重新生成readme。
-##### updatestargazers
-	用于更新Stargazers计数。
-#### 选项
-#### port
-	默认: 3000
-#### update_existed_stargazers
-	默认: false
+```
+
+  -h, --help                           Display this message.
+  -p, --port number                    (Default: 3000) Set the port what express listening.
+  -ues, --update_existed_stargazers    (Default: false) Update project's stargazers including existed.
+  --phantomjs                          The task to generate the image.
+  --readme                             The task to update readme.
+  --updatestargazers                   The task to update the count of the stargazers.
+
+```
 
 # 为什么？
 大家是否想过：
