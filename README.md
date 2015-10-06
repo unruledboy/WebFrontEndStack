@@ -152,7 +152,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 		- [Visual Studio](https://www.visualstudio.com/)
 		- [Visual Studio Code](https://code.visualstudio.com/)
 		- Dreamweaver ;-)
-		- FrontPage ;-)
+		- FrontPage / SharePoint Designer ;-)
 	- Build Tasks
 		- Minification
 		- Compilation
@@ -228,6 +228,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- [polymer](https://www.polymer-project.org/) [[GitHub]](https://github.com/polymer/polymer/)
 			- [Deft.js](http://deftjs.org/) [[GitHub]](https://github.com/deftjs/DeftJS/)
 			- [Vue](http://vuejs.org/) [[GitHub]](https://github.com/yyx990803/vue/)
+			- [Riot](http://riotjs.com/) [[GitHub]](https://github.com/riot/riot)
 		- UI framework
 			- [Bootstrap](http://getbootstrap.com/) [[GitHub]](https://github.com/twbs/bootstrap/)
 			- [Semantic UI](http://semantic-ui.com/) [[GitHub]](https://github.com/Semantic-Org/Semantic-UI/)
@@ -273,6 +274,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- [ramda](http://ramdajs.com/) [[GitHub]](http://github.com/ramda/ramda)
 			- [underscore.js](http://underscorejs.org/) [[GitHub]](https://github.com/jashkenas/underscore)
 			- [lodash](https://lodash.com/) [[GitHub]](https://github.com/lodash/lodash)
+			- [ReactiveX](http://reactivex.io/) [[GitHub]](https://github.com/Reactive-Extensions/RxJS)
 		- Mobile UI
 			- [jQuery Mobile](https://jquerymobile.com/) [[GitHub]](https://github.com/jquery/jquery-mobile/)
 			- [Jo](http://joapp.com/) [[GitHub]](https://github.com/davebalmer/jo/)

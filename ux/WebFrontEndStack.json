@@ -668,7 +668,12 @@
 				"url": "http://vuejs.org/",
 				"github": "https://github.com/yyx990803/vue/",
 				"stargazers": 6261
-			}]
+			}, {
+        "name": "Riot",
+        "url": "http://riotjs.com/",
+        "github": "https://github.com/riot/riot",
+        "stargazers": 7424
+      }]
 		}, {
 			"name": "UI framework",
 			"languages": {
@@ -873,7 +878,12 @@
 				"url": "https://lodash.com/",
 				"github": "https://github.com/lodash/lodash",
 				"stargazers": 11071
-			}]
+			}, {
+        "name": "ReactiveX",
+        "url": "http://reactivex.io/",
+        "github": "https://github.com/Reactive-Extensions/RxJS",
+        "stargazers": 582
+      }]
 		}, {
 			"name": "Mobile UI",
 			"languages": {
