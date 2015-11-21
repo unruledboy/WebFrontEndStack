@@ -302,7 +302,9 @@
 			"url": "https://www.visualstudio.com/"
 		}, {
 			"name": "Visual Studio Code",
-			"url": "https://code.visualstudio.com/"
+			"url": "https://code.visualstudio.com/",
+			"github": "https://github.com/Microsoft/vscode",
+			"stargazers": 6652
 		}, {
 			"name": "Dreamweaver ;-)"
 		}, {
@@ -518,10 +520,10 @@
 				"github": "http://github.com/substack/tape",
 				"stargazers": 1264
 			}, {
-				"name": "speckjs",
-				"url": "http://speckjs.github.io/",
-				"github": "http://github.com/speckjs/speckjs/",
-				"stargazers": 305
+				"name": "nightmare",
+				"url": "http://nightmarejs.org/",
+				"github": "https://github.com/segmentio/nightmare",
+				"stargazers": 6110
 			}]
 		}, {
 			"name": "Composite",
@@ -669,11 +671,11 @@
 				"github": "https://github.com/yyx990803/vue/",
 				"stargazers": 6261
 			}, {
-        "name": "Riot",
-        "url": "http://riotjs.com/",
-        "github": "https://github.com/riot/riot",
-        "stargazers": 7424
-      }]
+				"name": "Riot",
+				"url": "http://riotjs.com/",
+				"github": "https://github.com/riot/riot",
+				"stargazers": 7875
+			}]
 		}, {
 			"name": "UI framework",
 			"languages": {
@@ -879,11 +881,11 @@
 				"github": "https://github.com/lodash/lodash",
 				"stargazers": 11071
 			}, {
-        "name": "ReactiveX",
-        "url": "http://reactivex.io/",
-        "github": "https://github.com/Reactive-Extensions/RxJS",
-        "stargazers": 582
-      }]
+				"name": "ReactiveX",
+				"url": "http://reactivex.io/",
+				"github": "https://github.com/Reactive-Extensions/RxJS",
+				"stargazers": 6720
+			}]
 		}, {
 			"name": "Mobile UI",
 			"languages": {

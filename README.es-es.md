@@ -159,7 +159,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 		- [Brackets](http://brackets.io/) [[GitHub]](https://github.com/adobe/brackets/)
 		- [Light Table](http://lighttable.com/) [[GitHub]](https://github.com/LightTable/LightTable/)
 		- [Visual Studio](https://www.visualstudio.com/)
-		- [Visual Studio Code](https://code.visualstudio.com/)
+		- [Visual Studio Code](https://code.visualstudio.com/) [[GitHub]](https://github.com/Microsoft/vscode)
 		- Dreamweaver ;-)
 		- FrontPage / SharePoint Designer ;-)
 	- Build Tasks
@@ -203,7 +203,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- [Karma](http://karma-runner.github.io/) [[GitHub]](https://github.com/karma-runner/karma/)
 			- nodeunit [[GitHub]](https://github.com/caolan/nodeunit/)
 			- tape [[GitHub]](http://github.com/substack/tape)
-			- [speckjs](http://speckjs.github.io/) [[GitHub]](http://github.com/speckjs/speckjs/)
+			- [nightmare](http://nightmarejs.org/) [[GitHub]](https://github.com/segmentio/nightmare)
 		- Composite
 			- [Sauce Labs](https://saucelabs.com/)
 			- [Browser Stack](https://www.browserstack.com/)
