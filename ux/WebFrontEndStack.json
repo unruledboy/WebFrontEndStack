@@ -220,7 +220,7 @@
 			"name": "SpiderMonkey (Firefox)",
 			"url": " https://developer.mozilla.org/en-us/docs/Mozilla/Projects/SpiderMonkey"
 		}, {
-			"name": "Nitro (Safari)",
+			"name": "JavaScriptCore (Safari)",
 			"url": "https://en.wikipedia.org/wiki/WebKit#JavaScriptCore"
 		}]
 	}, {
