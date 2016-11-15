@@ -301,7 +301,7 @@
 			"name": "Visual Studio",
 			"url": "https://www.visualstudio.com/"
 		}, {
-			"name": "Visual Studio Code",
+			"name": "Visual Studio Code (Linux & Mac)",
 			"url": "https://code.visualstudio.com/",
 			"github": "https://github.com/Microsoft/vscode",
 			"stargazers": 6652

@@ -132,7 +132,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm?lo
 		- [Chakra (IE9+ / Edge)](https://en.wikipedia.org/wiki/Chakra_(JScript_engine))
 		- [V8 (Chrome / Opera / Nodejs / MongoDB)](https://developers.google.com/v8/?hl=zh-CN) [[GitHub]](https://github.com/v8/v8/)
 		- [SpiderMonkey (Firefox)]( https://developer.mozilla.org/en-us/docs/Mozilla/Projects/SpiderMonkey)
-		- [Nitro (Safari)](https://en.wikipedia.org/wiki/WebKit#JavaScriptCore)
+		- [JavaScriptCore (Safari)](https://en.wikipedia.org/wiki/WebKit#JavaScriptCore)
 	- 运行时
 		- Cookie
 		- Local Cache
@@ -156,7 +156,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm?lo
 		- [Brackets](http://brackets.io/) [[GitHub]](https://github.com/adobe/brackets/)
 		- [Light Table](http://lighttable.com/) [[GitHub]](https://github.com/LightTable/LightTable/)
 		- [Visual Studio](https://www.visualstudio.com/)
-		- [Visual Studio Code](https://code.visualstudio.com/) [[GitHub]](https://github.com/Microsoft/vscode)
+		- [Visual Studio Code (Linux & Mac)](https://code.visualstudio.com/) [[GitHub]](https://github.com/Microsoft/vscode)
 		- Dreamweaver ;-)
 		- FrontPage / SharePoint Designer ;-)
 	- 编译任务
