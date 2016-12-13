@@ -181,6 +181,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 	- Package
 		- [npm](https://www.npmjs.com/) [[GitHub]](https://github.com/npm/npm/)
 		- [Bower](http://bower.io/) [[GitHub]](https://github.com/bower/bower/)
+		- [yarn](https://yarnpkg.com/) [[GitHub]](https://github.com/yarnpkg/yarn/)
 	- Test
 		- Tools
 			- [QUnit](https://qunitjs.com/) [[GitHub]](https://github.com/jquery/qunit/)
@@ -195,6 +196,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- nodeunit [[GitHub]](https://github.com/caolan/nodeunit/)
 			- tape [[GitHub]](http://github.com/substack/tape)
 			- [nightmare](http://nightmarejs.org/) [[GitHub]](https://github.com/segmentio/nightmare)
+			- [Enzyme](http://airbnb.io/enzyme/) [[GitHub]](https://github.com/airbnb/enzyme)
 		- Composite
 			- [Sauce Labs](https://saucelabs.com/)
 			- [Browser Stack](https://www.browserstack.com/)
@@ -237,6 +239,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- [WinJS](https://dev.windows.com/en-us/develop/winjs) [[GitHub]](https://github.com/winjs/winjs)
 			- [Pure](http://purecss.io/) [[GitHub]](https://github.com/yahoo/pure/)
 			- [Amaze UI](http://amazeui.org/) [[GitHub]](https://github.com/allmobilize/amazeui)
+			- [Onsne UI](https://onsen.io/) [[GitHub]](https://github.com/OnsenUI/OnsenUI)
 		- WebSocket
 			- [Socket.io](http://socket.io/) [[GitHub]](https://github.com/Automattic/socket.io/)
 			- web-socket-js [[GitHub]](https://github.com/gimite/web-socket-js/)
